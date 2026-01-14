@@ -40,7 +40,7 @@ const TCMHome = ({ lang }) => {
       {/* 2. PROCESS / DIAGNOSIS SECTION (NEW) */}
       <section className="tcm-process section-padding bg-paper">
         <div className="container">
-          <h3 className="section-header text-center text-jade">The Clinical Approach</h3>
+          <h3 className="section-header text-center text-jade">{t.process_title}</h3>
 
           <div className="process-grid">
             {t.process.map((step, i) => (
@@ -54,8 +54,8 @@ const TCMHome = ({ lang }) => {
 
           <div className="pulse-visual-row">
             <div className="pulse-text">
-              <h3>Root Cause Diagnosis</h3>
-              <p>In TCM, we do not just treat the symptom; we listen to what the body is saying. Through pulse diagnosis, we can detect imbalances in the internal organs long before they manifest as severe illness.</p>
+              <h3>{t.pulse_section.title}</h3>
+              <p>{t.pulse_section.text}</p>
             </div>
 
             <div className="pulse-img">

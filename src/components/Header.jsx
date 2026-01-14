@@ -34,7 +34,7 @@ const Header = ({ lang, setLang }) => {
 
         {/* 2. NAVIGATION (Always Visible) */}
         <nav className="desktop-nav">
-          <NavLink to="/" end className="nav-item">Home</NavLink>
+          <NavLink to="/" end className="nav-item">{t.home}</NavLink>
           <NavLink to="/tcm" className="nav-item">{t.tcm}</NavLink>
           <NavLink to="/xinjian" className="nav-item">{t.xinjian}</NavLink>
           <NavLink to="/about" className="nav-item">{t.about}</NavLink>

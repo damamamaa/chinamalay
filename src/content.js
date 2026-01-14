@@ -1,6 +1,7 @@
 export const content = {
   en: {
     nav: {
+      home: "Home",
       services: "Services",
       tcm: "TCM Clinic",
       xinjian: "Xin Jian",
@@ -65,6 +66,11 @@ export const content = {
         { title: "Treatment", desc: "Applying precise therapies to restore balance." },
         { title: "Maintenance", desc: "Guidance on diet and habits for long-term health." }
       ],
+      process_title: "The Clinical Approach",
+      pulse_section: {
+        title: "Root Cause Diagnosis",
+        text: "In TCM, we do not just treat the symptom; we listen to what the body is saying. Through pulse diagnosis, we can detect imbalances in the internal organs long before they manifest as severe illness."
+      },
       disclaimer: "This section is strictly medical and wellness focused. No metaphysical elements are involved."
     },
     fengshui: {
@@ -139,6 +145,7 @@ export const content = {
   },
   zh: {
     nav: {
+      home: "首页",
       services: "服务",
       tcm: "中医诊所",
       xinjian: "心鉴",
@@ -179,6 +186,11 @@ export const content = {
         { title: "施治", desc: "精准施术，恢复平衡。" },
         { title: "养护", desc: "生活指导，长久健康。" }
       ],
+      process_title: "临床诊疗流程",
+      pulse_section: {
+        title: "治本诊断",
+        text: "在中医里，我们不只治疗症状，更倾听身体的语言。通过脉诊，我们能在疾病显化之前精准探测脏腑的失衡。"
+      },
       disclaimer: "本版块严格专注于医疗与健康。不涉及任何玄学内容。"
     },
     fengshui: {
@@ -233,6 +245,7 @@ export const content = {
   },
   ms: {
     nav: {
+      home: "Laman Utama",
       services: "Perkhidmatan",
       tcm: "Klinik TCM",
       xinjian: "Xin Jian",
@@ -273,6 +286,11 @@ export const content = {
         { title: "Rawatan", desc: "Menggunakan terapi yang tepat untuk memulihkan keseimbangan." },
         { title: "Penjagaan", desc: "Panduan pemakanan dan tabiat untuk kesihatan jangka panjang." }
       ],
+      process_title: "Pendekatan Klinikal",
+      pulse_section: {
+        title: "Diagnosis Punca Utama",
+        text: "Dalam TCM, kami tidak hanya merawat gejala; kami mendengar apa yang dikatakan oleh tubuh. Melalui diagnosis nadi, kami dapat mengesan ketidakseimbangan organ dalaman jauh sebelum ia menjadi penyakit kronik."
+      },
       disclaimer: "Bahagian ini tertumpu sepenuhnya kepada perubatan dan kesejahteraan. Tiada elemen metafizik terlibat."
     },
     fengshui: {
