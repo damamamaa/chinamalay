@@ -29,24 +29,34 @@ export const content = {
       services_title: "Clinical Modalities",
       services: [
         {
-          name: "TCM Wellness Support",
-          desc: "A comprehensive approach to health maintenance, focusing on boosting immunity, regulating sleep cycles, and improving digestion through herbal formulas and lifestyle adjustments.",
-          detail: "Our holistic wellness program is designed for modern professionals dealing with fatigue and sub-optimal health."
+          name: "Sports Injury Recovery",
+          desc: "Targeted therapy to accelerate healing of musculoskeletal injuries, reduce inflammation, and restore range of motion.",
+          detail: "Effective for sprains, strains, and post-operative recovery."
         },
         {
-          name: "Acupuncture",
-          desc: "Precision needle therapy to regulate the flow of Qi and blood. Effective for pain management, stress relief, and systemic balance.",
-          detail: "We use sterile, single-use needles and refined techniques to ensure a comfortable and effective session."
-        },
-        {
-          name: "Transitional Fire Cupping",
-          desc: "Using heat to create vacuum suction, drawing out deep-seated toxins and stagnation from the muscle layers.",
-          detail: "Excellent for relieving back pain, stiff neck, and respiratory congestion."
-        },
-        {
-          name: "Bone Setting (Tuina)",
+          name: "Bone Setting & Spinal Alignment",
           desc: "Structural alignment through manual therapy. Correcting the skeletal framework to allow proper nerve and blood function.",
           detail: "Restores mobility and alleviates chronic structural pain without medication."
+        },
+        {
+          name: "Pain Management",
+          desc: "A holistic approach to chronic and acute pain relief using acupuncture and manual techniques.",
+          detail: "We address the root cause of pain, not just the symptoms."
+        },
+        {
+          name: "Women’s Health Regulation",
+          desc: "Supporting hormonal balance, menstrual health, and fertility through natural methods.",
+          detail: "Gentle and effective care for women at all life stages."
+        },
+        {
+          name: "Men’s Vitality & Sub-health Care",
+          desc: "Boosting energy, improving stamina, and addressing sub-clinical fatigue states.",
+          detail: "Restoring vigor and resilience for modern life demands."
+        },
+        {
+          name: "Gua Sha, Cupping & Acupuncture Therapy",
+          desc: "Traditional modalities to improve circulation, release toxicity, and balance the body's energy flow.",
+          detail: "Proven techniques for systemic wellness and stress relief."
         }
       ],
       process: [
@@ -55,14 +65,19 @@ export const content = {
         { title: "Treatment", desc: "Applying precise therapies to restore balance." },
         { title: "Maintenance", desc: "Guidance on diet and habits for long-term health." }
       ],
-      disclaimer: "Strictly medical and wellness focused. No metaphysical elements."
+      disclaimer: "This section is strictly medical and wellness focused. No metaphysical elements are involved."
     },
     fengshui: {
-      brand: "Xin Jian (心鉴)",
-      tagline: "Destiny & Feng Shui Consulting",
+      brand: "Xin Jian Analysis",
+      tagline: "Numerology, Destiny & Feng Shui Analysis",
       description: "Destiny is not a fixed script; it is a map of terrain. We act as your navigator.",
       services_title: "Destiny Services",
       services: [
+        {
+          name: "Numerology Analysis",
+          desc: "Optimizing the frequencies around you. Selection of phone numbers, car plates, and unit numbers that resonate with your personal energy.",
+          detail: "Numbers are energy. Make sure yours are working for you."
+        },
         {
           name: "BaZi (Four Pillars) Analysis",
           desc: "Decoding your life's blueprint based on birth data. Understand your strengths, weaknesses, and timing for career, wealth, and relationships.",
@@ -74,32 +89,27 @@ export const content = {
           detail: "Offers high-resolution insight into specific life domains."
         },
         {
-          name: "Numerology & Lucky Numbers",
-          desc: "Optimizing the frequencies around you. Selection of phone numbers, car plates, and unit numbers that resonate with your personal energy.",
-          detail: "Numbers are energy. Make sure yours are working for you."
+          name: "Feng Shui Consultation",
+          desc: "Residential and office environmental assessment to optimize flow and balance.",
+          detail: "Harmonize your external environment with your internal goals."
         },
         {
           name: "Annual Guidance",
           desc: "A year-ahead forecast to help you prepare for opportunities and mitigate risks in career, health, and family matters.",
-          detail: " navigate the changing tides of the year with confidence."
-        },
-        {
-          name: "Feng Shui Consultation",
-          desc: "Environmental auditing for homes and offices. We use classical formulas to tap into beneficial Qi for health and prosperity.",
-          detail: "Harmonize your external environment with your internal goals."
+          detail: "Navigate the changing tides of the year with confidence."
         }
       ],
       philosophy: {
         title: "The Art of Clear Seeing",
         text: "We believe that metaphysics is not about superstition or fear. It is a strategic tool. Just as a captain checks the weather before sailing, a wise person checks the cosmic currents before making major life decisions."
       },
-      disclaimer: "Destiny and feng shui analysis provides reference and insight. Life outcomes depend on personal choices and actions."
+      disclaimer: "These services provide analytical reference and personal insight only. Life outcomes depend on individual choices and actions."
     },
     about: {
       title: "About Rusheng",
       role: "Practitioner",
       description: "Rusheng operates with clear ethical boundaries, providing two distinct professional services under one unified philosophy of balance. With a commitment to clarity and responsibility, the practice avoids mysticism in favor of practical, life-enhancing wisdom.",
-      bio_deep: "With over 15 years of rigorous study and clinical practice, Rusheng has bridged the gap between ancient lineage wisdom and modern practical application. His approach is characterized by a 'no-nonsense' clarity that cuts through superstition.",
+      bio_deep: "With over 15 years of study, advisory work, and practical application, Rusheng has bridged the gap between ancient lineage wisdom and modern practical application. His approach is characterized by a 'no-nonsense' clarity that cuts through superstition.",
       reg: "Professional Registration: CT0147948-T"
     },
     contact: {
@@ -122,7 +132,7 @@ export const content = {
       }
     },
     footer: {
-      brand: "AI TCM SYNERQI & XIN JIAN",
+      brand: "AI TCM SYNERQI",
       rights: "All Rights Reserved.",
       reg: "Reg: CT0147948-T"
     }
@@ -151,15 +161,17 @@ export const content = {
       }
     },
     tcm: {
-      brand: "爱中医 (AI TCM SYNERQI)",
+      brand: "AI TCM SYNERQI",
       tagline: "中医诊所",
       description: "以脚踏实地、负责任的医疗方式关注身体健康。",
       services_title: "中医服务项目",
       services: [
-        { name: "中医整体调理", desc: "全方位的健康维护。", detail: "专注于提升免疫力与身体平衡。" },
-        { name: "针灸", desc: "精准的经络与气血调理。", detail: "疏通经络，止痛调气。" },
-        { name: "过渡式火罐", desc: "排毒与肌肉放松。", detail: "深层排毒，缓解肌肉紧张。" },
-        { name: "正骨整复 (推拿)", desc: "骨骼结构调整与骨科护理。", detail: "复位骨骼，恢复机能。" }
+        { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。", detail: "有效缓解扭伤、拉伤及术后康复。" },
+        { name: "正骨与脊柱整复", desc: "通过手法复位骨骼结构。", detail: "恢复活动能力，无需药物缓解结构性疼痛。" },
+        { name: "疼痛管理", desc: "综合针灸与手法缓解急慢性疼痛。", detail: "治标更治本。" },
+        { name: "女性健康调理", desc: "通过自然疗法调理荷尔蒙与月经健康。", detail: "温柔呵护女性各个生命阶段。" },
+        { name: "男性活力与亚健康调理", desc: "提升精力，改善耐力，调理亚健康状态。", detail: "恢复活力，应对现代生活挑战。" },
+        { name: "刮痧、拔罐与针灸疗法", desc: "传统疗法促进循环，排毒通络。", detail: "系统性健康与减压的成熟技术。" }
       ],
       process: [
         { title: "诊断", desc: "望闻问切，寻找病根。" },
@@ -167,31 +179,31 @@ export const content = {
         { title: "施治", desc: "精准施术，恢复平衡。" },
         { title: "养护", desc: "生活指导，长久健康。" }
       ],
-      disclaimer: "严格专注于医疗与健康。此区不出现命理、算命、风水字眼。"
+      disclaimer: "本版块严格专注于医疗与健康。不涉及任何玄学内容。"
     },
     fengshui: {
-      brand: "心鉴 (Xin Jian)",
-      tagline: "命理与风水指引",
-      description: "提供命理与风水参考，帮助看清方向，做好选择。",
-      services_title: "命理与风水服务",
+      brand: "Xin Jian Analysis",
+      tagline: "命理、命运与风水分析",
+      description: "命运不是固定的剧本，而是地形图。我们是您的导航员。",
+      services_title: "命理服务",
       services: [
-        { name: "八字分析", desc: "剖析人生结构与潜能。", detail: "了解先天命格与运势起伏。" },
-        { name: "紫微斗数", desc: "详尽的人生路径图。", detail: "十二宫位详解人生方方面面。" },
-        { name: "生命数字", desc: "通过数字洞察人生。", detail: "数字磁场的影响与运用。" },
-        { name: "年度运势指引", desc: "事业、财富、感情、健康意识。", detail: "趋吉避凶，规划流年。" },
-        { name: "风水咨询", desc: "环境和谐调理 (需预约)。", detail: "人居环境磁场调理。" }
+        { name: "命理数字分析", desc: "优化您周围的磁场频率。选择与您个人能量共鸣的手机号、车牌号等。", detail: "数字即能量。确保它们为您所用。" },
+        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。了解优势、劣势及事业、财富、感情时机。", detail: "揭示您的五行结构与潜在人生路径。" },
+        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位，提供详细的人生事件与业力模式细节。", detail: "提供特定生活领域的得高分辨率洞察。" },
+        { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。", detail: "协调外部环境与内部目标。" },
+        { name: "年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。", detail: "充满信心地驾驭流年变幻。" }
       ],
       philosophy: {
         title: "明心见性",
-        text: "命理不是迷信，而是生命的导航系统。智者顺势而为，愚者逆理而动。"
+        text: "我们相信玄学不是迷信或恐惧。它是战略工具。正如船长出海前查看天气，智者在做重大人生决定前查看宇宙气流。"
       },
-      disclaimer: "命理与风水分析仅提供参考与洞察。人生结果取决于个人的选择与行动。"
+      disclaimer: "这些服务仅提供分析参考与个人洞察。人生结果取决于个人的选择与行动。"
     },
     about: {
       title: "关于鲁胜",
       role: "执业医师 / 顾问",
       description: "鲁胜在明确的职业道德界限下，以统一的‘平衡’理念提供两项具体的专业服务。",
-      bio_deep: "拥有超过15年的专业研习与临床经验，鲁胜致力于将古老的智慧与现代生活相结合。",
+      bio_deep: "拥有超过15年的专业研习、顾问咨询与实践应用经历，鲁胜致力于将古老的智慧与现代生活相结合。他的方式以打破迷信、务实清晰而著称。",
       reg: "专业注册号: CT0147948-T"
     },
     contact: {
@@ -214,7 +226,7 @@ export const content = {
       }
     },
     footer: {
-      brand: "AI TCM SYNERQI & 心鉴",
+      brand: "AI TCM SYNERQI",
       rights: "版权所有。",
       reg: "注册号: CT0147948-T"
     }
@@ -248,42 +260,44 @@ export const content = {
       description: "Pendekatan perubatan yang berpijak di bumi nyata dan bertanggungjawab untuk kesejahteraan fizikal.",
       services_title: "Perkhidmatan TCM",
       services: [
-        { name: "Sokongan Kesejahteraan TCM", desc: "Penyelenggaraan kesihatan holistik.", detail: "Meningkatkan imuniti dan keseimbangan badan." },
-        { name: "Akupunktur", desc: "Terapi jarum ketepatan untuk aliran dan penyembuhan.", detail: "Melancarkan aliran Qi dan darah." },
-        { name: "Bekam Api Peralihan", desc: "Detoksifikasi dan kelegaan otot.", detail: "Membuang angin dan toksin dari badan." },
-        { name: "Rawatan Tulang (Tuina)", desc: "Penyelarasan struktur dan penjagaan ortopedik.", detail: "Membetulkan struktur tulang dan sendi." }
+        { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal.", detail: "Berkesan untuk terseliuh, ketegangan otot, dan pemulihan pasca pembedahan." },
+        { name: "Rawatan Tulang & Penyelarasan Tulang Belakang", desc: "Penyelarasan struktur melalui terapi manual.", detail: "Memulihkan mobiliti dan melegakan sakit struktur kronik tanpa ubat." },
+        { name: "Pengurusan Kesakitan", desc: "Pendekatan holistik untuk melegakan sakit kronik dan akut menggunakan akupunktur dan teknik manual.", detail: "Kami menangani punca sakit, bukan sekadar gejala." },
+        { name: "Pengaturan Kesihatan Wanita", desc: "Menyokong keseimbangan hormon, kesihatan haid, dan kesuburan melalui kaedah semula jadi.", detail: "Penjagaan lembut dan berkesan untuk wanita pada semua peringkat umur." },
+        { name: "Tenaga Lelaki & Penjagaan Sub-kesihatan", desc: "Meningkatkan tenaga, memperbaiki stamina, dan menangani keadaan keletihan sub-klinikal.", detail: "Memulihkan semangat dan daya tahan untuk tuntutan kehidupan moden." },
+        { name: "Terapi Gua Sha, Bekam & Akupunktur", desc: "Modaliti tradisional untuk melancarkan peredaran darah, membuang toksin, dan menyeimbangkan aliran tenaga badan.", detail: "Teknik terbukti untuk kesejahteraan sistemik dan kelegaan tekanan." }
       ],
       process: [
-        { title: "Diagnosis", desc: "Pemeriksaan nadi dan lidah." },
-        { title: "Strategi", desc: "Merangka pelan rawatan." },
-        { title: "Rawatan", desc: "Terapi yang tepat." },
-        { title: "Penjagaan", desc: "Panduan gaya hidup." }
+        { title: "Diagnosis", desc: "Pemeriksaan nadi dan lidah untuk mengenal pasti punca." },
+        { title: "Strategi", desc: "Merangka pelan rawatan peribadi." },
+        { title: "Rawatan", desc: "Menggunakan terapi yang tepat untuk memulihkan keseimbangan." },
+        { title: "Penjagaan", desc: "Panduan pemakanan dan tabiat untuk kesihatan jangka panjang." }
       ],
-      disclaimer: "Fokus sepenuhnya kepada perubatan dan kesejahteraan. Tiada elemen metafizik."
+      disclaimer: "Bahagian ini tertumpu sepenuhnya kepada perubatan dan kesejahteraan. Tiada elemen metafizik terlibat."
     },
     fengshui: {
-      brand: "Xin Jian (心鉴)",
-      tagline: "Perundingan Takdir & Feng Shui",
-      description: "Panduan takdir dan feng shui untuk membantu orang melihat dengan jelas.",
-      services_title: "Perkhidmatan Takdir & Feng Shui",
+      brand: "Xin Jian Analysis",
+      tagline: "Analisis Numerologi, Takdir & Feng Shui",
+      description: "Takdir bukan skrip tetap; ia adalah peta rupa bumi. Kami bertindak sebagai navigator anda.",
+      services_title: "Perkhidmatan Takdir",
       services: [
-        { name: "Analisis BaZi", desc: "Memahami struktur dan potensi kehidupan.", detail: "Peta kehidupan elemen anda." },
-        { name: "Analisis Zi Wei Dou Shu", desc: "Pemetaan laluan hidup yang terperinci.", detail: "Wawasan mendalam tentang aspek kehidupan." },
-        { name: "Numerologi", desc: "Wawasan melalui nombor.", detail: "Tenaga nombor dalam kehidupan." },
-        { name: "Panduan Tahunan", desc: "Kerjaya, Kekayaan, Hubungan, Kesedaran Kesihatan.", detail: "Bersedia untuk peluang tahunan." },
-        { name: "Konsultasi Feng Shui", desc: "Keharmonian persekitaran (atas permintaan).", detail: "Menyelaraskan tenaga rumah dan pejabat." }
+        { name: "Analisis Numerologi", desc: "Mengoptimumkan frekuensi di sekeliling anda. Pemilihan nombor telefon, plat kereta, dan nombor unit yang bergema dengan tenaga peribadi anda.", detail: "Nombor adalah tenaga. Pastikan ia berfungsi untuk anda." },
+        { name: "Analisis BaZi (Empat Pilar)", desc: "Mencerna rangka tindakan kehidupan anda berdasarkan data kelahiran. Fahami kekuatan, kelemahan, dan masa untuk kerjaya, kekayaan, dan hubungan.", detail: "Dedahkan struktur elemen dan potensi laluan hidup anda." },
+        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem astrologi canggih yang memetakan 12 istana kehidupan utama, memberikan butiran terperinci tentang peristiwa kehidupan dan corak karma.", detail: "Menawarkan wawasan resolusi tinggi ke dalam domain kehidupan tertentu." },
+        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat untuk mengoptimumkan aliran dan keseimbangan.", detail: "Harmonikan persekitaran luaran anda dengan matlamat dalaman anda." },
+        { name: "Panduan Tahunan", desc: "Ramalan tahun hadapan untuk membantu anda bersedia bagi peluang dan mengurangkan risiko dalam kerjaya, kesihatan, dan keluarga.", detail: "Mengemudi perubahan arus tahun dengan yakin." }
       ],
       philosophy: {
         title: "Seni Kejelasan",
-        text: "Metafizik bukan kepercayaan karut, tetapi alat strategik untuk membuat keputusan yang bijak."
+        text: "Kami percaya bahawa metafizik bukan tentang khurafat atau ketakutan. Ia adalah alat strategik. Sama seperti kapten memeriksa cuaca sebelum belayar, orang bijak memeriksa arus kosmik sebelum membuat keputusan hidup yang besar."
       },
-      disclaimer: "Analisis takdir dan feng shui menyediakan rujukan dan wawasan."
+      disclaimer: "Perkhidmatan ini menyediakan rujukan analisis dan wawasan peribadi sahaja. Hasil kehidupan bergantung kepada pilihan dan tindakan individu."
     },
     about: {
       title: "Tentang Rusheng",
       role: "Pengamal",
       description: "Rusheng beroperasi dengan batasan etika yang jelas.",
-      bio_deep: "Dengan pengalaman lebih 15 tahun, Rusheng menggabungkan kebijaksanaan kuno dengan praktikaliti moden.",
+      bio_deep: "Dengan pengalaman lebih 15 tahun dalam pengajian, kerja penasihat, dan aplikasi praktikal, Rusheng menggabungkan kebijaksanaan kuno dengan praktikaliti moden.",
       reg: "Nombor Pendaftaran: CT0147948-T"
     },
     contact: {
@@ -306,7 +320,7 @@ export const content = {
       }
     },
     footer: {
-      brand: "AI TCM SYNERQI & XIN JIAN",
+      brand: "AI TCM SYNERQI",
       rights: "Hak Cipta Terpelihara.",
       reg: "No. Daftar: CT0147948-T"
     }

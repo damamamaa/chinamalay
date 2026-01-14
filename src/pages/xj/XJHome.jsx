@@ -60,47 +60,24 @@ const XJHome = ({ lang }) => {
 
           <div className="service-rows">
 
-            {/* Service 1 - BaZi */}
-            <div className="s-row">
-              <div className="s-content">
-                <span className="s-num text-gold">01</span>
-                <h3 className="text-white">{t.services[0].name}</h3>
-                <p className="s-desc text-dim">{t.services[0].desc}</p>
-                <p className="s-detail text-dim-2">{t.services[0].detail}</p>
-              </div>
+            {t.services.map((service, index) => (
+              <div key={index} className={`s-row ${index % 2 !== 0 ? 'reverse' : ''}`}>
+                <div className="s-content">
+                  <span className="s-num text-gold">0{index + 1}</span>
+                  <h3 className="text-white">{service.name}</h3>
+                  <p className="s-desc text-dim">{service.desc}</p>
+                  <p className="s-detail text-dim-2">{service.detail}</p>
+                </div>
 
-              <div className="s-visual">
-                <img src="/xj-chart.webp" alt="BaZi Chart" loading="lazy" />
+                <div className="s-visual">
+                  <img
+                    src={index % 2 === 0 ? "/xj-chart.webp" : "/fengshui-artistic.webp"}
+                    alt={service.name}
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-
-            {/* Service 2 - Feng Shui */}
-            <div className="s-row reverse">
-              <div className="s-content">
-                <span className="s-num text-gold">02</span>
-                <h3 className="text-white">{t.services[4].name}</h3>
-                <p className="s-desc text-dim">{t.services[4].desc}</p>
-                <p className="s-detail text-dim-2">{t.services[4].detail}</p>
-              </div>
-
-              <div className="s-visual">
-                <img src="/fengshui-artistic.webp" alt="Feng Shui" loading="lazy" />
-              </div>
-            </div>
-
-            {/* Service 3 - Zi Wei / Strategy */}
-            <div className="s-row">
-              <div className="s-content">
-                <span className="s-num text-gold">03</span>
-                <h3 className="text-white">{t.services[3].name}</h3>
-                <p className="s-desc text-dim">{t.services[3].desc}</p>
-                <p className="s-detail text-dim-2">{t.services[3].detail}</p>
-              </div>
-
-              <div className="s-visual">
-                <img src="/xj-tea.webp" alt="Strategy" loading="lazy" />
-              </div>
-            </div>
+            ))}
 
           </div>
         </div>
@@ -114,16 +91,18 @@ const XJHome = ({ lang }) => {
       </section>
 
       <style>{`
+
         .xj-page-rich {
-          background-color: #0E0D0C;
-          color: #EFEFEF;
+          background-color: #FFFFFF;
+          color: var(--text-main);
         }
 
         .text-gold { color: var(--xj-accent); }
-        .bg-void { background: #050505; }
-        .invert { filter: invert(1); opacity: 0.8; }
-        .text-dim { color: rgba(255,255,255,0.8); }
-        .text-dim-2 { color: rgba(255,255,255,0.5); font-style: italic; margin-top: 1rem; }
+        .bg-void { background: #F8F9FA; }
+        .invert { opacity: 1; }
+        .text-dim { color: var(--text-muted); }
+        .text-dim-2 { color: #888; font-style: italic; margin-top: 1rem; }
+        .text-white { color: var(--text-dark); }
 
         /* HERO */
         .xj-hero {
@@ -143,13 +122,13 @@ const XJHome = ({ lang }) => {
           background-image: url('/xj-chart.webp');
           background-size: cover;
           background-position: center;
-          filter: brightness(0.4) sepia(0.3);
+          filter: brightness(1) opacity(0.1);
         }
         
         .xj-hero-overlay {
            position: absolute;
            inset: 0;
-           background: radial-gradient(circle, transparent 0%, #0E0D0C 90%);
+           background: radial-gradient(circle, transparent 0%, #FFFFFF 90%);
         }
 
         .hero-brand-img {
@@ -163,7 +142,7 @@ const XJHome = ({ lang }) => {
            max-width: 600px;
            margin-left: auto; 
            margin-right: auto;
-           opacity: 0.8;
+           color: var(--text-muted);
         }
 
         /* PHILOSOPHY */
@@ -172,22 +151,23 @@ const XJHome = ({ lang }) => {
             grid-template-columns: 1fr 1fr;
             align-items: center;
             gap: 4rem;
-            background: #111;
+            background: #FFFFFF;
             padding: 4rem;
-            border: 1px solid #222;
+            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
         }
         
         .philo-text {
             font-size: 1.2rem;
             line-height: 1.8;
             margin-top: 2rem;
-            color: #ccc;
+            color: var(--text-muted);
         }
 
         .philo-img {
             width: 100%;
             border: 1px solid var(--xj-accent);
-            opacity: 0.8;
+            opacity: 1;
         }
 
         /* SERVICES */
@@ -218,7 +198,7 @@ const XJHome = ({ lang }) => {
           width: 100%;
           height: 450px;
           object-fit: cover;
-          filter: contrast(1.1);
+          box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
         .s-content h3 {
@@ -226,13 +206,15 @@ const XJHome = ({ lang }) => {
           font-size: 2.5rem;
           margin-bottom: 1rem;
           margin-top: 2rem;
+          color: var(--text-dark);
         }
 
         .s-num {
           font-family: var(--font-mono);
           font-size: 3rem;
           display: block;
-          opacity: 0.5;
+          opacity: 0.3;
+          color: var(--xj-accent);
         }
 
         .s-desc {
@@ -243,13 +225,12 @@ const XJHome = ({ lang }) => {
 
         /* NOTE */
         .xj-note {
-          background: #1C1917;
+          background: #F4F4F4;
           color: var(--xj-accent);
           padding: 2rem 0;
           font-family: var(--font-mono);
           font-size: 0.8rem;
-          opacity: 0.7;
-          border-top: 1px solid rgba(255,255,255,0.1);
+          border-top: 1px solid rgba(0,0,0,0.05);
         }
 
         @media (max-width: 900px) {

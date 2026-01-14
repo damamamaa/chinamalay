@@ -66,7 +66,7 @@ const About = ({ lang }) => {
               </div>
               <div className="cred-item">
                 <span className="c-label">Experience</span>
-                <span className="c-val">15+ Years Clinical & Advisory</span>
+                <span className="c-val">15+ Years Experience</span>
               </div>
             </div>
           </div>

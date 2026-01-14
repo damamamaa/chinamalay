@@ -71,12 +71,13 @@ const Hero = ({ lang }) => {
       </div>
 
       <style>{`
+
         .hero-masterpiece {
           position: relative;
           height: 100vh;
           width: 100%;
           overflow: hidden;
-          background: #000;
+          background: #FFFFFF;
         }
 
         .intro-center {
@@ -85,9 +86,9 @@ const Hero = ({ lang }) => {
           transform: translate(-50%, -50%);
           z-index: 10;
           text-align: center;
-          color: white;
+          color: var(--text-dark);
           pointer-events: none;
-          mix-blend-mode: difference;
+          mix-blend-mode: normal;
           transition: opacity 0.5s;
           width: 100%;
           padding: 0 1rem;
@@ -101,7 +102,8 @@ const Hero = ({ lang }) => {
           font-family: var(--font-display);
           font-size: clamp(3rem, 8vw, 8rem);
           white-space: nowrap;
-          color: #fff;
+          color: var(--text-dark);
+          text-shadow: 0 2px 20px rgba(255,255,255,0.9);
         }
 
         .hero-subtitle {
@@ -110,8 +112,13 @@ const Hero = ({ lang }) => {
           letter-spacing: 0.3em;
           margin-top: 1rem;
           font-size: 0.8rem;
-          color: rgba(255,255,255,0.8);
+          color: var(--text-muted);
+          background: rgba(255,255,255,0.9);
+          padding: 0.5rem 1rem;
+          display: inline-block;
+          border-radius: 4px;
         }
+
 
         .scroll-indicator {
           position: absolute;
@@ -119,14 +126,14 @@ const Hero = ({ lang }) => {
           left: 50%;
           height: 100px;
           width: 1px;
-          background: rgba(255,255,255,0.2);
+          background: rgba(0,0,0,0.1);
           overflow: hidden;
         }
 
         .scroll-indicator .line {
           width: 100%;
           height: 100%;
-          background: #fff;
+          background: #333;
           animation: scrollDown 2s infinite;
         }
 
@@ -142,13 +149,14 @@ const Hero = ({ lang }) => {
           width: 100%;
         }
 
+
         .portal {
           flex: 1;
           position: relative;
           transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
           overflow: hidden;
           cursor: pointer;
-          border-right: 1px solid rgba(255,255,255,0.1);
+          border-right: 1px solid rgba(0,0,0,0.05);
         }
 
         .portal-bg {
@@ -160,24 +168,24 @@ const Hero = ({ lang }) => {
           transition: filter 0.5s;
         }
 
-
         .tcm-portal .portal-bg {
           background-image: url('/tcm.webp');
-          filter: grayscale(100%) brightness(0.6);
+          filter: grayscale(100%) brightness(0.95);
         }
 
         .xj-portal .portal-bg {
           background-image: url('/fengshui.webp');
-          filter: grayscale(100%) brightness(0.6);
+          filter: grayscale(100%) brightness(0.95);
         }
 
         .portal:hover .portal-bg {
-          filter: grayscale(0%) brightness(0.9);
+          filter: grayscale(0%) brightness(1.05);
         }
+
 
         .portal.recede {
           flex: 0.4;
-          filter: brightness(0.4);
+          filter: brightness(0.6);
         }
         
         .portal.expand {
@@ -189,11 +197,15 @@ const Hero = ({ lang }) => {
           bottom: 10vh;
           left: 4vw;
           z-index: 5;
-          color: white;
+          color: var(--text-dark);
           opacity: 0;
           transform: translateY(20px);
           transition: all 0.5s 0.2s;
           max-width: 500px;
+          background: rgba(255,255,255,0.85);
+          padding: 2rem;
+          border-radius: 8px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
 
         .portal:hover .portal-content {
@@ -204,28 +216,29 @@ const Hero = ({ lang }) => {
         .portal-content h2 {
           margin: 1rem 0 2rem;
           font-weight: 300;
+          color: var(--text-dark);
         }
 
         /* Overlays for atmosphere */
         .overlay-mist {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to top, rgba(44, 62, 54, 0.8), transparent);
-          opacity: 0.6;
+          background: linear-gradient(to top, rgba(255,255,255, 0.9), transparent);
+          opacity: 0.7;
           pointer-events: none;
         }
         
         .overlay-warmth {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to top, rgba(62, 52, 43, 0.8), transparent);
-          opacity: 0.6;
+          background: linear-gradient(to top, rgba(255,255,255, 0.9), transparent);
+          opacity: 0.7;
           pointer-events: none;
         }
         
         .btn-gold {
-          color: #fff;
-          border-color: rgba(255,255,255,0.3);
+          color: var(--text-dark);
+          border-color: rgba(0,0,0,0.1);
         }
         .btn-gold::before {
            background: var(--xj-accent);

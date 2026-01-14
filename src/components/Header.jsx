@@ -26,9 +26,9 @@ const Header = ({ lang, setLang }) => {
         {/* 1. LOGO */}
         <NavLink to="/" className="logo-link">
           {isDarkTheme ? (
-            <span className="text-logo" style={{ color: 'white' }}>RUSHE<span style={{ fontWeight: 300 }}>NG</span></span>
+            <span className="text-logo" style={{ color: 'var(--text-dark)' }}>AI TCM SYNERQI</span>
           ) : (
-            <span className="text-logo" style={{ color: 'var(--text-primary)' }}>RUSHE<span style={{ fontWeight: 300 }}>NG</span></span>
+            <span className="text-logo" style={{ color: 'var(--text-dark)' }}>AI TCM SYNERQI</span>
           )}
         </NavLink>
 
@@ -111,11 +111,11 @@ const Header = ({ lang, setLang }) => {
         }
         
         .header.light-theme {
-          color: var(--text-primary);
+          color: var(--text-dark);
         }
 
         .header.dark-theme {
-          color: #fff;
+          color: var(--text-dark); 
         }
 
         .header.scrolled {

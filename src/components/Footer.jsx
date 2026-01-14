@@ -16,8 +16,9 @@ const Footer = ({ lang }) => {
       </div>
 
       <style>{`
+
         .footer {
-          background-color: #1a1a1a;
+          background-color: var(--tcm-primary);
           color: white;
           padding: 6rem 0;
           font-family: var(--font-sans);

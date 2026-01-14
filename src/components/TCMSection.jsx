@@ -65,7 +65,7 @@ const TCMSection = ({ lang }) => {
       <style>{`
         .tcm-masterpiece {
           position: relative;
-          background: #e8f1ee;
+          background: var(--tcm-light);
           overflow: hidden;
           padding-top: 15vh;
         }
@@ -79,9 +79,10 @@ const TCMSection = ({ lang }) => {
           width: 100%;
           white-space: nowrap;
           pointer-events: none;
-          opacity: 0.04;
+          opacity: 0.05;
           z-index: 0;
           overflow: hidden;
+          color: var(--tcm-primary);
         }
 
         .marquee-text {

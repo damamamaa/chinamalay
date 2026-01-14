@@ -1,9 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import { content } from '../content';
 
 const FloatingContact = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
+
+    // Only show AI chat on About and Xin Jian pages. 
+    // Exclude TCM and Home to keep it strictly professional and not dominate the landing.
+    const showAIChat = ['/about', '/xinjian'].some(path => location.pathname.includes(path));
+
     const [messages, setMessages] = useState([
         { text: "Hello! I am Rusheng's AI Assistant. How can I help you find balance today?", isBot: true }
     ]);
@@ -97,9 +104,16 @@ STRICT GUIDELINES:
             // Default fallback
             let fallbackMsg = "I apologize, but I am currently experiencing high traffic. Please try again later or contact us directly via WhatsApp.";
 
-            // Simple fallback if offline
-            if (input.toLowerCase().includes('tcm')) fallbackMsg = "We offer Acupuncture, Cupping, and Tuina based on root cause diagnosis.";
-            if (input.toLowerCase().includes('feng shui') || input.toLowerCase().includes('bazi')) fallbackMsg = "We provide BaZi analysis and Feng Shui audits to help navigate your destiny.";
+            // Analytical, medical, and strictly professional fallback logic
+            const lowerInput = input.toLowerCase();
+
+            if (lowerInput.includes('tcm') || lowerInput.includes('acupuncture') || lowerInput.includes('pain') || lowerInput.includes('injury')) {
+                fallbackMsg = "We offer strictly medical TCM therapies including Sports Injury Recovery, Pain Management, and Bone Setting. How may I assist you further?";
+            }
+
+            if (lowerInput.includes('feng shui') || lowerInput.includes('bazi') || lowerInput.includes('destiny') || lowerInput.includes('numerology')) {
+                fallbackMsg = "We provide analytical Bazi reference, Numerology analysis, and environmental Feng Shui assessment to help navigate life's terrain.";
+            }
 
             setMessages(prev => [...prev, {
                 text: fallbackMsg,
@@ -125,19 +139,22 @@ STRICT GUIDELINES:
                 </svg>
             </a>
 
-            {/* 2. AI CHAT TRIGGER (Above WA) */}
-            <button className="fab-ai" onClick={toggleChat}>
-                <div className="ai-avatar-container">
 
-                    <img src="/rusheng_real.webp" alt="Rusheng AI" className="ai-avatar" />
-                    <span className="online-dot"></span>
-                </div>
-                <span className="ai-label">Ask Rusheng</span>
-            </button>
+            {/* 2. AI CHAT TRIGGER (Above WA) - Only show on relevant pages */}
+            {showAIChat && (
+                <button className="fab-ai" onClick={toggleChat}>
+                    <div className="ai-avatar-container">
+
+                        <img src="/rusheng_real.webp" alt="Rusheng AI" className="ai-avatar" />
+                        <span className="online-dot"></span>
+                    </div>
+                    <span className="ai-label">Ask Rusheng</span>
+                </button>
+            )}
 
             {/* 3. CHAT WINDOW */}
             <AnimatePresence>
-                {isOpen && (
+                {isOpen && showAIChat && (
                     <motion.div
                         initial={{ opacity: 0, y: 20, scale: 0.9 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -216,21 +233,21 @@ STRICT GUIDELINES:
             position: fixed;
             bottom: 7.5rem; /* Above WA button */
             right: 2.2rem;   /* Aligned centerish */
-            background: #0E0D0C;
-            border: 1px solid rgba(255,255,255,0.2);
+            background: #FFFFFF;
+            border: 1px solid rgba(0,0,0,0.1);
             padding: 0.5rem 1rem 0.5rem 0.5rem;
             border-radius: 50px;
             display: flex;
             align-items: center;
             gap: 0.8rem;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             z-index: 9990;
-            color: white;
+            color: var(--text-dark);
             transition: all 0.3s ease;
         }
 
-        .fab-ai:hover { background: #1a1a1a; transform: translateY(-3px); }
+        .fab-ai:hover { background: #f8f8f8; transform: translateY(-3px); }
 
         .ai-avatar-container {
             position: relative;
@@ -243,7 +260,7 @@ STRICT GUIDELINES:
             height: 100%;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #C8B273; /* Gold border */
+            border: 2px solid var(--tcm-primary);
         }
 
         .online-dot {
@@ -281,7 +298,7 @@ STRICT GUIDELINES:
         }
 
         .chat-header {
-            background: #0E0D0C;
+            background: var(--tcm-primary);
             color: white;
             padding: 1rem;
             display: flex;
@@ -300,7 +317,7 @@ STRICT GUIDELINES:
             height: 35px;
             border-radius: 50%;
             object-fit: cover;
-            border: 1px solid #C8B273;
+            border: 1px solid rgba(255,255,255,0.5);
         }
 
         .header-info h4 { font-size: 1rem; margin-bottom: 2px; }
@@ -359,7 +376,7 @@ STRICT GUIDELINES:
         @keyframes blink { 0% { opacity: 0.2; } 50% { opacity: 1; } 100% { opacity: 0.2; } }
 
         .user .msg-bubble {
-            background: #0E0D0C;
+            background: var(--tcm-primary);
             color: white;
             border-bottom-right-radius: 2px;
         }
@@ -378,10 +395,11 @@ STRICT GUIDELINES:
             border: 1px solid #ddd;
             border-radius: 20px;
             outline: none;
+            color: #333;
         }
         
         .chat-input button {
-            background: #0E0D0C;
+            background: var(--tcm-primary);
             color: white;
             border: none;
             width: 40px;
@@ -393,7 +411,7 @@ STRICT GUIDELINES:
             align-items: center;
             justify-content: center;
         }
-        .chat-input button:hover { background: #333; }
+        .chat-input button:hover { background: #1e4036; }
         .chat-input button:disabled { background: #ccc; cursor: not-allowed; }
         
         @media (max-width: 480px) {

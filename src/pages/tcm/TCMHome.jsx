@@ -71,50 +71,24 @@ const TCMHome = ({ lang }) => {
           <h3 className="section-header text-center text-jade">{t.services_title}</h3>
 
           <div className="service-rows">
+            {t.services.map((service, index) => (
+              <div key={index} className={`s-row ${index % 2 !== 0 ? 'reverse' : ''}`}>
+                <div className="s-content">
+                  <span className="s-num">0{index + 1}</span>
+                  <h3>{service.name}</h3>
+                  <p className="s-desc">{service.desc}</p>
+                  <p className="s-detail">{service.detail}</p>
+                </div>
 
-            {/* Service 1 - Acupuncture */}
-            <div className="s-row">
-              <div className="s-content">
-                <span className="s-num">01</span>
-                <h3>{t.services[1].name}</h3>
-                <p className="s-desc">{t.services[1].desc}</p>
-                <p className="s-detail">{t.services[1].detail}</p>
+                <div className="s-visual">
+                  <img
+                    src={index % 2 === 0 ? "/tcm-artistic.webp" : "/tcm-cupping.webp"}
+                    alt={service.name}
+                    loading="lazy"
+                  />
+                </div>
               </div>
-
-              <div className="s-visual">
-                <img src="/tcm-artistic.webp" alt="Acupuncture" loading="lazy" />
-              </div>
-            </div>
-
-            {/* Service 2 - Cupping */}
-            <div className="s-row reverse">
-              <div className="s-content">
-                <span className="s-num">02</span>
-                <h3>{t.services[2].name}</h3>
-                <p className="s-desc">{t.services[2].desc}</p>
-                <p className="s-detail">{t.services[2].detail}</p>
-              </div>
-
-              <div className="s-visual">
-                <img src="/tcm-cupping.webp" alt="Cupping" loading="lazy" />
-              </div>
-            </div>
-
-            {/* Service 3 - Tuina */}
-            <div className="s-row">
-              <div className="s-content">
-                <span className="s-num">03</span>
-                <h3>{t.services[3].name}</h3>
-                <p className="s-desc">{t.services[3].desc}</p>
-                <p className="s-detail">{t.services[3].detail}</p>
-              </div>
-
-              <div className="s-visual">
-                {/* Fallback to herbs/general since we don't have explicit bone setting art yet */}
-                <img src="/tcm-herbs.webp" style={{ filter: 'grayscale(0.2)' }} alt="Tuina" loading="lazy" />
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </section>
@@ -128,12 +102,12 @@ const TCMHome = ({ lang }) => {
 
       <style>{`
         .tcm-page-rich {
-          background-color: #F8FBF9;
+          background-color: var(--tcm-light);
           color: #1A2E26;
         }
 
         .text-jade { color: var(--tcm-primary); }
-        .bg-paper { background-color: #EFEFEF; }
+        .bg-paper { background-color: var(--bg-paper); }
         .shadow-lg { box-shadow: 0 20px 50px rgba(0,0,0,0.15); }
 
         /* HERO */
@@ -155,38 +129,45 @@ const TCMHome = ({ lang }) => {
           background-image: url('/tcm-artistic.webp');
           background-size: cover;
           background-position: center;
-          filter: brightness(0.6);
+          filter: brightness(0.4); /* Darkened from 0.6 to 0.4 for better contrast */
+        }
+        
+        .tcm-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)); /* Added gradient for depth */
         }
 
         .tcm-hero-content {
           max-width: 800px;
+          position: relative;
+          z-index: 20;
+          text-shadow: 0 4px 20px rgba(0,0,0,0.8); /* Strong shadow for readability */
         }
 
         .sc-tag {
           font-family: var(--font-mono);
           letter-spacing: 0.2em;
           text-transform: uppercase;
-          font-size: 0.9rem;
+          font-size: 1rem; /* Slightly larger */
+          font-weight: 600; /* Bolder */
           display: block;
           margin-bottom: 2rem;
+          color: rgba(255,255,255,0.9);
         }
 
         .sc-title {
           font-family: var(--font-display);
           font-size: 5rem;
           margin-bottom: 2rem;
+          font-weight: 700; /* Bolder */
         }
 
         .sc-desc {
-          font-size: 1.5rem;
-          opacity: 0.9;
-        }
-        
-        .sc-line {
-          width: 1px;
-          height: 100px;
-          background: white;
-          margin: 4rem auto 0;
+          font-size: 1.6rem;
+          opacity: 1; /* Full opacity */
+          font-weight: 500;
+          line-height: 1.5;
         }
 
         /* PROCESS SECTION */

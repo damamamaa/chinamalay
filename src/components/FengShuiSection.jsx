@@ -40,9 +40,10 @@ const FengShuiSection = ({ lang }) => {
       <div className="star-field"></div>
 
       <style>{`
+
         .xj-masterpiece {
-          background-color: #1a1816; /* Deep cosmic dark */
-          color: #fbf8f3;
+          background-color: var(--bg-paper); /* Clean medical white/gray */
+          color: var(--text-main);
           position: relative;
           padding-top: 15vh;
           padding-bottom: 15vh;
@@ -65,9 +66,8 @@ const FengShuiSection = ({ lang }) => {
         .brand-mark {
           width: 120px;
           height: 120px;
-          filter: invert(1) brightness(0.9); /* Invert to make it white/gold on dark */
+          opacity: 1; 
           margin-bottom: 2rem;
-          opacity: 0.8;
         }
 
         .rotating {
@@ -90,7 +90,7 @@ const FengShuiSection = ({ lang }) => {
           margin: 0 auto;
           font-family: var(--font-serif);
           font-size: 1.3rem;
-          opacity: 0.8;
+          color: var(--text-muted);
           line-height: 1.8;
         }
 
@@ -105,16 +105,18 @@ const FengShuiSection = ({ lang }) => {
         .cosmos-card {
            position: relative;
            padding: 3rem 2rem;
-           background: rgba(255,255,255,0.03);
-           border: 1px solid rgba(194, 178, 128, 0.1);
+           background: #FFFFFF;
+           border: 1px solid rgba(0,0,0,0.05);
            transition: all 0.5s ease;
            cursor: default;
+           box-shadow: 0 4px 6px rgba(0,0,0,0.02);
         }
 
         .cosmos-card:hover {
-           background: rgba(194, 178, 128, 0.08); /* light gold tint */
+           background: #FFFFFF;
            transform: translateY(-5px);
-           border-color: rgba(194, 178, 128, 0.4);
+           box-shadow: 0 20px 40px rgba(0,0,0,0.08); 
+           border-color: var(--xj-accent);
         }
 
         .cosmos-title {
@@ -126,7 +128,7 @@ const FengShuiSection = ({ lang }) => {
 
         .cosmos-desc {
           font-size: 0.9rem;
-          color: rgba(255,255,255,0.6);
+          color: var(--text-muted);
         }
 
         .card-corner {
@@ -145,7 +147,7 @@ const FengShuiSection = ({ lang }) => {
 
         .wisdom-footer {
           margin-top: 4rem;
-          opacity: 0.5;
+          opacity: 0.8;
         }
         
         .wisdom-line {
@@ -159,16 +161,12 @@ const FengShuiSection = ({ lang }) => {
           font-family: var(--font-mono);
           font-size: 0.8rem;
           max-width: 500px;
+          color: var(--text-muted);
         }
 
-        /* Star Map Background */
+        /* Ambient Background - clean, no stars */
         .star-field {
-          position: absolute;
-          inset: 0;
-          background-image: radial-gradient(white 1px, transparent 1px);
-          background-size: 50px 50px;
-          opacity: 0.1;
-          z-index: 1;
+          display: none; 
         }
 
         @media (max-width: 900px) {

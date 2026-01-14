@@ -31,7 +31,7 @@ const Home = ({ lang }) => {
             transition={{ duration: 1, delay: 0.2 }}
             className="hero-badge"
           >
-            AI TCM SYNERQI & XIN JIAN
+            AI TCM SYNERQI
           </motion.div>
 
           <motion.h1
@@ -93,9 +93,9 @@ const Home = ({ lang }) => {
         <div className="overlay-dark">
           <div className="container">
             <div className="statement-box">
-              <h2 className="display-3 text-gradient">The Practitioner</h2>
+              <h2 className="display-3 text-gradient">{content[lang].about.role}</h2>
               <p className="statement-text">
-                "I operate with clear ethical boundaries, providing two distinct professional services under one unified philosophy of balance. With a commitment to clarity and responsibility, the practice avoids mysticism in favor of practical, life-enhancing wisdom."
+                "{content[lang].about.description}"
               </p>
               <div className="statement-sig">
                 Rusheng
@@ -262,14 +262,13 @@ const Home = ({ lang }) => {
           background-position: center;
           transition: transform 0.8s ease;
           z-index: 0;
-          opacity: 0.6;
-          filter: grayscale(0.2);
+          opacity: 1; /* Was 0.6, now full opacity but handled by brightness filter below */
+          filter: brightness(0.4) grayscale(0.1); /* Significantly darker for contrast */
         }
 
         .pathway-card:hover .pathway-bg {
           transform: scale(1.1);
-          opacity: 0.8;
-          filter: grayscale(0);
+          filter: brightness(0.5) grayscale(0); /* Lighten slightly on hover but keep contrast */
         }
 
         .pathway-content {
@@ -277,28 +276,33 @@ const Home = ({ lang }) => {
           z-index: 10;
           padding: 2rem;
           transition: transform 0.5s ease;
+          text-shadow: 0 4px 15px rgba(0,0,0,0.9); /* Strong shadow */
         }
         
         .pathway-label {
           display: block;
           font-family: var(--font-mono);
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           letter-spacing: 0.2em;
           margin-bottom: 2rem;
-          opacity: 0.7;
+          font-weight: 600;
+          opacity: 0.9;
         }
 
         .pathway-title {
           font-family: var(--font-display);
           font-size: 3.5rem;
           margin-bottom: 1rem;
+          font-weight: 700;
         }
 
         .pathway-desc {
           max-width: 400px;
           margin: 0 auto 3rem;
-          opacity: 0.8;
-          font-size: 1.1rem;
+          opacity: 1;
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 1.6;
         }
 
         .btn-explore {
