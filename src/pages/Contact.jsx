@@ -142,13 +142,14 @@ const Contact = ({ lang }) => {
 
                 /* HERO */
                 .contact-hero {
-                    height: 60vh;
+                    min-height: 60vh;
                     position: relative;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     text-align: center;
                     overflow: hidden;
+                    padding-top: 4rem;
                 }
 
                 .contact-hero-bg {
@@ -185,21 +186,26 @@ const Contact = ({ lang }) => {
 
                 .hero-title {
                     font-family: var(--font-display);
-                    font-size: 4rem;
-                    margin-bottom: 1rem;
+                    font-size: clamp(2.5rem, 6vw, 4.5rem);
+                    line-height: 1.1;
+                    margin-bottom: 1.5rem;
+                    word-wrap: break-word;
+                    max-width: 100%;
                 }
 
                 .hero-desc {
-                    font-size: 1.2rem;
+                    font-size: clamp(1rem, 2vw, 1.2rem);
                     color: rgba(255,255,255,0.7);
+                    max-width: 90%;
+                    margin: 0 auto;
                 }
 
                 /* TABS */
                 .contact-body {
                     position: relative;
                     z-index: 20;
-                    margin-top: -5rem;
-                    padding-bottom: 5rem;
+                    margin-top: -3rem;
+                    padding-bottom: 10rem;
                 }
 
                 .glass-tabs {
@@ -374,9 +380,11 @@ const Contact = ({ lang }) => {
                 }
 
                 @media (max-width: 900px) {
-                    .contact-layout { grid-template-columns: 1fr; }
+                    .contact-layout { grid-template-columns: 1fr; gap: 4rem; }
                     .glass-tabs { flex-wrap: wrap; }
-                    .contact-hero { height: 50vh; }
+                    .contact-hero { height: auto; min-height: 50vh; padding-top: 8rem; padding-bottom: 4rem; }
+                    .ch-content { padding: 0 1rem; }
+                    .submit-btn-premium { font-size: 0.9rem; padding: 1.2rem; }
                 }
             `}</style>
     </div>
