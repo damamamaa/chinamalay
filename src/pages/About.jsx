@@ -35,11 +35,12 @@ const About = ({ lang }) => {
                 style={{ y: yImg }}
                 src="/rusheng_real.webp"
                 alt="Rusheng Portrait"
+                loading="eager"
               />
             </div>
 
             <div className="scrolls-visual">
-              <img src="/about-scrolls.webp" alt="Ancient Wisdom" />
+              <img src="/about-scrolls.webp" alt="Ancient Wisdom" loading="lazy" />
             </div>
           </div>
 

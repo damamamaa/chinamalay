@@ -47,7 +47,7 @@ const XJHome = ({ lang }) => {
             </div>
 
             <div className="philo-visual">
-              <img src="/xj-map.webp" alt="Celestial Map" className="philo-img" />
+              <img src="/xj-map.webp" alt="Celestial Map" className="philo-img" loading="lazy" />
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ const XJHome = ({ lang }) => {
               </div>
 
               <div className="s-visual">
-                <img src="/xj-chart.webp" alt="BaZi Chart" />
+                <img src="/xj-chart.webp" alt="BaZi Chart" loading="lazy" />
               </div>
             </div>
 
@@ -84,7 +84,7 @@ const XJHome = ({ lang }) => {
               </div>
 
               <div className="s-visual">
-                <img src="/fengshui-artistic.webp" alt="Feng Shui" />
+                <img src="/fengshui-artistic.webp" alt="Feng Shui" loading="lazy" />
               </div>
             </div>
 
@@ -98,7 +98,7 @@ const XJHome = ({ lang }) => {
               </div>
 
               <div className="s-visual">
-                <img src="/xj-tea.webp" alt="Strategy" />
+                <img src="/xj-tea.webp" alt="Strategy" loading="lazy" />
               </div>
             </div>
 

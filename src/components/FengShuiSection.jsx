@@ -12,7 +12,7 @@ const FengShuiSection = ({ lang }) => {
 
 
           <div className="brand-lockup fade-in-scroll">
-            <img src="/xinjian-brand.webp" alt="Xin Jian" className="brand-mark rotating" />
+            <img src="/xinjian-brand.webp" alt="Xin Jian" className="brand-mark rotating" loading="lazy" />
             <h2 className="display-1 brand-name">{t.brand}</h2>
             <p className="brand-philosophy">{t.description}</p>
           </div>

@@ -59,7 +59,7 @@ const TCMHome = ({ lang }) => {
             </div>
 
             <div className="pulse-img">
-              <img src="/tcm-pulse.webp" alt="Pulse Diagnosis" className="shadow-lg" />
+              <img src="/tcm-pulse.webp" alt="Pulse Diagnosis" className="shadow-lg" loading="lazy" />
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ const TCMHome = ({ lang }) => {
               </div>
 
               <div className="s-visual">
-                <img src="/tcm-artistic.webp" alt="Acupuncture" />
+                <img src="/tcm-artistic.webp" alt="Acupuncture" loading="lazy" />
               </div>
             </div>
 
@@ -96,7 +96,7 @@ const TCMHome = ({ lang }) => {
               </div>
 
               <div className="s-visual">
-                <img src="/tcm-cupping.webp" alt="Cupping" />
+                <img src="/tcm-cupping.webp" alt="Cupping" loading="lazy" />
               </div>
             </div>
 
@@ -111,7 +111,7 @@ const TCMHome = ({ lang }) => {
 
               <div className="s-visual">
                 {/* Fallback to herbs/general since we don't have explicit bone setting art yet */}
-                <img src="/tcm-herbs.webp" style={{ filter: 'grayscale(0.2)' }} alt="Tuina" />
+                <img src="/tcm-herbs.webp" style={{ filter: 'grayscale(0.2)' }} alt="Tuina" loading="lazy" />
               </div>
             </div>
 
