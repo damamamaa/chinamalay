@@ -76,7 +76,7 @@ const Home = ({ lang }) => {
 
 
           <NavLink to="/xinjian" className="pathway-card xj-card">
-            <div className="pathway-bg" style={{ backgroundImage: "url('/fengshui-artistic.webp')" }}></div>
+            <div className="pathway-bg" style={{ backgroundImage: "url('/xj_hero_strategic.webp')" }}></div>
             <div className="pathway-content">
               <span className="pathway-label">02 // DESTINY</span>
               <h2 className="pathway-title">{content[lang].hero.section_xj.title}</h2>

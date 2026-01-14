@@ -47,7 +47,7 @@ const XJHome = ({ lang }) => {
             </div>
 
             <div className="philo-visual">
-              <img src="/xj-map.webp" alt="Celestial Map" className="philo-img" loading="lazy" />
+              <img src="/xj_philosophy_compass.webp" alt="Strategic Navigation" className="philo-img" loading="lazy" />
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ const XJHome = ({ lang }) => {
 
                 <div className="s-visual">
                   <img
-                    src={index % 2 === 0 ? "/xj-chart.webp" : "/fengshui-artistic.webp"}
+                    src={index % 2 === 0 ? "/xj_services_struct.webp" : "/xj_hero_strategic.webp"}
                     alt={service.name}
                     loading="lazy"
                   />
@@ -120,10 +120,10 @@ const XJHome = ({ lang }) => {
           position: absolute;
           inset: 0;
 
-          background-image: url('/xj-chart.webp');
+          background-image: url('/xj_hero_strategic.webp');
           background-size: cover;
           background-position: center;
-          filter: grayscale(1) opacity(0.15); /* Slightly more visible grid */
+          filter: brightness(0.6); /* Adjusted for new strategic map image */
         }
         
         .xj-hero-overlay {
