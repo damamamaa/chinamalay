@@ -97,12 +97,12 @@ const XJHome = ({ lang }) => {
           color: var(--text-main);
         }
 
-        .text-gold { color: var(--xj-accent); }
+        .text-gold { color: #D4AF37; text-shadow: 0 0 1px rgba(0,0,0,0.1); } 
         .bg-void { background: #F8F9FA; }
         .invert { opacity: 1; }
-        .text-dim { color: var(--text-muted); }
-        .text-dim-2 { color: #888; font-style: italic; margin-top: 1rem; }
-        .text-white { color: var(--text-dark); }
+        .text-dim { color: #444; } /* Darkened from muted */
+        .text-dim-2 { color: #666; font-style: italic; margin-top: 1rem; }
+        .text-white { color: #000; } /* In XJ (light theme), "text-white" class name might be misleading if it was copied, but here it likely refers to cards. Checking context: It's in s-content inside s-row. The background is bg-void (light). So text MUST be dark. */
 
         /* HERO */
         .xj-hero {
@@ -113,6 +113,7 @@ const XJHome = ({ lang }) => {
           justify-content: center;
           overflow: hidden;
           text-align: center;
+          background: #fff; /* Ensure white bg */
         }
 
         .xj-hero-bg {
@@ -122,27 +123,30 @@ const XJHome = ({ lang }) => {
           background-image: url('/xj-chart.webp');
           background-size: cover;
           background-position: center;
-          filter: brightness(1) opacity(0.1);
+          filter: grayscale(1) opacity(0.15); /* Slightly more visible grid */
         }
         
         .xj-hero-overlay {
+           /* Removed radical gradient that might cause glare */
            position: absolute;
            inset: 0;
-           background: radial-gradient(circle, transparent 0%, #FFFFFF 90%);
+           background: transparent; 
         }
 
         .hero-brand-img {
           width: 80px;
           margin-bottom: 2rem;
+          filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
 
         .xj-lead {
-           font-size: 1.5rem;
+           font-size: 1.6rem;
            margin-top: 1rem;
            max-width: 600px;
            margin-left: auto; 
            margin-right: auto;
-           color: var(--text-muted);
+           color: #333; /* Dark gray for readability */
+           font-weight: 500;
         }
 
         /* PHILOSOPHY */

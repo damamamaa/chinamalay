@@ -148,7 +148,7 @@ export const content = {
     },
     hero: {
       title: "平衡。清晰。责任。",
-      subtitle: "一个统一的专业实践，两条清晰的服务路径。",
+      subtitle: "一个统一的专业实践，融合临床精准与古老智慧。",
       section_tcm: {
         title: "爱中医 (AI TCM SYNERQI)",
         desc: "以稳妥、安全与平衡为核心的中医调理服务。",
@@ -182,7 +182,7 @@ export const content = {
       disclaimer: "本版块严格专注于医疗与健康。不涉及任何玄学内容。"
     },
     fengshui: {
-      brand: "Xin Jian Analysis",
+      brand: "心鉴分析 (Xin Jian Analysis)",
       tagline: "命理、命运与风水分析",
       description: "命运不是固定的剧本，而是地形图。我们是您的导航员。",
       services_title: "命理服务",
@@ -202,7 +202,7 @@ export const content = {
     about: {
       title: "关于鲁胜",
       role: "执业医师 / 顾问",
-      description: "鲁胜在明确的职业道德界限下，以统一的‘平衡’理念提供两项具体的专业服务。",
+      description: "鲁胜在明确的职业道德界限下运营，在统一的‘平衡’理念下提供两项截然不同的专业服务。凭借对清晰和责任的承诺，本业务摒弃神秘主义，转而追求实用、提升生活的智慧。",
       bio_deep: "拥有超过15年的专业研习、顾问咨询与实践应用经历，鲁胜致力于将古老的智慧与现代生活相结合。他的方式以打破迷信、务实清晰而著称。",
       reg: "专业注册号: CT0147948-T"
     },
@@ -242,7 +242,7 @@ export const content = {
     },
     hero: {
       title: "Keseimbangan. Kejelasan. Tanggungjawab.",
-      subtitle: "Amalan profesional bersatu dengan dua laluan yang berbeza.",
+      subtitle: "Amalan profesional bersatu yang menggabungkan ketepatan klinikal dengan kebijaksanaan kuno.",
       section_tcm: {
         title: "AI TCM SYNERQI",
         desc: "Rawatan Perubatan Tradisional Cina yang tenang dan bertanggungjawab.",
@@ -296,7 +296,7 @@ export const content = {
     about: {
       title: "Tentang Rusheng",
       role: "Pengamal",
-      description: "Rusheng beroperasi dengan batasan etika yang jelas.",
+      description: "Rusheng beroperasi dengan batasan etika yang jelas, menyediakan dua perkhidmatan profesional yang berbeza di bawah satu falsafah keseimbangan yang bersatu. Dengan komitmen terhadap kejelasan dan tanggungjawab, amalan ini mengelakkan mistik demi kebijaksanaan praktikal yang meningkatkan kehidupan.",
       bio_deep: "Dengan pengalaman lebih 15 tahun dalam pengajian, kerja penasihat, dan aplikasi praktikal, Rusheng menggabungkan kebijaksanaan kuno dengan praktikaliti moden.",
       reg: "Nombor Pendaftaran: CT0147948-T"
     },
