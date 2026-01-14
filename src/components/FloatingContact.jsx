@@ -30,7 +30,12 @@ const FloatingContact = () => {
             const apiKey = import.meta.env.VITE_OPENROUTER_API_KEY;
 
             if (!apiKey || apiKey.includes('YOUR-KEY')) {
-                throw new Error("Missing API Key");
+                console.error("Chat Error: API Key is missing or invalid in environment variables.");
+                setMessages(prev => [...prev, {
+                    text: "System Configuration Error: API Key is missing. Please check your website settings.",
+                    isBot: true
+                }]);
+                return;
             }
 
             const systemContext = `
@@ -72,7 +77,11 @@ STRICT GUIDELINES:
                 })
             });
 
-            if (!response.ok) throw new Error("API Error");
+            if (!response.ok) {
+                const errData = await response.json().catch(() => ({}));
+                console.error("OpenRouter API Error:", response.status, errData);
+                throw new Error(`API Error: ${response.status}`);
+            }
 
             const data = await response.json();
             const botReply = data.choices[0].message.content || "I apologize, I am having trouble connecting clearly right now.";
@@ -84,9 +93,11 @@ STRICT GUIDELINES:
 
         } catch (error) {
             console.error("Chat Error:", error);
-            let fallbackMsg = "I apologize, but I cannot connect to my knowledge base right now. Please verify that the API Key is set in the .env file.";
 
-            // Simple fallback if no API key
+            // Default fallback
+            let fallbackMsg = "I apologize, but I am currently experiencing high traffic. Please try again later or contact us directly via WhatsApp.";
+
+            // Simple fallback if offline
             if (input.toLowerCase().includes('tcm')) fallbackMsg = "We offer Acupuncture, Cupping, and Tuina based on root cause diagnosis.";
             if (input.toLowerCase().includes('feng shui') || input.toLowerCase().includes('bazi')) fallbackMsg = "We provide BaZi analysis and Feng Shui audits to help navigate your destiny.";
 
