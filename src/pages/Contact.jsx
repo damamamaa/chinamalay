@@ -13,7 +13,7 @@ const Contact = ({ lang }) => {
 
       {/* 1. VISUAL HEADER */}
       <div className="contact-hero">
-        <div className="contact-hero-bg" style={{ backgroundImage: `url('${activeTab === 'tcm' ? '/contact-meeting.png' : '/contact-quill.png'}')` }} />
+        <div className="contact-hero-bg" style={{ backgroundImage: `url(${activeTab === 'tcm' ? '/tcm-herbs.webp' : '/xj-map.webp'})` }} />
         <div className="contact-overlay" />
         <motion.div
           key={activeTab}

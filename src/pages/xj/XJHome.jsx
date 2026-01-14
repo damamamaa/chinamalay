@@ -29,7 +29,8 @@ const XJHome = ({ lang }) => {
             transition={{ duration: 1 }}
             className="xj-hero-content"
           >
-            <img src="/xinjian-brand.png" alt="Xin Jian" className="hero-brand-img invert" />
+
+            <img src="/xinjian-brand.webp" alt="Xin Jian" className="hero-brand-img invert" />
             <h1 className="display-1 text-gold">{t.brand}</h1>
             <p className="xj-lead">{t.description}</p>
           </motion.div>
@@ -44,8 +45,9 @@ const XJHome = ({ lang }) => {
               <h2 className="display-3 text-gold">{t.philosophy.title}</h2>
               <p className="philo-text">{t.philosophy.text}</p>
             </div>
+
             <div className="philo-visual">
-              <img src="/xj-map.png" alt="Celestial Map" className="philo-img" />
+              <img src="/xj-map.webp" alt="Celestial Map" className="philo-img" />
             </div>
           </div>
         </div>
@@ -66,8 +68,9 @@ const XJHome = ({ lang }) => {
                 <p className="s-desc text-dim">{t.services[0].desc}</p>
                 <p className="s-detail text-dim-2">{t.services[0].detail}</p>
               </div>
+
               <div className="s-visual">
-                <img src="/xj-chart.png" alt="BaZi Chart" />
+                <img src="/xj-chart.webp" alt="BaZi Chart" />
               </div>
             </div>
 
@@ -79,8 +82,9 @@ const XJHome = ({ lang }) => {
                 <p className="s-desc text-dim">{t.services[4].desc}</p>
                 <p className="s-detail text-dim-2">{t.services[4].detail}</p>
               </div>
+
               <div className="s-visual">
-                <img src="/fengshui-artistic.png" alt="Feng Shui" />
+                <img src="/fengshui-artistic.webp" alt="Feng Shui" />
               </div>
             </div>
 
@@ -92,8 +96,9 @@ const XJHome = ({ lang }) => {
                 <p className="s-desc text-dim">{t.services[3].desc}</p>
                 <p className="s-detail text-dim-2">{t.services[3].detail}</p>
               </div>
+
               <div className="s-visual">
-                <img src="/xj-tea.png" alt="Strategy" />
+                <img src="/xj-tea.webp" alt="Strategy" />
               </div>
             </div>
 
@@ -134,7 +139,8 @@ const XJHome = ({ lang }) => {
         .xj-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('/xj-chart.png');
+
+          background-image: url('/xj-chart.webp');
           background-size: cover;
           background-position: center;
           filter: brightness(0.4) sepia(0.3);

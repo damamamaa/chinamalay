@@ -30,14 +30,16 @@ const About = ({ lang }) => {
           {/* LEFT: IMAGE */}
           <div className="about-visual">
             <div className="frame-gold">
+
               <motion.img
                 style={{ y: yImg }}
-                src="/rusheng_real.jpg"
+                src="/rusheng_real.webp"
                 alt="Rusheng Portrait"
               />
             </div>
+
             <div className="scrolls-visual">
-              <img src="/about-scrolls.png" alt="Ancient Wisdom" />
+              <img src="/about-scrolls.webp" alt="Ancient Wisdom" />
             </div>
           </div>
 

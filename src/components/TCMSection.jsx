@@ -49,8 +49,9 @@ const TCMSection = ({ lang }) => {
 
           {/* Floater Images */}
           <div className="visual-col">
+
             <div className="floating-card main-img" style={{ transform: `translateY(${offset * -0.5}px)` }}>
-              <img src="/tcm.png" alt="TCM" />
+              <img src="/tcm.webp" alt="TCM" />
               <div className="card-overlay"></div>
             </div>
 

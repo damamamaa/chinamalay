@@ -63,9 +63,9 @@ const Home = ({ lang }) => {
       <section className="pathways-section">
         <div className="pathway-container">
 
-          {/* TCM PATH */}
+
           <NavLink to="/tcm" className="pathway-card tcm-card">
-            <div className="pathway-bg" style={{ backgroundImage: "url('/tcm-artistic.png')" }}></div>
+            <div className="pathway-bg" style={{ backgroundImage: "url('/tcm-artistic.webp')" }}></div>
             <div className="pathway-content">
               <span className="pathway-label">01 // CLINIC</span>
               <h2 className="pathway-title">{content[lang].hero.section_tcm.title}</h2>
@@ -74,9 +74,9 @@ const Home = ({ lang }) => {
             </div>
           </NavLink>
 
-          {/* XIN JIAN PATH */}
+
           <NavLink to="/xinjian" className="pathway-card xj-card">
-            <div className="pathway-bg" style={{ backgroundImage: "url('/fengshui-artistic.png')" }}></div>
+            <div className="pathway-bg" style={{ backgroundImage: "url('/fengshui-artistic.webp')" }}></div>
             <div className="pathway-content">
               <span className="pathway-label">02 // DESTINY</span>
               <h2 className="pathway-title">{content[lang].hero.section_xj.title}</h2>
@@ -88,8 +88,8 @@ const Home = ({ lang }) => {
         </div>
       </section>
 
-      {/* 3. PRACTITIONER STATEMENT - DARK MODE */}
-      <section className="statement-section" style={{ backgroundImage: "url('/profile-artistic.png')", backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
+
+      <section className="statement-section" style={{ backgroundImage: "url('/profile-artistic.webp')", backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
         <div className="overlay-dark">
           <div className="container">
             <div className="statement-box">
@@ -157,7 +157,8 @@ const Home = ({ lang }) => {
         .hero-bg-layer {
           position: absolute;
           inset: 0;
-          background-image: url('/hero-split.png');
+
+          background-image: url('/hero-split.webp');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;

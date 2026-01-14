@@ -160,13 +160,14 @@ const Hero = ({ lang }) => {
           transition: filter 0.5s;
         }
 
+
         .tcm-portal .portal-bg {
-          background-image: url('/tcm.png');
+          background-image: url('/tcm.webp');
           filter: grayscale(100%) brightness(0.6);
         }
 
         .xj-portal .portal-bg {
-          background-image: url('/fengshui.png');
+          background-image: url('/fengshui.webp');
           filter: grayscale(100%) brightness(0.6);
         }
 

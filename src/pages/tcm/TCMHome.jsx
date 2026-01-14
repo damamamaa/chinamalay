@@ -57,8 +57,9 @@ const TCMHome = ({ lang }) => {
               <h3>Root Cause Diagnosis</h3>
               <p>In TCM, we do not just treat the symptom; we listen to what the body is saying. Through pulse diagnosis, we can detect imbalances in the internal organs long before they manifest as severe illness.</p>
             </div>
+
             <div className="pulse-img">
-              <img src="/tcm-pulse.png" alt="Pulse Diagnosis" className="shadow-lg" />
+              <img src="/tcm-pulse.webp" alt="Pulse Diagnosis" className="shadow-lg" />
             </div>
           </div>
         </div>
@@ -79,8 +80,9 @@ const TCMHome = ({ lang }) => {
                 <p className="s-desc">{t.services[1].desc}</p>
                 <p className="s-detail">{t.services[1].detail}</p>
               </div>
+
               <div className="s-visual">
-                <img src="/tcm-artistic.png" alt="Acupuncture" />
+                <img src="/tcm-artistic.webp" alt="Acupuncture" />
               </div>
             </div>
 
@@ -92,8 +94,9 @@ const TCMHome = ({ lang }) => {
                 <p className="s-desc">{t.services[2].desc}</p>
                 <p className="s-detail">{t.services[2].detail}</p>
               </div>
+
               <div className="s-visual">
-                <img src="/tcm-cupping.png" alt="Cupping" />
+                <img src="/tcm-cupping.webp" alt="Cupping" />
               </div>
             </div>
 
@@ -105,9 +108,10 @@ const TCMHome = ({ lang }) => {
                 <p className="s-desc">{t.services[3].desc}</p>
                 <p className="s-detail">{t.services[3].detail}</p>
               </div>
+
               <div className="s-visual">
                 {/* Fallback to herbs/general since we don't have explicit bone setting art yet */}
-                <img src="/tcm-herbs.png" style={{ filter: 'grayscale(0.2)' }} alt="Tuina" />
+                <img src="/tcm-herbs.webp" style={{ filter: 'grayscale(0.2)' }} alt="Tuina" />
               </div>
             </div>
 
@@ -147,7 +151,8 @@ const TCMHome = ({ lang }) => {
         .tcm-hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('/tcm-artistic.png');
+
+          background-image: url('/tcm-artistic.webp');
           background-size: cover;
           background-position: center;
           filter: brightness(0.6);
