@@ -47,7 +47,7 @@ const XJHome = ({ lang }) => {
             </div>
 
             <div className="philo-visual">
-              <img src="/xj_philosophy_compass.webp" alt="Strategic Navigation" className="philo-img" loading="lazy" />
+              <img src="/xj_discussion_rusheng.png" alt="Strategic Navigation" className="philo-img" loading="lazy" />
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ const XJHome = ({ lang }) => {
 
                 <div className="s-visual">
                   <img
-                    src={index % 2 === 0 ? "/xj_services_struct.webp" : "/xj_hero_strategic.webp"}
+                    src={service.image || (index % 2 === 0 ? "/xj_services_struct.webp" : "/xj_hero_strategic.webp")}
                     alt={service.name}
                     loading="lazy"
                   />

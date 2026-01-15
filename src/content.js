@@ -52,37 +52,37 @@ export const content = {
           name: "Sports Injury Recovery",
           desc: "Targeted therapy to accelerate healing of musculoskeletal injuries, reduce inflammation, and restore range of motion.",
           detail: "Effective for sprains, strains, and post-operative recovery.",
-          image: "/service_sports.webp"
+          image: "/tcm_sports_rusheng.webp"
         },
         {
           name: "Bone Setting & Spinal Alignment",
           desc: "Structural alignment through manual therapy. Correcting the skeletal framework to allow proper nerve and blood function.",
           detail: "Restores mobility and alleviates chronic structural pain without medication.",
-          image: "/service_bones.webp"
+          image: "/tcm_bone_setting_rusheng.webp"
         },
         {
           name: "Pain Management",
           desc: "A holistic approach to chronic and acute pain relief using acupuncture and manual techniques.",
           detail: "We address the root cause of pain, not just the symptoms.",
-          image: "/service_pain.webp"
+          image: "/tcm_acupuncture_rusheng.webp"
         },
         {
           name: "Women’s Health Regulation",
           desc: "Supporting hormonal balance, menstrual health, and fertility through natural methods.",
           detail: "Gentle and effective care for women at all life stages.",
-          image: "/service_women.webp"
+          image: "/tcm_women_health_rusheng.webp"
         },
         {
           name: "Men’s Vitality & Sub-health Care",
           desc: "Boosting energy, improving stamina, and addressing sub-clinical fatigue states.",
           detail: "Restoring vigor and resilience for modern life demands.",
-          image: "/service_men.webp"
+          image: "/tcm_men_vitality_rusheng.webp"
         },
         {
           name: "Gua Sha, Cupping & Acupuncture Therapy",
           desc: "Traditional modalities to improve circulation, release toxicity, and balance the body's energy flow.",
           detail: "Proven techniques for systemic wellness and stress relief.",
-          image: "/service_cupping.webp"
+          image: "/tcm_pulse_rusheng.webp"
         }
       ],
       process: [
@@ -106,28 +106,32 @@ export const content = {
       services: [
         {
           name: "Numerology Analysis",
-          desc: "Optimizing the frequencies around you. Selection of phone numbers, car plates, and unit numbers that resonate with your personal energy.",
-          detail: "Numbers are energy. Make sure yours are working for you."
+          desc: "Optimizing the frequencies around you. Selection of phone numbers, car plates, and house numbers that resonate with your personal energy.",
+          image: "/xj_numerology_rusheng.webp"
         },
         {
           name: "BaZi (Four Pillars) Analysis",
           desc: "Decoding your life's blueprint based on birth data. Understand your strengths, weaknesses, and timing for career, wealth, and relationships.",
-          detail: "Reveal your elemental structure and potential life path."
+          detail: "Reveal your elemental structure and potential life path.",
+          image: "/xj_consultant_rusheng.webp"
         },
         {
           name: "Zi Wei Dou Shu Analysis",
           desc: "A sophisticated astrological system that maps out 12 key life palaces, providing granular detail on life events and karmic patterns.",
-          detail: "Offers high-resolution insight into specific life domains."
+          detail: "Offers high-resolution insight into specific life domains.",
+          image: "/xj_reading_rusheng.webp"
         },
         {
           name: "Feng Shui Consultation",
           desc: "Residential and office environmental assessment to optimize flow and balance.",
-          detail: "Harmonize your external environment with your internal goals."
+          detail: "Harmonize your external environment with your internal goals.",
+          image: "/xj_compass_rusheng.webp"
         },
         {
           name: "Annual Guidance",
           desc: "A year-ahead forecast to help you prepare for opportunities and mitigate risks in career, health, and family matters.",
-          detail: "Navigate the changing tides of the year with confidence."
+          detail: "Navigate the changing tides of the year with confidence.",
+          image: "/xj_annual_rusheng.webp"
         }
       ],
       philosophy: {
@@ -229,12 +233,12 @@ export const content = {
       description: "以脚踏实地、负责任的医疗方式关注身体健康。",
       services_title: "中医服务项目",
       services: [
-        { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。", detail: "有效缓解扭伤、拉伤及术后康复。", image: "/service_sports.webp" },
-        { name: "正骨与脊柱整复", desc: "通过手法复位骨骼结构。", detail: "恢复活动能力，无需药物缓解结构性疼痛。", image: "/service_bones.webp" },
-        { name: "疼痛管理", desc: "综合针灸与手法缓解急慢性疼痛。", detail: "治标更治本。", image: "/service_pain.webp" },
-        { name: "女性健康调理", desc: "通过自然疗法调理荷尔蒙与月经健康。", detail: "温柔呵护女性各个生命阶段。", image: "/service_women.webp" },
-        { name: "男性活力与亚健康调理", desc: "提升精力，改善耐力，调理亚健康状态。", detail: "恢复活力，应对现代生活挑战。", image: "/service_men.webp" },
-        { name: "刮痧、拔罐与针灸疗法", desc: "传统疗法促进循环，排毒通络。", detail: "系统性健康与减压的成熟技术。", image: "/service_cupping.webp" }
+        { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。", detail: "有效缓解扭伤、拉伤及术后康复。", image: "/tcm_sports_rusheng.webp" },
+        { name: "正骨与脊柱整复", desc: "通过手法复位骨骼结构。", detail: "恢复活动能力，无需药物缓解结构性疼痛。", image: "/tcm_bone_setting_rusheng.webp" },
+        { name: "疼痛管理", desc: "综合针灸与手法缓解急慢性疼痛。", detail: "治标更治本。", image: "/tcm_acupuncture_rusheng.webp" },
+        { name: "女性健康调理", desc: "通过自然疗法调理荷尔蒙与月经健康。", detail: "温柔呵护女性各个生命阶段。", image: "/tcm_women_health_rusheng.webp" },
+        { name: "男性活力与亚健康调理", desc: "提升精力，改善耐力，调理亚健康状态。", detail: "恢复活力，应对现代生活挑战。", image: "/tcm_men_vitality_rusheng.webp" },
+        { name: "刮痧、拔罐与针灸疗法", desc: "传统疗法促进循环，排毒通络。", detail: "系统性健康与减压的成熟技术。", image: "/tcm_pulse_rusheng.webp" }
       ],
       process: [
         { title: "诊断", desc: "望闻问切，寻找病根。" },
@@ -255,11 +259,11 @@ export const content = {
       description: "命运不是固定的剧本，而是地形图。我们是您的导航员。",
       services_title: "命理服务",
       services: [
-        { name: "命理数字分析", desc: "优化您周围的磁场频率。选择与您个人能量共鸣的手机号、车牌号等。", detail: "数字即能量。确保它们为您所用。" },
-        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。了解优势、劣势及事业、财富、感情时机。", detail: "揭示您的五行结构与潜在人生路径。" },
-        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位，提供详细的人生事件与业力模式细节。", detail: "提供特定生活领域的得高分辨率洞察。" },
-        { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。", detail: "协调外部环境与内部目标。" },
-        { name: "年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。", detail: "充满信心地驾驭流年变幻。" }
+        { name: "命理数字分析", desc: "优化您周围的磁场频率。选择与您个人能量共鸣的手机号、车牌号等。", detail: "数字即能量。确保它们为您所用。", image: "/xj_numerology_rusheng.webp" },
+        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。了解优势、劣势及事业、财富、感情时机。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
+        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位，提供详细的人生事件与业力模式细节。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
+        { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。", detail: "协调外部环境与内部目标。", image: "/xj_compass_rusheng.webp" },
+        { name: "年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。", detail: "充满信心地驾驭流年变幻。", image: "/xj_annual_rusheng.webp" }
       ],
       philosophy: {
         title: "明心见性",
@@ -360,12 +364,12 @@ export const content = {
       description: "Pendekatan perubatan yang berpijak di bumi nyata dan bertanggungjawab untuk kesejahteraan fizikal.",
       services_title: "Perkhidmatan TCM",
       services: [
-        { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal.", detail: "Berkesan untuk terseliuh, ketegangan otot, dan pemulihan pasca pembedahan.", image: "/service_sports.webp" },
-        { name: "Rawatan Tulang & Penyelarasan Tulang Belakang", desc: "Penyelarasan struktur melalui terapi manual.", detail: "Memulihkan mobiliti dan melegakan sakit struktur kronik tanpa ubat.", image: "/service_bones.webp" },
-        { name: "Pengurusan Kesakitan", desc: "Pendekatan holistik untuk melegakan sakit kronik dan akut menggunakan akupunktur dan teknik manual.", detail: "Kami menangani punca sakit, bukan sekadar gejala.", image: "/service_pain.webp" },
-        { name: "Pengaturan Kesihatan Wanita", desc: "Menyokong keseimbangan hormon, kesihatan haid, dan kesuburan melalui kaedah semula jadi.", detail: "Penjagaan lembut dan berkesan untuk wanita pada semua peringkat umur.", image: "/service_women.webp" },
-        { name: "Tenaga Lelaki & Penjagaan Sub-kesihatan", desc: "Meningkatkan tenaga, memperbaiki stamina, dan menangani keadaan keletihan sub-klinikal.", detail: "Memulihkan semangat dan daya tahan untuk tuntutan kehidupan moden.", image: "/service_men.webp" },
-        { name: "Terapi Gua Sha, Bekam & Akupunktur", desc: "Modaliti tradisional untuk melancarkan peredaran darah, membuang toksin, dan menyeimbangkan aliran tenaga badan.", detail: "Teknik terbukti untuk kesejahteraan sistemik dan kelegaan tekanan.", image: "/service_cupping.webp" }
+        { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal.", detail: "Berkesan untuk terseliuh, ketegangan otot, dan pemulihan pasca pembedahan.", image: "/tcm_sports_rusheng.webp" },
+        { name: "Rawatan Tulang & Penyelarasan Tulang Belakang", desc: "Penyelarasan struktur melalui terapi manual.", detail: "Memulihkan mobiliti dan melegakan sakit struktur kronik tanpa ubat.", image: "/tcm_bone_setting_rusheng.webp" },
+        { name: "Pengurusan Kesakitan", desc: "Pendekatan holistik untuk melegakan sakit kronik dan akut menggunakan akupunktur dan teknik manual.", detail: "Kami menangani punca sakit, bukan sekadar gejala.", image: "/tcm_acupuncture_rusheng.webp" },
+        { name: "Pengaturan Kesihatan Wanita", desc: "Menyokong keseimbangan hormon, kesihatan haid, dan kesuburan melalui kaedah semula jadi.", detail: "Penjagaan lembut dan berkesan untuk wanita pada semua peringkat umur.", image: "/tcm_women_health_rusheng.webp" },
+        { name: "Tenaga Lelaki & Penjagaan Sub-kesihatan", desc: "Meningkatkan tenaga, memperbaiki stamina, dan menangani keadaan keletihan sub-klinikal.", detail: "Memulihkan semangat dan daya tahan untuk tuntutan kehidupan moden.", image: "/tcm_men_vitality_rusheng.webp" },
+        { name: "Terapi Gua Sha, Bekam & Akupunktur", desc: "Modaliti tradisional untuk melancarkan peredaran darah, membuang toksin, dan menyeimbangkan aliran tenaga badan.", detail: "Teknik terbukti untuk kesejahteraan sistemik dan kelegaan tekanan.", image: "/tcm_pulse_rusheng.webp" }
       ],
       process: [
         { title: "Diagnosis", desc: "Pemeriksaan nadi dan lidah untuk mengenal pasti punca." },
@@ -386,11 +390,11 @@ export const content = {
       description: "Takdir bukan skrip tetap; ia adalah peta rupa bumi. Kami bertindak sebagai navigator anda.",
       services_title: "Perkhidmatan Takdir",
       services: [
-        { name: "Analisis Numerologi", desc: "Mengoptimumkan frekuensi di sekeliling anda. Pemilihan nombor telefon, plat kereta, dan nombor unit yang bergema dengan tenaga peribadi anda.", detail: "Nombor adalah tenaga. Pastikan ia berfungsi untuk anda." },
-        { name: "Analisis BaZi (Empat Pilar)", desc: "Mencerna rangka tindakan kehidupan anda berdasarkan data kelahiran. Fahami kekuatan, kelemahan, dan masa untuk kerjaya, kekayaan, dan hubungan.", detail: "Dedahkan struktur elemen dan potensi laluan hidup anda." },
-        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem astrologi canggih yang memetakan 12 istana kehidupan utama, memberikan butiran terperinci tentang peristiwa kehidupan dan corak karma.", detail: "Menawarkan wawasan resolusi tinggi ke dalam domain kehidupan tertentu." },
-        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat untuk mengoptimumkan aliran dan keseimbangan.", detail: "Harmonikan persekitaran luaran anda dengan matlamat dalaman anda." },
-        { name: "Panduan Tahunan", desc: "Ramalan tahun hadapan untuk membantu anda bersedia bagi peluang dan mengurangkan risiko dalam kerjaya, kesihatan, dan keluarga.", detail: "Mengemudi perubahan arus tahun dengan yakin." }
+        { name: "Analisis Numerologi", desc: "Mengoptimumkan frekuensi di sekeliling anda. Pemilihan nombor telefon, plat kereta, dan nombor rumah yang bergema dengan tenaga peribadi anda.", detail: "Nombor adalah tenaga. Pastikan ia berfungsi untuk anda.", image: "/xj_numerology_rusheng.webp" },
+        { name: "Analisis BaZi (Empat Pilar)", desc: "Mencerna rangka tindakan kehidupan anda berdasarkan data kelahiran. Fahami kekuatan, kelemahan, dan masa untuk kerjaya, kekayaan, dan hubungan.", detail: "Dedahkan struktur elemen dan potensi laluan hidup anda.", image: "/xj_consultant_rusheng.webp" },
+        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem astrologi canggih yang memetakan 12 istana kehidupan utama, memberikan butiran terperinci tentang peristiwa kehidupan dan corak karma.", detail: "Menawarkan wawasan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
+        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat untuk mengoptimumkan aliran dan keseimbangan.", detail: "Harmonikan persekitaran luaran anda dengan matlamat dalaman anda.", image: "/xj_compass_rusheng.webp" },
+        { name: "Panduan Tahunan", desc: "Ramalan tahun hadapan untuk membantu anda bersedia bagi peluang dan mengurangkan risiko dalam kerjaya, kesihatan, dan keluarga.", detail: "Mengemudi perubahan arus tahun dengan yakin.", image: "/xj_annual_rusheng.webp" }
       ],
       philosophy: {
         title: "Seni Kejelasan",
