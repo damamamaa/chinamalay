@@ -120,7 +120,7 @@ const XJHome = ({ lang }) => {
           position: absolute;
           inset: 0;
 
-          background-image: url('/xj_hero_strategic.webp');
+          background-image: url('/visual_xinjian.webp');
           background-size: cover;
           background-position: center;
           filter: brightness(0.6); /* Adjusted for new strategic map image */

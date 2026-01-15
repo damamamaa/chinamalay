@@ -82,7 +82,7 @@ const TCMHome = ({ lang }) => {
 
                 <div className="s-visual">
                   <img
-                    src={index % 2 === 0 ? "/tcm-artistic.webp" : "/tcm-cupping.webp"}
+                    src={service.image || "/tcm-artistic.webp"}
                     alt={service.name}
                     loading="lazy"
                   />

@@ -45,7 +45,7 @@ export const content = {
           name: "Pain Management",
           desc: "A holistic approach to chronic and acute pain relief using acupuncture and manual techniques.",
           detail: "We address the root cause of pain, not just the symptoms.",
-          image: "/service_sports.webp"
+          image: "/service_pain.webp"
         },
         {
           name: "Women’s Health Regulation",
@@ -63,7 +63,7 @@ export const content = {
           name: "Gua Sha, Cupping & Acupuncture Therapy",
           desc: "Traditional modalities to improve circulation, release toxicity, and balance the body's energy flow.",
           detail: "Proven techniques for systemic wellness and stress relief.",
-          image: "/service_women.webp"
+          image: "/service_cupping.webp"
         }
       ],
       process: [
@@ -185,10 +185,10 @@ export const content = {
       services: [
         { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。", detail: "有效缓解扭伤、拉伤及术后康复。", image: "/service_sports.webp" },
         { name: "正骨与脊柱整复", desc: "通过手法复位骨骼结构。", detail: "恢复活动能力，无需药物缓解结构性疼痛。", image: "/service_bones.webp" },
-        { name: "疼痛管理", desc: "综合针灸与手法缓解急慢性疼痛。", detail: "治标更治本。", image: "/service_sports.webp" },
+        { name: "疼痛管理", desc: "综合针灸与手法缓解急慢性疼痛。", detail: "治标更治本。", image: "/service_pain.webp" },
         { name: "女性健康调理", desc: "通过自然疗法调理荷尔蒙与月经健康。", detail: "温柔呵护女性各个生命阶段。", image: "/service_women.webp" },
         { name: "男性活力与亚健康调理", desc: "提升精力，改善耐力，调理亚健康状态。", detail: "恢复活力，应对现代生活挑战。", image: "/service_men.webp" },
-        { name: "刮痧、拔罐与针灸疗法", desc: "传统疗法促进循环，排毒通络。", detail: "系统性健康与减压的成熟技术。", image: "/service_women.webp" }
+        { name: "刮痧、拔罐与针灸疗法", desc: "传统疗法促进循环，排毒通络。", detail: "系统性健康与减压的成熟技术。", image: "/service_cupping.webp" }
       ],
       process: [
         { title: "诊断", desc: "望闻问切，寻找病根。" },
@@ -289,10 +289,10 @@ export const content = {
       services: [
         { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal.", detail: "Berkesan untuk terseliuh, ketegangan otot, dan pemulihan pasca pembedahan.", image: "/service_sports.webp" },
         { name: "Rawatan Tulang & Penyelarasan Tulang Belakang", desc: "Penyelarasan struktur melalui terapi manual.", detail: "Memulihkan mobiliti dan melegakan sakit struktur kronik tanpa ubat.", image: "/service_bones.webp" },
-        { name: "Pengurusan Kesakitan", desc: "Pendekatan holistik untuk melegakan sakit kronik dan akut menggunakan akupunktur dan teknik manual.", detail: "Kami menangani punca sakit, bukan sekadar gejala.", image: "/service_sports.webp" },
+        { name: "Pengurusan Kesakitan", desc: "Pendekatan holistik untuk melegakan sakit kronik dan akut menggunakan akupunktur dan teknik manual.", detail: "Kami menangani punca sakit, bukan sekadar gejala.", image: "/service_pain.webp" },
         { name: "Pengaturan Kesihatan Wanita", desc: "Menyokong keseimbangan hormon, kesihatan haid, dan kesuburan melalui kaedah semula jadi.", detail: "Penjagaan lembut dan berkesan untuk wanita pada semua peringkat umur.", image: "/service_women.webp" },
         { name: "Tenaga Lelaki & Penjagaan Sub-kesihatan", desc: "Meningkatkan tenaga, memperbaiki stamina, dan menangani keadaan keletihan sub-klinikal.", detail: "Memulihkan semangat dan daya tahan untuk tuntutan kehidupan moden.", image: "/service_men.webp" },
-        { name: "Terapi Gua Sha, Bekam & Akupunktur", desc: "Modaliti tradisional untuk melancarkan peredaran darah, membuang toksin, dan menyeimbangkan aliran tenaga badan.", detail: "Teknik terbukti untuk kesejahteraan sistemik dan kelegaan tekanan.", image: "/service_women.webp" }
+        { name: "Terapi Gua Sha, Bekam & Akupunktur", desc: "Modaliti tradisional untuk melancarkan peredaran darah, membuang toksin, dan menyeimbangkan aliran tenaga badan.", detail: "Teknik terbukti untuk kesejahteraan sistemik dan kelegaan tekanan.", image: "/service_cupping.webp" }
       ],
       process: [
         { title: "Diagnosis", desc: "Pemeriksaan nadi dan lidah untuk mengenal pasti punca." },
