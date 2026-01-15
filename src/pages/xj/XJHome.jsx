@@ -47,7 +47,7 @@ const XJHome = ({ lang }) => {
             </div>
 
             <div className="philo-visual">
-              <img src="/xj_discussion_rusheng.png" alt="Strategic Navigation" className="philo-img" loading="lazy" />
+              <img src="/xj_discussion_rusheng.webp" alt="Strategic Navigation" className="philo-img" loading="lazy" />
             </div>
           </div>
         </div>

@@ -65,7 +65,7 @@ const Home = ({ lang }) => {
 
 
           <NavLink to="/tcm" className="pathway-card tcm-card">
-            <div className="pathway-bg" style={{ backgroundImage: "url('/tcm-artistic-rusheng.png')" }}></div>
+            <div className="pathway-bg" style={{ backgroundImage: "url('/tcm-artistic-rusheng.webp')" }}></div>
             <div className="pathway-content">
               <span className="pathway-label">{t.path_clinic}</span>
               <h2 className="pathway-title">{content[lang].hero.section_tcm.title}</h2>
@@ -76,7 +76,7 @@ const Home = ({ lang }) => {
 
 
           <NavLink to="/xinjian" className="pathway-card xj-card">
-            <div className="pathway-bg" style={{ backgroundImage: "url('/xj_compass_rusheng.png')" }}></div>
+            <div className="pathway-bg" style={{ backgroundImage: "url('/xj_compass_rusheng.webp')" }}></div>
             <div className="pathway-content">
               <span className="pathway-label">{t.path_destiny}</span>
               <h2 className="pathway-title">{content[lang].hero.section_xj.title}</h2>

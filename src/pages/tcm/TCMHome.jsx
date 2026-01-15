@@ -59,7 +59,7 @@ const TCMHome = ({ lang }) => {
             </div>
 
             <div className="pulse-img">
-              <img src="/tcm_pulse_rusheng.png" alt="Pulse Diagnosis" className="shadow-lg" loading="lazy" />
+              <img src="/tcm_pulse_rusheng.webp" alt="Pulse Diagnosis" className="shadow-lg" loading="lazy" />
             </div>
           </div>
         </div>
