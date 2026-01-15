@@ -174,7 +174,7 @@ const Hero = ({ lang }) => {
         }
 
         .xj-portal .portal-bg {
-          background-image: url('/fengshui.webp');
+          background-image: url('/visual_xinjian.webp');
           filter: grayscale(100%) brightness(0.95);
         }
 

@@ -26,9 +26,9 @@ const Header = ({ lang, setLang }) => {
         {/* 1. LOGO */}
         <NavLink to="/" className="logo-link">
           {isDarkTheme ? (
-            <span className="text-logo" style={{ color: 'var(--text-dark)' }}>AI TCM SYNERQI</span>
+            <span className="text-logo" style={{ color: 'var(--text-dark)' }}>Life Balance Synerqi</span>
           ) : (
-            <span className="text-logo" style={{ color: 'var(--text-dark)' }}>AI TCM SYNERQI</span>
+            <span className="text-logo" style={{ color: 'var(--text-dark)' }}>Life Balance Synerqi</span>
           )}
         </NavLink>
 

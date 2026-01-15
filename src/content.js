@@ -13,7 +13,7 @@ export const content = {
       title: "Balance. Clarity. Responsibility.",
       subtitle: "A unified professional practice merging clinical precision with ancient wisdom.",
       section_tcm: {
-        title: "AI TCM SYNERQI",
+        title: "Life Balance Synerqi",
         desc: "Evidence-based Traditional Chinese Medicine for physical recovery, pain management, and holistic vitality.",
         button: "Enter TCM Clinic"
       },
@@ -24,7 +24,7 @@ export const content = {
       }
     },
     tcm: {
-      brand: "AI TCM SYNERQI",
+      brand: "Life Balance Synerqi",
       tagline: "Medical & Wellness",
       description: "Restoring the body's natural intelligence through the time-tested science of Traditional Chinese Medicine.",
       services_title: "Clinical Modalities",
@@ -32,32 +32,38 @@ export const content = {
         {
           name: "Sports Injury Recovery",
           desc: "Targeted therapy to accelerate healing of musculoskeletal injuries, reduce inflammation, and restore range of motion.",
-          detail: "Effective for sprains, strains, and post-operative recovery."
+          detail: "Effective for sprains, strains, and post-operative recovery.",
+          image: "/service_sports.webp"
         },
         {
           name: "Bone Setting & Spinal Alignment",
           desc: "Structural alignment through manual therapy. Correcting the skeletal framework to allow proper nerve and blood function.",
-          detail: "Restores mobility and alleviates chronic structural pain without medication."
+          detail: "Restores mobility and alleviates chronic structural pain without medication.",
+          image: "/service_bones.webp"
         },
         {
           name: "Pain Management",
           desc: "A holistic approach to chronic and acute pain relief using acupuncture and manual techniques.",
-          detail: "We address the root cause of pain, not just the symptoms."
+          detail: "We address the root cause of pain, not just the symptoms.",
+          image: "/service_sports.webp"
         },
         {
           name: "Women’s Health Regulation",
           desc: "Supporting hormonal balance, menstrual health, and fertility through natural methods.",
-          detail: "Gentle and effective care for women at all life stages."
+          detail: "Gentle and effective care for women at all life stages.",
+          image: "/service_women.webp"
         },
         {
           name: "Men’s Vitality & Sub-health Care",
           desc: "Boosting energy, improving stamina, and addressing sub-clinical fatigue states.",
-          detail: "Restoring vigor and resilience for modern life demands."
+          detail: "Restoring vigor and resilience for modern life demands.",
+          image: "/service_men.webp"
         },
         {
           name: "Gua Sha, Cupping & Acupuncture Therapy",
           desc: "Traditional modalities to improve circulation, release toxicity, and balance the body's energy flow.",
-          detail: "Proven techniques for systemic wellness and stress relief."
+          detail: "Proven techniques for systemic wellness and stress relief.",
+          image: "/service_women.webp"
         }
       ],
       process: [
@@ -129,7 +135,11 @@ export const content = {
         email: "Email Address",
         service: "Service of Interest",
         message: "Message",
-        submit: "Send Inquiry"
+        submit: "Send Inquiry",
+        service_options: {
+          tcm: "TCM Clinic",
+          xj: "Xin Jian Destiny"
+        }
       },
       whatsapp: {
         label: "WhatsApp",
@@ -138,7 +148,7 @@ export const content = {
       }
     },
     footer: {
-      brand: "AI TCM SYNERQI",
+      brand: "Life Balance Synerqi",
       rights: "All Rights Reserved.",
       reg: "Reg: CT0147948-T"
     }
@@ -157,7 +167,7 @@ export const content = {
       title: "平衡。清晰。责任。",
       subtitle: "一个统一的专业实践，融合临床精准与古老智慧。",
       section_tcm: {
-        title: "爱中医 (AI TCM SYNERQI)",
+        title: "Life Balance Synerqi",
         desc: "以稳妥、安全与平衡为核心的中医调理服务。",
         button: "进入中医诊所"
       },
@@ -168,17 +178,17 @@ export const content = {
       }
     },
     tcm: {
-      brand: "AI TCM SYNERQI",
+      brand: "Life Balance Synerqi",
       tagline: "中医诊所",
       description: "以脚踏实地、负责任的医疗方式关注身体健康。",
       services_title: "中医服务项目",
       services: [
-        { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。", detail: "有效缓解扭伤、拉伤及术后康复。" },
-        { name: "正骨与脊柱整复", desc: "通过手法复位骨骼结构。", detail: "恢复活动能力，无需药物缓解结构性疼痛。" },
-        { name: "疼痛管理", desc: "综合针灸与手法缓解急慢性疼痛。", detail: "治标更治本。" },
-        { name: "女性健康调理", desc: "通过自然疗法调理荷尔蒙与月经健康。", detail: "温柔呵护女性各个生命阶段。" },
-        { name: "男性活力与亚健康调理", desc: "提升精力，改善耐力，调理亚健康状态。", detail: "恢复活力，应对现代生活挑战。" },
-        { name: "刮痧、拔罐与针灸疗法", desc: "传统疗法促进循环，排毒通络。", detail: "系统性健康与减压的成熟技术。" }
+        { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。", detail: "有效缓解扭伤、拉伤及术后康复。", image: "/service_sports.webp" },
+        { name: "正骨与脊柱整复", desc: "通过手法复位骨骼结构。", detail: "恢复活动能力，无需药物缓解结构性疼痛。", image: "/service_bones.webp" },
+        { name: "疼痛管理", desc: "综合针灸与手法缓解急慢性疼痛。", detail: "治标更治本。", image: "/service_sports.webp" },
+        { name: "女性健康调理", desc: "通过自然疗法调理荷尔蒙与月经健康。", detail: "温柔呵护女性各个生命阶段。", image: "/service_women.webp" },
+        { name: "男性活力与亚健康调理", desc: "提升精力，改善耐力，调理亚健康状态。", detail: "恢复活力，应对现代生活挑战。", image: "/service_men.webp" },
+        { name: "刮痧、拔罐与针灸疗法", desc: "传统疗法促进循环，排毒通络。", detail: "系统性健康与减压的成熟技术。", image: "/service_women.webp" }
       ],
       process: [
         { title: "诊断", desc: "望闻问切，寻找病根。" },
@@ -229,7 +239,11 @@ export const content = {
         email: "电子邮箱",
         service: "感兴趣的服务",
         message: "留言",
-        submit: "发送咨询"
+        submit: "发送咨询",
+        service_options: {
+          tcm: "中医诊所",
+          xj: "心鉴命理"
+        }
       },
       whatsapp: {
         label: "WhatsApp",
@@ -238,7 +252,7 @@ export const content = {
       }
     },
     footer: {
-      brand: "AI TCM SYNERQI",
+      brand: "Life Balance Synerqi",
       rights: "版权所有。",
       reg: "注册号: CT0147948-T"
     }
@@ -257,7 +271,7 @@ export const content = {
       title: "Keseimbangan. Kejelasan. Tanggungjawab.",
       subtitle: "Amalan profesional bersatu yang menggabungkan ketepatan klinikal dengan kebijaksanaan kuno.",
       section_tcm: {
-        title: "AI TCM SYNERQI",
+        title: "Life Balance Synerqi",
         desc: "Rawatan Perubatan Tradisional Cina yang tenang dan bertanggungjawab.",
         button: "Masuk Klinik TCM"
       },
@@ -268,17 +282,17 @@ export const content = {
       }
     },
     tcm: {
-      brand: "AI TCM SYNERQI",
+      brand: "Life Balance Synerqi",
       tagline: "Perubatan & Kesejahteraan",
       description: "Pendekatan perubatan yang berpijak di bumi nyata dan bertanggungjawab untuk kesejahteraan fizikal.",
       services_title: "Perkhidmatan TCM",
       services: [
-        { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal.", detail: "Berkesan untuk terseliuh, ketegangan otot, dan pemulihan pasca pembedahan." },
-        { name: "Rawatan Tulang & Penyelarasan Tulang Belakang", desc: "Penyelarasan struktur melalui terapi manual.", detail: "Memulihkan mobiliti dan melegakan sakit struktur kronik tanpa ubat." },
-        { name: "Pengurusan Kesakitan", desc: "Pendekatan holistik untuk melegakan sakit kronik dan akut menggunakan akupunktur dan teknik manual.", detail: "Kami menangani punca sakit, bukan sekadar gejala." },
-        { name: "Pengaturan Kesihatan Wanita", desc: "Menyokong keseimbangan hormon, kesihatan haid, dan kesuburan melalui kaedah semula jadi.", detail: "Penjagaan lembut dan berkesan untuk wanita pada semua peringkat umur." },
-        { name: "Tenaga Lelaki & Penjagaan Sub-kesihatan", desc: "Meningkatkan tenaga, memperbaiki stamina, dan menangani keadaan keletihan sub-klinikal.", detail: "Memulihkan semangat dan daya tahan untuk tuntutan kehidupan moden." },
-        { name: "Terapi Gua Sha, Bekam & Akupunktur", desc: "Modaliti tradisional untuk melancarkan peredaran darah, membuang toksin, dan menyeimbangkan aliran tenaga badan.", detail: "Teknik terbukti untuk kesejahteraan sistemik dan kelegaan tekanan." }
+        { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal.", detail: "Berkesan untuk terseliuh, ketegangan otot, dan pemulihan pasca pembedahan.", image: "/service_sports.webp" },
+        { name: "Rawatan Tulang & Penyelarasan Tulang Belakang", desc: "Penyelarasan struktur melalui terapi manual.", detail: "Memulihkan mobiliti dan melegakan sakit struktur kronik tanpa ubat.", image: "/service_bones.webp" },
+        { name: "Pengurusan Kesakitan", desc: "Pendekatan holistik untuk melegakan sakit kronik dan akut menggunakan akupunktur dan teknik manual.", detail: "Kami menangani punca sakit, bukan sekadar gejala.", image: "/service_sports.webp" },
+        { name: "Pengaturan Kesihatan Wanita", desc: "Menyokong keseimbangan hormon, kesihatan haid, dan kesuburan melalui kaedah semula jadi.", detail: "Penjagaan lembut dan berkesan untuk wanita pada semua peringkat umur.", image: "/service_women.webp" },
+        { name: "Tenaga Lelaki & Penjagaan Sub-kesihatan", desc: "Meningkatkan tenaga, memperbaiki stamina, dan menangani keadaan keletihan sub-klinikal.", detail: "Memulihkan semangat dan daya tahan untuk tuntutan kehidupan moden.", image: "/service_men.webp" },
+        { name: "Terapi Gua Sha, Bekam & Akupunktur", desc: "Modaliti tradisional untuk melancarkan peredaran darah, membuang toksin, dan menyeimbangkan aliran tenaga badan.", detail: "Teknik terbukti untuk kesejahteraan sistemik dan kelegaan tekanan.", image: "/service_women.webp" }
       ],
       process: [
         { title: "Diagnosis", desc: "Pemeriksaan nadi dan lidah untuk mengenal pasti punca." },
@@ -329,7 +343,11 @@ export const content = {
         email: "Alamat Emel",
         service: "Perkhidmatan Diminati",
         message: "Mesej",
-        submit: "Hantar Pertanyaan"
+        submit: "Hantar Pertanyaan",
+        service_options: {
+          tcm: "Klinik TCM",
+          xj: "Xin Jian Destiny"
+        }
       },
       whatsapp: {
         label: "WhatsApp",
@@ -338,7 +356,7 @@ export const content = {
       }
     },
     footer: {
-      brand: "AI TCM SYNERQI",
+      brand: "Life Balance Synerqi",
       rights: "Hak Cipta Terpelihara.",
       reg: "No. Daftar: CT0147948-T"
     }

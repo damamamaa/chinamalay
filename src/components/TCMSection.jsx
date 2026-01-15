@@ -21,44 +21,31 @@ const TCMSection = ({ lang }) => {
       </div>
 
       <div className="container relative">
-        <div className="layout-grid">
+        <div className="header-lockup">
+          <span className="label-mono highlight-jade">{t.tagline}</span>
+          <h2 className="display-2 section-title">{t.brand}</h2>
+          <p className="intro-text-center">{t.description}</p>
+        </div>
 
-          {/* Text Column */}
-          <div className="text-col">
-            <span className="label-mono highlight-jade">{t.tagline}</span>
-            <h2 className="display-2 section-title">{t.brand}</h2>
-            <div className="divider-line"></div>
-            <p className="intro-text">{t.description}</p>
-
-            <div className="services-accordions">
-              {t.services.map((item, index) => (
-                <div key={index} className="accordion-item fade-in-scroll">
-                  <span className="acc-num">0{index + 1}</span>
-                  <div className="acc-content">
-                    <h3 className="acc-title display-3">{item.name}</h3>
-                    <p className="acc-desc">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
+        <div className="services-grid">
+          {t.services.map((item, index) => (
+            <div key={index} className="service-card fade-in-scroll">
+              <div className="card-image-wrapper">
+                <img src={item.image || '/tcm.webp'} alt={item.name} loading="lazy" />
+                <div className="card-num">0{index + 1}</div>
+              </div>
+              <div className="card-content">
+                <h3 className="card-title display-3">{item.name}</h3>
+                <p className="card-desc">{item.desc}</p>
+                <div className="card-detail-line"></div>
+                <p className="card-detail">{item.detail}</p>
+              </div>
             </div>
+          ))}
+        </div>
 
-            <div className="disclaimer-stamp">
-              {t.disclaimer}
-            </div>
-          </div>
-
-          {/* Floater Images */}
-          <div className="visual-col">
-
-            <div className="floating-card main-img" style={{ transform: `translateY(${offset * -0.5}px)` }}>
-              <img src="/tcm.webp" alt="TCM" loading="lazy" />
-              <div className="card-overlay"></div>
-            </div>
-
-            {/* Decorative geometrical elements */}
-            <div className="deco-circle"></div>
-          </div>
-
+        <div className="disclaimer-stamp-center">
+          {t.disclaimer}
         </div>
       </div>
 
@@ -67,7 +54,7 @@ const TCMSection = ({ lang }) => {
           position: relative;
           background: var(--tcm-light);
           overflow: hidden;
-          padding-top: 15vh;
+          padding-top: 10vh;
         }
 
         .relative { position: relative; z-index: 2; }
@@ -98,10 +85,10 @@ const TCMSection = ({ lang }) => {
           100% { transform: translateX(-50%); }
         }
 
-        .layout-grid {
-          display: grid;
-          grid-template-columns: 1.2fr 1fr;
-          gap: 8vw;
+        .header-lockup {
+          text-align: center;
+          max-width: 800px;
+          margin: 0 auto 6rem;
         }
 
         .highlight-jade {
@@ -116,98 +103,118 @@ const TCMSection = ({ lang }) => {
           color: var(--tcm-primary);
         }
 
-        .divider-line {
-          width: 100%;
-          height: 1px;
-          background: rgba(0,0,0,0.1);
-          margin-bottom: 3rem;
-        }
-
-        .intro-text {
+        .intro-text-center {
           font-size: 1.2rem;
-          margin-bottom: 5rem;
           color: var(--tcm-primary);
         }
 
-        .services-accordions {
-          border-top: 1px solid rgba(0,0,0,0.1);
-        }
-
-        .accordion-item {
-          display: flex;
+        .services-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
           gap: 2rem;
-          padding: 2rem 0;
-          border-bottom: 1px solid rgba(0,0,0,0.1);
-          transition: background 0.3s;
+          margin-bottom: 6rem;
         }
 
-        .accordion-item:hover {
-          background: rgba(255,255,255,0.4);
-          padding-left: 1rem;
+        .service-card {
+           background: #FFFFFF;
+           border: 1px solid rgba(0,0,0,0.05);
+           transition: transform 0.4s ease, box-shadow 0.4s ease;
+           display: flex;
+           flex-direction: column;
         }
 
-        .acc-num {
+        .service-card:hover {
+           transform: translateY(-10px);
+           box-shadow: 0 20px 40px -10px rgba(44, 62, 54, 0.15);
+        }
+
+        .card-image-wrapper {
+          position: relative;
+          width: 100%;
+          aspect-ratio: 4/3;
+          overflow: hidden;
+        }
+
+        .card-image-wrapper img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.6s ease;
+        }
+
+        .service-card:hover .card-image-wrapper img {
+          transform: scale(1.05);
+        }
+
+        .card-num {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: var(--tcm-primary);
+          color: #fff;
+          padding: 0.5rem 1rem;
           font-family: var(--font-mono);
-          font-size: 0.8rem;
-          opacity: 0.5;
+          font-size: 0.9rem;
         }
 
-        .acc-title {
-          font-size: 1.8rem; /* localized display-3 override */
-          margin-bottom: 0.5rem;
+        .card-content {
+          padding: 2rem;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .card-title {
+          font-size: 1.5rem;
           color: var(--tcm-primary);
-        }
-        
-        .acc-desc {
-          font-size: 0.95rem;
+          margin-bottom: 1rem;
         }
 
-        .disclaimer-stamp {
-          margin-top: 4rem;
+        .card-desc {
+          font-size: 0.95rem;
+          color: var(--text-muted);
+          margin-bottom: 1.5rem;
+        }
+
+        .card-detail-line {
+          width: 30px;
+          height: 1px;
+          background: var(--tcm-primary);
+          opacity: 0.3;
+          margin-bottom: 1rem;
+          margin-top: auto;
+        }
+
+        .card-detail {
+          font-size: 0.85rem;
+          font-style: italic;
+          color: var(--text-muted);
+        }
+
+        .disclaimer-stamp-center {
+          text-align: center;
+          margin: 0 auto;
+          max-width: 600px;
           border: 1px solid var(--tcm-primary);
           color: var(--tcm-primary);
           padding: 1rem;
           font-family: var(--font-mono);
           font-size: 0.7rem;
           text-transform: uppercase;
-          display: inline-block;
         }
 
-        .visual-col {
-          position: relative;
+        @media (max-width: 1024px) {
+          .services-grid {
+             grid-template-columns: repeat(2, 1fr);
+          }
         }
 
-        .floating-card {
-          position: relative;
-          z-index: 2;
-          box-shadow: 0 40px 80px -20px rgba(44, 62, 54, 0.3);
-        }
-
-        .floating-card img {
-          width: 100%;
-          display: block;
-        }
-
-        .deco-circle {
-          position: absolute;
-          top: 20%;
-          right: -10vw;
-          width: 40vw;
-          height: 40vw;
-          border: 1px solid rgba(44, 62, 54, 0.1);
-          border-radius: 50%;
-          z-index: 1;
-        }
-
-        @media (max-width: 900px) {
-          .layout-grid {
+        @media (max-width: 768px) {
+          .services-grid {
              grid-template-columns: 1fr;
           }
-          .floating-card {
-             display: none; /* Hide complex scrolling image on mobile or simplify */
-          }
-          .tcm-masterpiece {
-            padding-top: 5rem;
+          .marquee-text {
+            font-size: 8rem;
           }
         }
       `}</style>
