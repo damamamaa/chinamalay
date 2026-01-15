@@ -11,15 +11,15 @@ export const content = {
     },
     hero: {
       title: "Balance. Clarity. Responsibility.",
-      subtitle: "A unified professional practice merging clinical precision with ancient wisdom.",
+      subtitle: "True care begins with clarity, not fear.",
       section_tcm: {
         title: "Live true care",
-        desc: "Evidence-based Traditional Chinese Medicine for physical recovery, pain management, and holistic vitality.",
+        desc: "Strictly medical and wellness focused. Emphasizing daily health maintenance and long-term balance.",
         button: "Enter TCM Clinic"
       },
       section_xj: {
         title: "Xin Jian",
-        desc: "Strategic destiny analysis and classical Feng Shui to navigate life’s terrain with foresight and confidence.",
+        desc: "The Art of Clear Seeing. Tools for awareness and preparation, not superstition.",
         button: "Enter Destiny & Feng Shui"
       },
       explore: "Explore Paths",
@@ -29,7 +29,7 @@ export const content = {
       btn_destiny: "Enter Destiny",
       read_profile: "Read Full Profile",
       clinical_highlights: "Clinical Highlights",
-      destiny_guidance: "Destiny Guidance"
+      destiny_guidance: "Destiny Services"
     },
     ai_chat: {
       welcome: "Hello! I am Rusheng's AI Assistant. How can I help you find balance today?",
@@ -44,8 +44,8 @@ export const content = {
     },
     tcm: {
       brand: "Live true care",
-      tagline: "Medical & Wellness",
-      description: "Restoring the body's natural intelligence through the time-tested science of Traditional Chinese Medicine.",
+      tagline: "TCM Clinic & Wellness Care",
+      description: "Strictly medical and wellness focused. No metaphysical elements involved. Emphasizing daily health maintenance, long-term balance, and gentle care aligned with nature.",
       services_title: "Clinical Modalities",
       services: [
         {
@@ -96,61 +96,62 @@ export const content = {
         title: "Root Cause Diagnosis",
         text: "In TCM, we do not just treat the symptom; we listen to what the body is saying. Through pulse diagnosis, we can detect imbalances in the internal organs long before they manifest as severe illness."
       },
-      disclaimer: "This section is strictly medical and wellness focused. No metaphysical elements are involved."
+      disclaimer: "All wellness services aim to support the body, not override it. Care is personalized, gradual, and grounded in professional responsibility."
     },
     fengshui: {
       brand: "Xin Jian Analysis",
-      tagline: "Numerology, Destiny & Feng Shui Analysis",
-      description: "Destiny is not a fixed script; it is a map of terrain. We act as your navigator.",
+      tagline: "The Art of Clear Seeing",
+      description: "We believe that metaphysical studies are not about superstition or fear. They are tools for awareness and preparation.",
       services_title: "Destiny Services",
       services: [
         {
           name: "Numerology Analysis",
-          desc: "Optimizing the frequencies around you. Selection of phone numbers, car plates, and house numbers that resonate with your personal energy.",
+          desc: "Helping you understand numerical patterns associated with names, phone numbers, vehicle plates, and house numbers.",
+          detail: "This service offers reference for alignment and clarity—not control over outcomes.",
           image: "/xj_numerology_rusheng.webp"
         },
         {
           name: "BaZi (Four Pillars) Analysis",
-          desc: "Decoding your life's blueprint based on birth data. Understand your strengths, weaknesses, and timing for career, wealth, and relationships.",
-          detail: "Reveal your elemental structure and potential life path.",
+          desc: "An analysis of life structure based on birth data, focusing on strengths, weaknesses, and timing trends related to career, relationships, and personal development.",
+          detail: "Understand your Elemental structure and potential life path.",
           image: "/xj_consultant_rusheng.webp"
         },
         {
           name: "Zi Wei Dou Shu Analysis",
-          desc: "A sophisticated astrological system that maps out 12 key life palaces, providing granular detail on life events and karmic patterns.",
+          desc: "A detailed classical system that maps major life domains to provide deeper insight into long-term patterns and recurring themes.",
           detail: "Offers high-resolution insight into specific life domains.",
           image: "/xj_reading_rusheng.webp"
         },
         {
           name: "Feng Shui Consultation",
-          desc: "Residential and office environmental assessment to optimize flow and balance.",
-          detail: "Harmonize your external environment with your internal goals.",
+          desc: "Assessment of residential and office environments to improve flow, balance, and harmony between external surroundings and internal goals.",
+          detail: "Harmonize your environment with your goals.",
           image: "/xj_compass_rusheng.webp"
         },
         {
           name: "Annual Guidance",
-          desc: "A year-ahead forecast to help you prepare for opportunities and mitigate risks in career, health, and family matters.",
+          desc: "A year-ahead outlook designed to help you prepare for opportunities and manage potential challenges in work, health, and family matters.",
           detail: "Navigate the changing tides of the year with confidence.",
           image: "/xj_annual_rusheng.webp"
         }
       ],
       philosophy: {
         title: "The Art of Clear Seeing",
-        text: "We believe that metaphysics is not about superstition or fear. It is a strategic tool. Just as a captain checks the weather before sailing, a wise person checks the cosmic currents before making major life decisions."
+        text: "Just as a captain checks the weather before sailing, a thoughtful person reviews life patterns and timing before making major decisions. We provide analytical reference, not absolute answers."
       },
-      disclaimer: "These services provide analytical reference and personal insight only. Life outcomes depend on individual choices and actions."
+      disclaimer: "All services provided under Live True Care are for analytical reference and personal insight only. Life outcomes depend on individual decisions, actions, and circumstances."
     },
     about: {
       title: "About Rusheng",
       role: "Practitioner",
-      description: "Rusheng operates with clear ethical boundaries, providing two distinct professional services under one unified philosophy of balance. With a commitment to clarity and responsibility, the practice avoids mysticism in favor of practical, life-enhancing wisdom.",
-      bio_deep: "With over 15 years of study, advisory work, and practical application, Rusheng has bridged the gap between ancient lineage wisdom and modern practical application. His approach is characterized by a 'no-nonsense' clarity that cuts through superstition.",
+      description: "Live True Care is founded on a simple principle: true care begins with clarity, not fear. We believe that well-being should be approached with honesty, responsibility, and respect for individual choice.",
+      bio_deep: "Live True Care represents an evolution: a clearer, more grounded expression of care that respects both modern understanding and classical wisdom.",
       reg: "Professional Registration: CT0147948-T",
-      heading: "Wisdom in Practice.",
-      philosophy_title: "Core Philosophy",
-      phil_balance: "Balance: Health is not the absence of disease, but the dynamic equilibrium of Yin and Yang.",
-      phil_clarity: "Clarity: Destiny analysis is not prediction, but a tool for clear decision making.",
-      phil_resp: "Responsibility: We empower clients to take charge of their health and life choices.",
+      heading: "Our Commitment",
+      philosophy_title: "Core Values",
+      phil_balance: "No Fear: We do not use fear-based language.",
+      phil_clarity: "No Fixed Outcomes: We do not promise certainty, but support awareness.",
+      phil_resp: "Responsibility: We do not replace medical or professional advice. We support conscious choice.",
       label_reg: "Registered Practitioner",
       label_exp: "Experience",
       val_exp: "15+ Years Experience"
