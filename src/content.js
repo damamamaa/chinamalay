@@ -13,7 +13,7 @@ export const content = {
       title: "Balance. Clarity. Responsibility.",
       subtitle: "A unified professional practice merging clinical precision with ancient wisdom.",
       section_tcm: {
-        title: "Life Balance Synerqi",
+        title: "Live true care",
         desc: "Evidence-based Traditional Chinese Medicine for physical recovery, pain management, and holistic vitality.",
         button: "Enter TCM Clinic"
       },
@@ -43,7 +43,7 @@ export const content = {
       fallback_xj: "We provide analytical Bazi reference, Numerology analysis, and environmental Feng Shui assessment to help navigate life's terrain."
     },
     tcm: {
-      brand: "Life Balance Synerqi",
+      brand: "Live true care",
       tagline: "Medical & Wellness",
       description: "Restoring the body's natural intelligence through the time-tested science of Traditional Chinese Medicine.",
       services_title: "Clinical Modalities",
@@ -175,7 +175,7 @@ export const content = {
       }
     },
     footer: {
-      brand: "Life Balance Synerqi",
+      brand: "Live true care",
       rights: "All Rights Reserved.",
       reg: "Reg: CT0147948-T"
     }
@@ -194,7 +194,7 @@ export const content = {
       title: "平衡。清晰。责任。",
       subtitle: "一个统一的专业实践，融合临床精准与古老智慧。",
       section_tcm: {
-        title: "Life Balance Synerqi",
+        title: "Live true care",
         desc: "以稳妥、安全与平衡为核心的中医调理服务。",
         button: "进入中医诊所"
       },
@@ -224,7 +224,7 @@ export const content = {
       fallback_xj: "我们提供八字分析、命理参考和风水评估，帮助您看清人生地形。"
     },
     tcm: {
-      brand: "Life Balance Synerqi",
+      brand: "Live true care",
       tagline: "中医诊所",
       description: "以脚踏实地、负责任的医疗方式关注身体健康。",
       services_title: "中医服务项目",
@@ -306,7 +306,7 @@ export const content = {
       }
     },
     footer: {
-      brand: "Life Balance Synerqi",
+      brand: "Live true care",
       rights: "版权所有。",
       reg: "注册号: CT0147948-T"
     }
@@ -325,7 +325,7 @@ export const content = {
       title: "Keseimbangan. Kejelasan. Tanggungjawab.",
       subtitle: "Amalan profesional bersatu yang menggabungkan ketepatan klinikal dengan kebijaksanaan kuno.",
       section_tcm: {
-        title: "Life Balance Synerqi",
+        title: "Live true care",
         desc: "Rawatan Perubatan Tradisional Cina yang tenang dan bertanggungjawab.",
         button: "Masuk Klinik TCM"
       },
@@ -355,7 +355,7 @@ export const content = {
       fallback_xj: "Kami menyediakan rujukan analisis Bazi, Numerologi, dan penilaian Feng Shui untuk membantu menavigasi kehidupan."
     },
     tcm: {
-      brand: "Life Balance Synerqi",
+      brand: "Live true care",
       tagline: "Perubatan & Kesejahteraan",
       description: "Pendekatan perubatan yang berpijak di bumi nyata dan bertanggungjawab untuk kesejahteraan fizikal.",
       services_title: "Perkhidmatan TCM",
@@ -437,7 +437,7 @@ export const content = {
       }
     },
     footer: {
-      brand: "Life Balance Synerqi",
+      brand: "Live true care",
       rights: "Hak Cipta Terpelihara.",
       reg: "No. Daftar: CT0147948-T"
     }

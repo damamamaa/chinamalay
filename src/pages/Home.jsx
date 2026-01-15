@@ -31,7 +31,7 @@ const Home = ({ lang }) => {
             transition={{ duration: 1, delay: 0.2 }}
             className="hero-badge"
           >
-            Life Balance Synerqi
+            Live true care
           </motion.div>
 
           <motion.h1
