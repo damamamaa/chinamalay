@@ -54,7 +54,7 @@ const Home = ({ lang }) => {
         </div>
 
         <div className="scroll-hint">
-          <span>Explore Paths</span>
+          <span>{t.explore}</span>
           <div className="scroll-line"></div>
         </div>
       </section>
@@ -67,10 +67,10 @@ const Home = ({ lang }) => {
           <NavLink to="/tcm" className="pathway-card tcm-card">
             <div className="pathway-bg" style={{ backgroundImage: "url('/tcm-artistic.webp')" }}></div>
             <div className="pathway-content">
-              <span className="pathway-label">01 // CLINIC</span>
+              <span className="pathway-label">{t.path_clinic}</span>
               <h2 className="pathway-title">{content[lang].hero.section_tcm.title}</h2>
               <p className="pathway-desc">{content[lang].hero.section_tcm.desc}</p>
-              <span className="btn-explore">Enter Clinic &rarr;</span>
+              <span className="btn-explore">{t.btn_clinic} &rarr;</span>
             </div>
           </NavLink>
 
@@ -78,10 +78,10 @@ const Home = ({ lang }) => {
           <NavLink to="/xinjian" className="pathway-card xj-card">
             <div className="pathway-bg" style={{ backgroundImage: "url('/visual_xinjian.webp')" }}></div>
             <div className="pathway-content">
-              <span className="pathway-label">02 // DESTINY</span>
+              <span className="pathway-label">{t.path_destiny}</span>
               <h2 className="pathway-title">{content[lang].hero.section_xj.title}</h2>
               <p className="pathway-desc">{content[lang].hero.section_xj.desc}</p>
-              <span className="btn-explore gold-accent">Enter Destiny &rarr;</span>
+              <span className="btn-explore gold-accent">{t.btn_destiny} &rarr;</span>
             </div>
           </NavLink>
 
@@ -100,7 +100,7 @@ const Home = ({ lang }) => {
               <div className="statement-sig">
                 Rusheng
               </div>
-              <NavLink to="/about" className="btn-statement">Read Full Profile</NavLink>
+              <NavLink to="/about" className="btn-statement">{t.read_profile}</NavLink>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@ const Home = ({ lang }) => {
       {/* 4. CLINICAL HIGHLIGHTS (TCM) */}
       <section className="h-section bg-light">
         <div className="container">
-          <h3 className="section-label dark-label">Clinical Highlights</h3>
+          <h3 className="section-label dark-label">{t.clinical_highlights}</h3>
           <div className="h-grid">
             {content[lang].tcm.services.slice(0, 3).map((s, i) => (
               <div key={i} className="h-card fade-in-scroll">
@@ -125,7 +125,7 @@ const Home = ({ lang }) => {
       {/* 5. DESTINY HIGHLIGHTS (XJ) */}
       <section className="h-section bg-dark">
         <div className="container">
-          <h3 className="section-label light-label">Destiny Guidance</h3>
+          <h3 className="section-label light-label">{t.destiny_guidance}</h3>
           <div className="h-grid">
             {content[lang].fengshui.services.slice(0, 3).map((s, i) => (
               <div key={i} className="h-card dark-card fade-in-scroll">

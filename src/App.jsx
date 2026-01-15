@@ -41,7 +41,7 @@ function App() {
       <Footer lang={lang} />
 
       {/* Floating Elements */}
-      <FloatingContact />
+      <FloatingContact lang={lang} />
     </div>
   );
 }

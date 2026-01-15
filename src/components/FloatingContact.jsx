@@ -3,7 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import { content } from '../content';
 
-const FloatingContact = () => {
+const FloatingContact = ({ lang }) => {
+    const t = content[lang].ai_chat;
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
 
@@ -12,7 +13,7 @@ const FloatingContact = () => {
     const showAIChat = ['/about', '/xinjian'].some(path => location.pathname.includes(path));
 
     const [messages, setMessages] = useState([
-        { text: "Hello! I am Rusheng's AI Assistant. How can I help you find balance today?", isBot: true }
+        { text: content[lang].ai_chat.welcome, isBot: true }
     ]);
     const [input, setInput] = useState("");
     const [isTyping, setIsTyping] = useState(false);
@@ -23,6 +24,18 @@ const FloatingContact = () => {
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
     }, [messages, isTyping]);
+
+    // Update welcome message if language changes
+    useEffect(() => {
+        setMessages(prev => {
+            if (prev.length > 0 && prev[0].isBot) {
+                const newMsgs = [...prev];
+                newMsgs[0] = { ...newMsgs[0], text: content[lang].ai_chat.welcome };
+                return newMsgs;
+            }
+            return prev;
+        });
+    }, [lang]);
 
     const handleSend = async (e) => {
         e.preventDefault();
@@ -39,26 +52,29 @@ const FloatingContact = () => {
             if (!apiKey || apiKey.includes('YOUR-KEY')) {
                 console.error("Chat Error: API Key is missing or invalid in environment variables.");
                 setMessages(prev => [...prev, {
-                    text: "System Configuration Error: API Key is missing. Please check your website settings.",
+                    text: t.fallback_error,
                     isBot: true
                 }]);
                 return;
             }
+
+            // Determine language name for system prompt
+            const langName = lang === 'zh' ? 'Chinese' : lang === 'ms' ? 'Malay' : 'English';
 
             const systemContext = `
 You are the AI Assistant for 'Rusheng', a professional practice offering Traditional Chinese Medicine (TCM) and Xin Jian (Destiny Analysis/Feng Shui).
 Your goal is to answer visitor questions clearly and professionally based ONLY on the context provided below.
 
 CONTEXT_START
-${JSON.stringify(content, null, 2)}
+${JSON.stringify(content[lang], null, 2)}
 CONTEXT_END
 
 STRICT GUIDELINES:
 1.  **NO MARKDOWN**: Do not use bold (**), italics (*), headers (#), lists (-/1.), or any other markdown symbols. Use strictly plain text with normal punctuation.
-2.  **PROFESSIONAL TONE**: Be polite, calm, and wise. Matches the brand 'Balance, Clarity, Responsibility'.
+2.  **PROFESSIONAL TONE**: Be polite, calm, and wise. Matches the brand 'Life Balance Synerqi'.
 3.  **ACCURATE**: Only answer based on the context. If you don't know, ask them to contact Master Rusheng via WhatsApp.
 4.  **CONCISE**: Keep answers brief (under 3-4 sentences if possible) unless a detailed explanation is requested.
-5.  **LANGUAGE**: Respond in the same language as the user (English, Malay, or Chinese).
+5.  **LANGUAGE**: Respond in ${langName}.
 `;
 
             const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
@@ -91,7 +107,7 @@ STRICT GUIDELINES:
             }
 
             const data = await response.json();
-            const botReply = data.choices[0].message.content || "I apologize, I am having trouble connecting clearly right now.";
+            const botReply = data.choices[0].message.content || t.fallback_error;
 
             // Final clean up just in case
             const cleanReply = botReply.replace(/[*#_`]/g, '');
@@ -102,17 +118,17 @@ STRICT GUIDELINES:
             console.error("Chat Error:", error);
 
             // Default fallback
-            let fallbackMsg = "I apologize, but I am currently experiencing high traffic. Please try again later or contact us directly via WhatsApp.";
+            let fallbackMsg = t.fallback_busy;
 
             // Analytical, medical, and strictly professional fallback logic
             const lowerInput = input.toLowerCase();
 
             if (lowerInput.includes('tcm') || lowerInput.includes('acupuncture') || lowerInput.includes('pain') || lowerInput.includes('injury')) {
-                fallbackMsg = "We offer strictly medical TCM therapies including Sports Injury Recovery, Pain Management, and Bone Setting. How may I assist you further?";
+                fallbackMsg = t.fallback_tcm;
             }
 
             if (lowerInput.includes('feng shui') || lowerInput.includes('bazi') || lowerInput.includes('destiny') || lowerInput.includes('numerology')) {
-                fallbackMsg = "We provide analytical Bazi reference, Numerology analysis, and environmental Feng Shui assessment to help navigate life's terrain.";
+                fallbackMsg = t.fallback_xj;
             }
 
             setMessages(prev => [...prev, {
@@ -148,7 +164,7 @@ STRICT GUIDELINES:
                         <img src="/rusheng_real.webp" alt="Rusheng AI" className="ai-avatar" />
                         <span className="online-dot"></span>
                     </div>
-                    <span className="ai-label">Ask Rusheng</span>
+                    <span className="ai-label">{t.trigger}</span>
                 </button>
             )}
 
@@ -166,8 +182,8 @@ STRICT GUIDELINES:
 
                                 <img src="/rusheng_real.webp" alt="Bot" className="header-avatar" />
                                 <div>
-                                    <h4>Rusheng AI</h4>
-                                    <span className="status">Always here to help</span>
+                                    <h4>{t.title}</h4>
+                                    <span className="status">{t.status}</span>
                                 </div>
                             </div>
                             <button onClick={toggleChat} className="close-btn">&times;</button>
@@ -194,7 +210,7 @@ STRICT GUIDELINES:
                         <form className="chat-input" onSubmit={handleSend}>
                             <input
                                 type="text"
-                                placeholder="Type a message..."
+                                placeholder={t.placeholder}
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
                                 disabled={isTyping}

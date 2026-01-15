@@ -21,7 +21,26 @@ export const content = {
         title: "Xin Jian",
         desc: "Strategic destiny analysis and classical Feng Shui to navigate life’s terrain with foresight and confidence.",
         button: "Enter Destiny & Feng Shui"
-      }
+      },
+      explore: "Explore Paths",
+      path_clinic: "01 // CLINIC",
+      path_destiny: "02 // DESTINY",
+      btn_clinic: "Enter Clinic",
+      btn_destiny: "Enter Destiny",
+      read_profile: "Read Full Profile",
+      clinical_highlights: "Clinical Highlights",
+      destiny_guidance: "Destiny Guidance"
+    },
+    ai_chat: {
+      welcome: "Hello! I am Rusheng's AI Assistant. How can I help you find balance today?",
+      trigger: "Ask Rusheng",
+      title: "Rusheng AI",
+      status: "Always here to help",
+      placeholder: "Type a message...",
+      fallback_error: "I apologize, I am having trouble connecting clearly right now.",
+      fallback_busy: "I apologize, but I am currently experiencing high traffic. Please try again later or contact us directly via WhatsApp.",
+      fallback_tcm: "We offer strictly medical TCM therapies including Sports Injury Recovery, Pain Management, and Bone Setting. How may I assist you further?",
+      fallback_xj: "We provide analytical Bazi reference, Numerology analysis, and environmental Feng Shui assessment to help navigate life's terrain."
     },
     tcm: {
       brand: "Life Balance Synerqi",
@@ -122,7 +141,15 @@ export const content = {
       role: "Practitioner",
       description: "Rusheng operates with clear ethical boundaries, providing two distinct professional services under one unified philosophy of balance. With a commitment to clarity and responsibility, the practice avoids mysticism in favor of practical, life-enhancing wisdom.",
       bio_deep: "With over 15 years of study, advisory work, and practical application, Rusheng has bridged the gap between ancient lineage wisdom and modern practical application. His approach is characterized by a 'no-nonsense' clarity that cuts through superstition.",
-      reg: "Professional Registration: CT0147948-T"
+      reg: "Professional Registration: CT0147948-T",
+      heading: "Wisdom in Practice.",
+      philosophy_title: "Core Philosophy",
+      phil_balance: "Balance: Health is not the absence of disease, but the dynamic equilibrium of Yin and Yang.",
+      phil_clarity: "Clarity: Destiny analysis is not prediction, but a tool for clear decision making.",
+      phil_resp: "Responsibility: We empower clients to take charge of their health and life choices.",
+      label_reg: "Registered Practitioner",
+      label_exp: "Experience",
+      val_exp: "15+ Years Experience"
     },
     contact: {
       title: "Inquiries & Appointments",
@@ -175,7 +202,26 @@ export const content = {
         title: "心鉴 (Xin Jian)",
         desc: "提供命理与风水参考，帮助看清方向，做好选择。",
         button: "进入心鉴服务"
-      }
+      },
+      explore: "探索路径",
+      path_clinic: "01 // 中医诊所",
+      path_destiny: "02 // 心鉴命理",
+      btn_clinic: "进入诊所",
+      btn_destiny: "进入命理",
+      read_profile: "阅读完整简介",
+      clinical_highlights: "临床精选",
+      destiny_guidance: "命运指引"
+    },
+    ai_chat: {
+      welcome: "您好！我是鲁胜的AI助手。今天有什么可以帮您寻找平衡的吗？",
+      trigger: "咨询AI",
+      title: "鲁胜 AI",
+      status: "随时为您服务",
+      placeholder: "输入您的留言...",
+      fallback_error: "抱歉，连接似乎出了点问题。",
+      fallback_busy: "抱歉，目前咨询量较大。请稍后再试或直接通过WhatsApp联系我们。",
+      fallback_tcm: "我们提供严格的医疗中医治疗，包括运动损伤康复、疼痛管理和正骨。有什么可以帮您的吗？",
+      fallback_xj: "我们提供八字分析、命理参考和风水评估，帮助您看清人生地形。"
     },
     tcm: {
       brand: "Life Balance Synerqi",
@@ -226,7 +272,15 @@ export const content = {
       role: "执业医师 / 顾问",
       description: "鲁胜在明确的职业道德界限下运营，在统一的‘平衡’理念下提供两项截然不同的专业服务。凭借对清晰和责任的承诺，本业务摒弃神秘主义，转而追求实用、提升生活的智慧。",
       bio_deep: "拥有超过15年的专业研习、顾问咨询与实践应用经历，鲁胜致力于将古老的智慧与现代生活相结合。他的方式以打破迷信、务实清晰而著称。",
-      reg: "专业注册号: CT0147948-T"
+      reg: "专业注册号: CT0147948-T",
+      heading: "实践中的智慧",
+      philosophy_title: "核心理念",
+      phil_balance: "平衡：健康不是没有疾病，而是阴阳的动态平衡。",
+      phil_clarity: "清晰：命理分析不是预测，而是清晰决策的工具。",
+      phil_resp: "责任：我们赋能客户，让他们主导自己的健康与人生选择。",
+      label_reg: "注册执业医师",
+      label_exp: "经验",
+      val_exp: "15年+ 经验"
     },
     contact: {
       title: "咨询与预约",
@@ -279,7 +333,26 @@ export const content = {
         title: "Xin Jian",
         desc: "Panduan untuk kejelasan dan keputusan hidup yang lebih baik.",
         button: "Masuk Takdir & Feng Shui"
-      }
+      },
+      explore: "Terokai Haluan",
+      path_clinic: "01 // KLINIK",
+      path_destiny: "02 // TAKDIR",
+      btn_clinic: "Masuk Klinik",
+      btn_destiny: "Masuk Takdir",
+      read_profile: "Baca Profil Penuh",
+      clinical_highlights: "Sorotan Klinikal",
+      destiny_guidance: "Panduan Takdir"
+    },
+    ai_chat: {
+      welcome: "Helo! Saya Pembantu AI Rusheng. Bagaimana saya boleh bantu anda mencari keseimbangan hari ini?",
+      trigger: "Tanya AI",
+      title: "Rusheng AI",
+      status: "Sentiasa di sini untuk membantu",
+      placeholder: "Taip mesej...",
+      fallback_error: "Maaf, saya menghadapi masalah sambungan sekarang.",
+      fallback_busy: "Maaf, trafik sedang tinggi. Sila cuba lagi kemudian atau hubungi kami melalui WhatsApp.",
+      fallback_tcm: "Kami menawarkan terapi TCM perubatan termasuk Pemulihan Kecederaan Sukan, Pengurusan Kesakitan, dan Rawatan Tulang. Bagaimana saya boleh bantu?",
+      fallback_xj: "Kami menyediakan rujukan analisis Bazi, Numerologi, dan penilaian Feng Shui untuk membantu menavigasi kehidupan."
     },
     tcm: {
       brand: "Life Balance Synerqi",
@@ -330,7 +403,15 @@ export const content = {
       role: "Pengamal",
       description: "Rusheng beroperasi dengan batasan etika yang jelas, menyediakan dua perkhidmatan profesional yang berbeza di bawah satu falsafah keseimbangan yang bersatu. Dengan komitmen terhadap kejelasan dan tanggungjawab, amalan ini mengelakkan mistik demi kebijaksanaan praktikal yang meningkatkan kehidupan.",
       bio_deep: "Dengan pengalaman lebih 15 tahun dalam pengajian, kerja penasihat, dan aplikasi praktikal, Rusheng menggabungkan kebijaksanaan kuno dengan praktikaliti moden.",
-      reg: "Nombor Pendaftaran: CT0147948-T"
+      reg: "Nombor Pendaftaran: CT0147948-T",
+      heading: "Kebijaksanaan dalam Amalan",
+      philosophy_title: "Falsafah Teras",
+      phil_balance: "Keseimbangan: Kesihatan bukan ketiadaan penyakit, tetapi keseimbangan dinamik Yin dan Yang.",
+      phil_clarity: "Kejelasan: Analisis takdir bukan ramalan, tetapi alat untuk membuat keputusan yang jelas.",
+      phil_resp: "Tanggungjawab: Kami memperkasakan pelanggan untuk mengawal kesihatan dan pilihan hidup mereka.",
+      label_reg: "Pengamal Berdaftar",
+      label_exp: "Pengalaman",
+      val_exp: "15+ Tahun Pengalaman"
     },
     contact: {
       title: "Pertanyaan & Janji Temu",

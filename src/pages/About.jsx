@@ -46,27 +46,27 @@ const About = ({ lang }) => {
 
           {/* RIGHT: STORY */}
           <div className="about-story">
-            <h2 className="display-3">Wisdom in Practice.</h2>
+            <h2 className="display-3">{t.heading}</h2>
             <p className="lead-text">{t.description}</p>
             <p className="deep-text">{t.bio_deep}</p>
 
             <div className="philosophy-box">
-              <h3>Core Philosophy</h3>
+              <h3>{t.philosophy_title}</h3>
               <ul>
-                <li><strong>Balance:</strong> Health is not the absence of disease, but the dynamic equilibrium of Yin and Yang.</li>
-                <li><strong>Clarity:</strong> Destiny analysis is not prediction, but a tool for clear decision making.</li>
-                <li><strong>Responsibility:</strong> We empower clients to take charge of their health and life choices.</li>
+                <li>{t.phil_balance}</li>
+                <li>{t.phil_clarity}</li>
+                <li>{t.phil_resp}</li>
               </ul>
             </div>
 
             <div className="credentials">
               <div className="cred-item">
-                <span className="c-label">Registered Practitioner</span>
+                <span className="c-label">{t.label_reg}</span>
                 <span className="c-val">{t.reg}</span>
               </div>
               <div className="cred-item">
-                <span className="c-label">Experience</span>
-                <span className="c-val">15+ Years Experience</span>
+                <span className="c-label">{t.label_exp}</span>
+                <span className="c-val">{t.val_exp}</span>
               </div>
             </div>
           </div>
