@@ -54,8 +54,15 @@ const Home = ({ lang }) => {
         </div>
 
         <div className="scroll-hint">
-          <span>{t.explore}</span>
-          <div className="scroll-line"></div>
+          {/* Main CTA: How to Consult */}
+          <NavLink to="/how-to-consult" className="btn-hero-consult">
+            {content[lang].consult} &rarr;
+          </NavLink>
+
+          <div className="scroll-hint-text">
+            <span>{t.explore}</span>
+            <div className="scroll-line"></div>
+          </div>
         </div>
       </section>
 
@@ -210,10 +217,39 @@ const Home = ({ lang }) => {
 
         .scroll-hint {
           position: absolute;
-          bottom: 3rem;
+          bottom: 2rem;
           left: 50%;
           transform: translateX(-50%);
           z-index: 10;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5rem;
+        }
+
+        .btn-hero-consult {
+          display: inline-block;
+          padding: 0.8rem 2rem;
+          border: 1px solid rgba(255,255,255,0.4);
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          font-family: var(--font-mono);
+          font-size: 0.8rem;
+          background: rgba(255,255,255,0.05);
+          backdrop-filter: blur(5px);
+          border-radius: 50px;
+          transition: all 0.3s;
+          margin-bottom: 1rem;
+        }
+
+        .btn-hero-consult:hover {
+          background: white;
+          color: black;
+          border-color: white;
+        }
+
+        .scroll-hint-text {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -226,7 +262,7 @@ const Home = ({ lang }) => {
 
         .scroll-line {
           width: 1px;
-          height: 60px;
+          height: 40px;
           background: rgba(255,255,255,0.3);
         }
 
