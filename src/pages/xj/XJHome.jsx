@@ -112,7 +112,7 @@ const XJHome = ({ lang }) => {
 
             {/* Right: What It Does Not Do */}
             <div className="q-list-box border-dim">
-              <h4 className="q-title text-white">{t.qimen_details.not_title}</h4>
+              <h4 className="q-title text-gold">{t.qimen_details.not_title}</h4>
               <ul className="q-list cross-list">
                 {t.qimen_details.not_list.map((item, i) => (
                   <li key={i}>{item}</li>
@@ -142,6 +142,19 @@ const XJHome = ({ lang }) => {
       </section>
 
       <style>{`
+        .xj-home {
+          overflow-x: hidden;
+          width: 100%;
+          background-color: #FFFFFF;
+        }
+
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 1.5rem;
+          width: 100%;
+          box-sizing: border-box;
+        }
 
         .xj-page-rich {
           background-color: #FFFFFF;
@@ -288,16 +301,7 @@ const XJHome = ({ lang }) => {
           border-top: 1px solid rgba(0,0,0,0.05);
         }
 
-        @media (max-width: 900px) {
-          .philo-box { grid-template-columns: 1fr; padding: 2rem; }
-          .s-row { grid-template-columns: 1fr; }
-          .s-row.reverse { direction: ltr; }
-          .display-1 { font-size: 3rem; }
-          .qimen-grid, .qimen-bottom-layout { grid-template-columns: 1fr; gap: 2rem; }
-          .q-list-box { padding: 1.5rem; } /* Reduce padding on mobile */
-          .section-header { font-size: 2.2rem; } /* Smaller header on mobile */
-          .xj-home { overflow-x: hidden; } /* Prevent horizontal overflow */
-        }
+
 
         /* QIMEN SECTION */
         .bg-dark-rich { background: #111; color: #eee; }
@@ -393,6 +397,20 @@ const XJHome = ({ lang }) => {
            opacity: 0.6;
            max-width: 600px;
            margin: 0 auto;
+        }
+
+        @media (max-width: 900px) {
+          .philo-box { grid-template-columns: 1fr !important; padding: 2rem; }
+          .s-row { grid-template-columns: 1fr !important; }
+          .s-row.reverse { direction: ltr !important; }
+          .display-1 { font-size: 2.5rem !important; }
+          .qimen-grid, .qimen-bottom-layout { grid-template-columns: 1fr !important; gap: 2rem !important; }
+          .q-list-box { padding: 1.5rem !important; }
+          .q-bottom-card { padding: 1.5rem !important; }
+          .section-header { font-size: 2rem !important; }
+          .xj-home { overflow-x: hidden !important; width: 100% !important; }
+          .container { padding: 0 1rem !important; }
+          .qimen-header { margin-bottom: 3rem !important; }
         }
       `}</style>
     </div>
