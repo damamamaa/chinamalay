@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-<parameter name="useParams, NavLink } from 'react-router-dom';
+import { useParams, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { supabase } from '../supabaseClient';
 
@@ -32,64 +32,64 @@ const ArticleDetail = ({ lang }) => {
   if (loading) {
     return (
       <div className="article-detail-page">
-  < div className = "container" style = {{ paddingTop: '10rem', textAlign: 'center' }}>
-    <h2>Loading...</h2>
+        < div className="container" style={{ paddingTop: '10rem', textAlign: 'center' }}>
+          <h2>Loading...</h2>
         </div >
       </div >
     );
   }
 
-if (!article) {
+  if (!article) {
+    return (
+      <div className="article-detail-page">
+        <div className="container" style={{ paddingTop: '10rem', textAlign: 'center' }}>
+          <h2>Article not found</h2>
+          <NavLink to="/articles" style={{ color: '#2C5E4F', marginTop: '1rem', display: 'inline-block' }}>
+            ← Back to Articles
+          </NavLink>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="article-detail-page">
-      <div className="container" style={{ paddingTop: '10rem', textAlign: 'center' }}>
-        <h2>Article not found</h2>
-        <NavLink to="/articles" style={{ color: '#2C5E4F', marginTop: '1rem', display: 'inline-block' }}>
-          ← Back to Articles
-        </NavLink>
+      <div className="article-header" style={{ backgroundImage: `url(${article.image})` }}>
+        <div className="article-overlay" />
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="header-content"
+          >
+            <span className="article-category">{article.category}</span>
+            <h1 className="article-title">{article[`title_${lang}`]}</h1>
+            <div className="article-meta">
+              <span>{article.author}</span>
+              <span>•</span>
+              <span>{new Date(article.created_at).toLocaleDateString(lang === 'zh' ? 'zh-CN' : lang === 'ms' ? 'ms-MY' : 'en-US')}</span>
+            </div>
+          </motion.div>
+        </div>
       </div>
-    </div>
-  );
-}
 
-return (
-  <div className="article-detail-page">
-    <div className="article-header" style={{ backgroundImage: `url(${article.image})` }}>
-      <div className="article-overlay" />
-      <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="header-content"
-        >
-          <span className="article-category">{article.category}</span>
-          <h1 className="article-title">{article[`title_${lang}`]}</h1>
-          <div className="article-meta">
-            <span>{article.author}</span>
-            <span>•</span>
-            <span>{new Date(article.created_at).toLocaleDateString(lang === 'zh' ? 'zh-CN' : lang === 'ms' ? 'ms-MY' : 'en-US')}</span>
-          </div>
-        </motion.div>
-      </div>
-    </div>
+      <div className="article-body">
+        <div className="container">
+          <div className="article-content">
+            <div
+              className="content-text"
+              dangerouslySetInnerHTML={{ __html: article[`content_${lang}`] || article[`excerpt_${lang}`] }}
+            />
 
-    <div className="article-body">
-      <div className="container">
-        <div className="article-content">
-          <div
-            className="content-text"
-            dangerouslySetInnerHTML={{ __html: article[`content_${lang}`] || article[`excerpt_${lang}`] }}
-          />
-
-          <div className="article-footer">
-            <NavLink to="/articles" className="back-link">← Back to Articles</NavLink>
+            <div className="article-footer">
+              <NavLink to="/articles" className="back-link">← Back to Articles</NavLink>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <style>{`
+      <style>{`
         .article-detail-page {
           background: #FAFAFA;
           min-height: 100vh;
@@ -214,8 +214,8 @@ return (
           }
         }
       `}</style>
-  </div>
-);
+    </div>
+  );
 };
 
 export default ArticleDetail;
