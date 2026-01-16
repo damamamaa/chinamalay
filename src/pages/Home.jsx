@@ -54,9 +54,14 @@ const Home = ({ lang }) => {
         </div>
 
         <div className="scroll-hint">
-          {/* Main CTA: How to Consult */}
+          {/* Primary CTA: Get Started */}
+          <NavLink to="/service-entry" className="btn-hero-primary">
+            Get Started
+          </NavLink>
+
+          {/* Secondary CTA: How to Consult */}
           <NavLink to="/how-to-consult" className="btn-hero-consult">
-            {content[lang].consult} &rarr;
+            {content[lang].consult}
           </NavLink>
 
           <div className="scroll-hint-text">
@@ -225,6 +230,29 @@ const Home = ({ lang }) => {
           flex-direction: column;
           align-items: center;
           gap: 1.5rem;
+        }
+
+        .btn-hero-primary {
+          display: inline-block;
+          padding: 1rem 2.5rem;
+          background: #2C5E4F;
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+          font-family: var(--font-mono);
+          font-size: 0.9rem;
+          font-weight: 600;
+          border-radius: 50px;
+          border: none;
+          transition: all 0.3s;
+          margin-bottom: 0.8rem;
+          box-shadow: 0 4px 15px rgba(44, 94, 79, 0.4);
+        }
+
+        .btn-hero-primary:hover {
+          background: #1a3b31;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(44, 94, 79, 0.5);
         }
 
         .btn-hero-consult {

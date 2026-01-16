@@ -38,6 +38,7 @@ const Header = ({ lang, setLang }) => {
           <NavLink to="/tcm" className="nav-item">{t.tcm}</NavLink>
           <NavLink to="/xinjian" className="nav-item">{t.xinjian}</NavLink>
           <NavLink to="/about" className="nav-item">{t.about}</NavLink>
+          <NavLink to="/articles" className="nav-item">Articles</NavLink>
           <NavLink to="/how-to-consult" className="nav-item">{t.consult}</NavLink>
           <NavLink to="/contact" className="nav-item">{t.contact}</NavLink>
         </nav>
