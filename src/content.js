@@ -158,19 +158,42 @@ export const content = {
     },
     contact: {
       title: "Inquiries & Appointments",
+      connect: "Connect with Rusheng",
+      hero_tcm: "Book a clinical consultation for physical wellness and balance.",
+      hero_xj: "Schedule a session for destiny analysis or feng shui audit.",
+      details_title: "Contact Details",
+      visit: "Visit Us",
+      maps: "View on Google Maps",
+      direct: "Direct Line",
+      chat: "Start Chat",
+      faq_title: "Before you book...",
+      faqs: [
+        { q: "Do I need to prepare anything?", a: "For TCM, bring recent medical reports. For Destiny reading, clear date and time of birth is required." },
+        { q: "Is online consultation available?", a: "Yes, especially for BaZi and Destiny analysis via Zoom. Clinic treatments must be in-person." }
+      ],
       address: "100-01, Jalan Jaya Putra 7/8, Bandar Jaya Putra, 81100 Johor Bahru, Johor Darul Ta’zim",
       email: "masterrusheng123@gmail.com",
       phone_sg: "+65 9696 1237",
       phone_my: "+60 14 827 1236",
       form: {
+        title: "Send an Inquiry",
         name: "Your Name",
         email: "Email Address",
         service: "Service of Interest",
         message: "Message",
-        submit: "Send Inquiry",
+        placeholder: "Tell us about your needs...",
+        submit: "Send Request",
         service_options: {
           tcm: "TCM Clinic",
           xj: "Xin Jian Destiny"
+        },
+        options: {
+          tcm_gen: "General TCM Consultation",
+          acu: "Acupuncture",
+          bone: "Bone Setting",
+          bazi: "BaZi Analysis",
+          fs: "Feng Shui Audit",
+          career: "Career Strategy"
         }
       },
       whatsapp: {
@@ -289,19 +312,42 @@ export const content = {
     },
     contact: {
       title: "咨询与预约",
+      connect: "联系鲁胜",
+      hero_tcm: "预约中医临床咨询，调理身体平衡。",
+      hero_xj: "预约命理分析或风水评估。",
+      details_title: "联系方式",
+      visit: "地址",
+      maps: "查看 Google 地图",
+      direct: "直线电话",
+      chat: "开始对话",
+      faq_title: "预约须知",
+      faqs: [
+        { q: "我需要准备什么？", a: "中医：请携带近期体检报告。命理：需要准确的出生日期和时间。" },
+        { q: "提供在线咨询吗？", a: "是的，八字和命理分析可通过 Zoom 进行。中医治疗需亲临诊所。" }
+      ],
       address: "100-01, Jalan Jaya Putra 7/8, Bandar Jaya Putra, 81100 Johor Bahru, Johor Darul Ta’zim",
       email: "masterrusheng123@gmail.com",
       phone_sg: "+65 9696 1237",
       phone_my: "+60 14 827 1236",
       form: {
+        title: "发送咨询",
         name: "您的姓名",
         email: "电子邮箱",
         service: "感兴趣的服务",
         message: "留言",
-        submit: "发送咨询",
+        placeholder: "请告知您的需求...",
+        submit: "提交申请",
         service_options: {
           tcm: "中医诊所",
           xj: "心鉴命理"
+        },
+        options: {
+          tcm_gen: "中医全科咨询",
+          acu: "针灸治疗",
+          bone: "正骨整脊",
+          bazi: "八字分析",
+          fs: "风水堪舆",
+          career: "事业运势策划"
         }
       },
       whatsapp: {
@@ -420,19 +466,42 @@ export const content = {
     },
     contact: {
       title: "Pertanyaan & Janji Temu",
+      connect: "Hubungi Rusheng",
+      hero_tcm: "Tempah konsultasi klinikal untuk kesihatan dan keseimbangan.",
+      hero_xj: "Jadualkan sesi untuk analisis takdir atau audit feng shui.",
+      details_title: "Maklumat Hubungan",
+      visit: "Lawati Kami",
+      maps: "Lihat di Google Maps",
+      direct: "Talian Terus",
+      chat: "Mula Sembang",
+      faq_title: "Sebelum menempah...",
+      faqs: [
+        { q: "Adakah saya perlu menyediakan apa-apa?", a: "Untuk TCM, bawa laporan perubatan terkini. Untuk Takdir, tarikh dan masa lahir yang jelas diperlukan." },
+        { q: "Adakah konsultasi dalam talian disediakan?", a: "Ya, terutamanya untuk analisis BaZi dan Takdir melalui Zoom. Rawatan klinik mestilah secara bersemuka." }
+      ],
       address: "100-01, Jalan Jaya Putra 7/8, Bandar Jaya Putra, 81100 Johor Bahru, Johor Darul Ta’zim",
       email: "masterrusheng123@gmail.com",
       phone_sg: "+65 9696 1237",
       phone_my: "+60 14 827 1236",
       form: {
+        title: "Hantar Pertanyaan",
         name: "Nama Anda",
         email: "Alamat Emel",
         service: "Perkhidmatan Diminati",
         message: "Mesej",
-        submit: "Hantar Pertanyaan",
+        placeholder: "Beritahu kami tentang keperluan anda...",
+        submit: "Hantar Permintaan",
         service_options: {
           tcm: "Klinik TCM",
           xj: "Xin Jian Destiny"
+        },
+        options: {
+          tcm_gen: "Konsultasi TCM Am",
+          acu: "Akupunktur",
+          bone: "Rawatan Tulang",
+          bazi: "Analisis BaZi",
+          fs: "Audit Feng Shui",
+          career: "Strategi Kerjaya"
         }
       },
       whatsapp: {

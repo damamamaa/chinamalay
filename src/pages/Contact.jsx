@@ -22,12 +22,10 @@ const Contact = ({ lang }) => {
           transition={{ duration: 0.8 }}
           className="ch-content"
         >
-          <span className="mono-label">Connect with Rusheng</span>
+          <span className="mono-label">{t.connect}</span>
           <h1 className="hero-title">{t.title}</h1>
           <p className="hero-desc">
-            {activeTab === 'tcm'
-              ? "Book a clinical consultation for physical wellness and balance."
-              : "Schedule a session for destiny analysis or feng shui audit."}
+            {activeTab === 'tcm' ? t.hero_tcm : t.hero_xj}
           </p>
         </motion.div>
       </div>
@@ -41,29 +39,29 @@ const Contact = ({ lang }) => {
               className={`g-tab ${activeTab === 'tcm' ? 'active' : 'inactive'}`}
               onClick={() => toggleTab('tcm')}
             >
-              <span className="dot"></span> TCM Clinic
+              <span className="dot"></span> {content[lang].contact.form.service_options.tcm}
             </button>
             <button
               className={`g-tab ${activeTab === 'xj' ? 'active' : 'inactive'}`}
               onClick={() => toggleTab('xj')}
             >
-              <span className="dot"></span> Xin Jian Destiny
+              <span className="dot"></span> {content[lang].contact.form.service_options.xj}
             </button>
           </div>
 
           <div className="contact-layout">
             {/* LEFT: INFO & FAQ */}
             <div className="c-info">
-              <h3 className="section-label">Contact Details</h3>
+              <h3 className="section-label">{t.details_title}</h3>
 
               <div className="info-card">
-                <label>Visit Us</label>
+                <label>{t.visit}</label>
                 <p className="address-text">{t.address}</p>
-                <a href="https://maps.google.com" target="_blank" className="map-link">View on Google Maps &rarr;</a>
+                <a href="https://maps.google.com" target="_blank" className="map-link">{t.maps} &rarr;</a>
               </div>
 
               <div className="info-card">
-                <label>Direct Line</label>
+                <label>{t.direct}</label>
                 <div className="phone-row">
                   <span>SG:</span> <a href={`tel:${t.phone_sg}`}>{t.phone_sg}</a>
                 </div>
@@ -72,59 +70,57 @@ const Contact = ({ lang }) => {
                 </div>
                 <a href="#" className="whatsapp-btn">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="20" />
-                  Start Chat
+                  {t.chat}
                 </a>
               </div>
 
               <div className="faq-mini">
-                <h4 className="faq-title">Before you book...</h4>
-                <details open>
-                  <summary>Do I need to prepare anything?</summary>
-                  <p>For TCM, bring recent medical reports. For Destiny reading, clear date and time of birth is required.</p>
-                </details>
-                <details>
-                  <summary>Is online consultation available?</summary>
-                  <p>Yes, especially for BaZi and Destiny analysis via Zoom. Clinic treatments must be in-person.</p>
-                </details>
+                <h4 className="faq-title">{t.faq_title}</h4>
+                {t.faqs && t.faqs.map((faq, i) => (
+                  <details key={i} open={i === 0}>
+                    <summary>{faq.q}</summary>
+                    <p>{faq.a}</p>
+                  </details>
+                ))}
               </div>
             </div>
 
             {/* RIGHT: FORM */}
             <div className="c-form-wrapper">
-              <h3 className="section-label">Send an Inquiry</h3>
+              <h3 className="section-label">{t.form.title}</h3>
               <form className="master-form">
                 <div className="form-group">
-                  <label>Your Name</label>
+                  <label>{t.form.name}</label>
                   <input type="text" placeholder="John Doe" />
                 </div>
                 <div className="form-group">
-                  <label>Email Address</label>
+                  <label>{t.form.email}</label>
                   <input type="email" placeholder="john@example.com" />
                 </div>
                 <div className="form-group">
-                  <label>Service of Interest</label>
+                  <label>{t.form.service}</label>
                   <select className="minimal-select">
                     {activeTab === 'tcm' ? (
                       <>
-                        <option>General TCM Consultation</option>
-                        <option>Acupuncture</option>
-                        <option>Bone Setting</option>
+                        <option>{t.form.options.tcm_gen}</option>
+                        <option>{t.form.options.acu}</option>
+                        <option>{t.form.options.bone}</option>
                       </>
                     ) : (
                       <>
-                        <option>BaZi Analysis</option>
-                        <option>Feng Shui Audit</option>
-                        <option>Career Strategy</option>
+                        <option>{t.form.options.bazi}</option>
+                        <option>{t.form.options.fs}</option>
+                        <option>{t.form.options.career}</option>
                       </>
                     )}
                   </select>
                 </div>
                 <div className="form-group">
-                  <label>Message</label>
-                  <textarea rows="5" placeholder="Tell us about your needs..."></textarea>
+                  <label>{t.form.message}</label>
+                  <textarea rows="5" placeholder={t.form.placeholder}></textarea>
                 </div>
                 <button type="submit" className="submit-btn-premium">
-                  Send Request
+                  {t.form.submit}
                 </button>
               </form>
             </div>
