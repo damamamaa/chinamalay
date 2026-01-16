@@ -7,7 +7,50 @@ export const content = {
       xinjian: "Xin Jian",
       about: "About Rusheng",
       faq: "FAQ",
-      contact: "Contact"
+      contact: "Contact",
+      consult: "How to Consult"
+    },
+    how_to_consult: {
+      title: "How to Consult",
+      subtitle: "Clear, Flexible & Private",
+      intro: "We understand that everyone has different needs and comfort levels. Consultations are flexible, private, and adapted to your situation.",
+      contact_options: {
+        title: "Contact Options",
+        options: [
+          { title: "1. Phone Call", desc: "Direct phone consultation for immediate discussion." },
+          { title: "2. WhatsApp Message", desc: "Text or voice messages for written communication." },
+          { title: "3. Email", desc: "For detailed background sharing or document-based consultation." }
+        ]
+      },
+      online: {
+        title: "Online Consultation (No Physical Visit Required)",
+        list: [
+          "Destiny Analysis",
+          "Numerology",
+          "BaZi (Four Pillars)",
+          "Zi Wei Dou Shu",
+          "Life Direction Guidance"
+        ],
+        desc: "Consultations can be conducted via WhatsApp video or voice call. No physical visit is required."
+      },
+      tcm: {
+        title: "Traditional Chinese Medicine (TCM) Consultation",
+        desc: "Initial assessment and guidance can be conducted online. Prescriptions are discussed clearly, and medicines are self-purchased by clients."
+      },
+      payment: {
+        title: "Payment Methods",
+        list: [
+          "Touch ’n Go (QR)",
+          "Online Banking Transfer",
+          "Other electronic payment methods"
+        ],
+        desc: "Payment details will be shared privately after consultation confirmation."
+      },
+      ethics: {
+        title: "Consultation Principles",
+        text: "All consultations are conducted with clarity, respect, and ethical boundaries. No fear-based guidance. No dependency created."
+      },
+      cta: "Request a Consultation"
     },
     hero: {
       title: "Balance. Clarity. Responsibility.",
@@ -216,7 +259,50 @@ export const content = {
       xinjian: "心鉴",
       about: "关于鲁胜",
       faq: "常见问题",
-      contact: "联系预约"
+      contact: "联系预约",
+      consult: "如何咨询"
+    },
+    how_to_consult: {
+      title: "如何咨询",
+      subtitle: "清晰、灵活与隐私",
+      intro: "我们要了解每个人都有不同的需求和舒适度。咨询是灵活的、私密的，并根据您的情况进行调整。",
+      contact_options: {
+        title: "联系方式",
+        options: [
+          { title: "1. 电话咨询", desc: "直接电话咨询，立即讨论。" },
+          { title: "2. WhatsApp 留言", desc: "文字或语音消息，用于书面沟通。" },
+          { title: "3. 电子邮件", desc: "用于详细背景分享或基于文档的咨询。" }
+        ]
+      },
+      online: {
+        title: "在线咨询 (无需亲临)",
+        list: [
+          "命运分析",
+          "数字命理学",
+          "八字 (四柱)",
+          "紫微斗数",
+          "人生方向指引"
+        ],
+        desc: "咨询可以通过 WhatsApp 视频或语音通话进行。无需亲临。"
+      },
+      tcm: {
+        title: "中医 (TCM) 咨询",
+        desc: "初步评估和指导可以在线进行。处方会清晰讨论，药物由客户自行购买。"
+      },
+      payment: {
+        title: "支付方式",
+        list: [
+          "Touch ’n Go (QR)",
+          "网上银行转账",
+          "其他电子支付方式"
+        ],
+        desc: "付款详情将在咨询确认后私下分享。"
+      },
+      ethics: {
+        title: "咨询原则",
+        text: "所有咨询均以清晰、尊重和道德界限进行。没有基于恐惧的指导。不制造依赖。"
+      },
+      cta: "预约咨询"
     },
     hero: {
       title: "平衡。清晰。责任。",
@@ -370,7 +456,50 @@ export const content = {
       xinjian: "Xin Jian",
       about: "Tentang Rusheng",
       faq: "Soalan Lazim",
-      contact: "Hubungi"
+      contact: "Hubungi",
+      consult: "Cara Konsultasi"
+    },
+    how_to_consult: {
+      title: "Cara Konsultasi",
+      subtitle: "Jelas, Fleksibel & Peribadi",
+      intro: "Kami memahami bahawa setiap orang mempunyai keperluan dan tahap keselesaan yang berbeza. Konsultasi adalah fleksibel, peribadi, dan disesuaikan dengan situasi anda.",
+      contact_options: {
+        title: "Pilihan Hubungi",
+        options: [
+          { title: "1. Panggilan Telefon", desc: "Konsultasi telefon terus untuk perbincangan segera." },
+          { title: "2. Mesej WhatsApp", desc: "Mesej teks atau suara untuk komunikasi bertulis." },
+          { title: "3. Emel", desc: "Untuk perkongsian latar belakang terperinci atau konsultasi berasaskan dokumen." }
+        ]
+      },
+      online: {
+        title: "Konsultasi Dalam Talian (Tiada Lawatan Fizikal Diperlukan)",
+        list: [
+          "Analisis Takdir",
+          "Numerologi",
+          "BaZi (Empat Pilar)",
+          "Zi Wei Dou Shu",
+          "Panduan Arah Kehidupan"
+        ],
+        desc: "Konsultasi boleh dijalankan melalui panggilan video atau suara WhatsApp. Tiada lawatan fizikal diperlukan."
+      },
+      tcm: {
+        title: "Konsultasi Perubatan Tradisional Cina (TCM)",
+        desc: "Penilaian awal dan panduan boleh dijalankan dalam talian. Preskripsi dibincangkan dengan jelas, dan ubat dibeli sendiri oleh pelanggan."
+      },
+      payment: {
+        title: "Kaedah Pembayaran",
+        list: [
+          "Touch ’n Go (QR)",
+          "Pindahan Bank Dalam Talian",
+          "Kaedah pembayaran elektronik lain"
+        ],
+        desc: "Butiran pembayaran akan dikongsi secara peribadi selepas pengesahan konsultasi."
+      },
+      ethics: {
+        title: "Prinsip Konsultasi",
+        text: "Semua konsultasi dijalankan dengan kejelasan, rasa hormat, dan batasan etika. Tiada panduan berasaskan ketakutan. Tiada pergantungan dicipta."
+      },
+      cta: "Minta Konsultasi"
     },
     hero: {
       title: "Keseimbangan. Kejelasan. Tanggungjawab.",

@@ -38,6 +38,7 @@ const Header = ({ lang, setLang }) => {
           <NavLink to="/tcm" className="nav-item">{t.tcm}</NavLink>
           <NavLink to="/xinjian" className="nav-item">{t.xinjian}</NavLink>
           <NavLink to="/about" className="nav-item">{t.about}</NavLink>
+          <NavLink to="/how-to-consult" className="nav-item">{t.consult}</NavLink>
           <NavLink to="/contact" className="nav-item">{t.contact}</NavLink>
         </nav>
 
@@ -176,12 +177,12 @@ const Header = ({ lang, setLang }) => {
 
         .desktop-nav {
           display: flex;
-          gap: 2.5rem;
+          gap: 1.5rem;
         }
 
         .nav-item {
           font-family: var(--font-sans);
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           text-transform: uppercase;
           letter-spacing: 0.1em;
           position: relative;

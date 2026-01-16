@@ -8,6 +8,8 @@ import XJHome from './pages/xj/XJHome';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
+import HowToConsult from './pages/HowToConsult';
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -33,6 +35,7 @@ function App() {
           <Route path="/tcm" element={<TCMHome lang={lang} />} />
           <Route path="/xinjian" element={<XJHome lang={lang} />} />
           <Route path="/about" element={<About lang={lang} />} />
+          <Route path="/how-to-consult" element={<HowToConsult lang={lang} />} />
           <Route path="/contact" element={<Contact lang={lang} />} />
         </Routes>
       </main>
