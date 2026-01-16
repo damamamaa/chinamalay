@@ -64,25 +64,25 @@ export const content = {
           name: "Pain Management",
           desc: "A holistic approach to chronic and acute pain relief using acupuncture and manual techniques.",
           detail: "We address the root cause of pain, not just the symptoms.",
-          image: "/tcm_acupuncture_rusheng.webp"
+          image: "/tcm_acupuncture_rusheng_v2.webp"
         },
         {
           name: "Women’s Health Regulation",
           desc: "Supporting hormonal balance, menstrual health, and fertility through natural methods.",
           detail: "Gentle and effective care for women at all life stages.",
-          image: "/tcm_women_health_rusheng.webp"
+          image: "/tcm_women_health_rusheng_v2.webp"
         },
         {
           name: "Men’s Vitality & Sub-health Care",
           desc: "Boosting energy, improving stamina, and addressing sub-clinical fatigue states.",
           detail: "Restoring vigor and resilience for modern life demands.",
-          image: "/tcm_men_vitality_rusheng.webp"
+          image: "/tcm_men_vitality_rusheng_v2.webp"
         },
         {
           name: "Gua Sha, Cupping & Acupuncture Therapy",
           desc: "Traditional modalities to improve circulation, release toxicity, and balance the body's energy flow.",
           detail: "Proven techniques for systemic wellness and stress relief.",
-          image: "/tcm_pulse_rusheng.webp"
+          image: "/tcm_cupping_rusheng.webp"
         }
       ],
       process: [
@@ -106,20 +106,20 @@ export const content = {
       services: [
         {
           name: "Numerology Analysis",
-          desc: "Helping you understand numerical patterns associated with names, phone numbers, vehicle plates, and house numbers.",
+          desc: "Helping you understand numerical patterns associated with names, phone numbers, vehicle registration numbers, and house numbers.",
           detail: "This service offers reference for alignment and clarity—not control over outcomes.",
           image: "/xj_numerology_rusheng.webp"
         },
         {
           name: "BaZi (Four Pillars) Analysis",
-          desc: "An analysis of life structure based on birth data, focusing on strengths, weaknesses, and timing trends related to career, relationships, and personal development.",
+          desc: "An analysis of life structure based on birth data, focusing on strengths, challenges, and timing trends related to career, relationships, and personal development.",
           detail: "Understand your Elemental structure and potential life path.",
           image: "/xj_consultant_rusheng.webp"
         },
         {
           name: "Zi Wei Dou Shu Analysis",
           desc: "A detailed classical system that maps major life domains to provide deeper insight into long-term patterns and recurring themes.",
-          detail: "Offers high-resolution insight into specific life domains.",
+          detail: "Offers high-resolution insight into specific life domains, supporting long-term reflection and planning.",
           image: "/xj_reading_rusheng.webp"
         },
         {
@@ -130,7 +130,7 @@ export const content = {
         },
         {
           name: "Annual Guidance",
-          desc: "A year-ahead outlook designed to help you prepare for opportunities and manage potential challenges in work, health, and family matters.",
+          desc: "A year-ahead outlook designed to help you prepare for opportunities and manage potential challenges in work, health, and family matters. Focused on awareness and preparation, not fixed outcomes.",
           detail: "Navigate the changing tides of the year with confidence.",
           image: "/xj_annual_rusheng.webp"
         }
