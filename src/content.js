@@ -176,8 +176,40 @@ export const content = {
           desc: "A year-ahead outlook designed to help you prepare for opportunities and manage potential challenges in work, health, and family matters. Focused on awareness and preparation, not fixed outcomes.",
           detail: "Navigate the changing tides of the year with confidence.",
           image: "/xj_annual_rusheng.webp"
+        },
+        {
+          name: "Qi Men Dun Jia (Strategic Analysis)",
+          desc: "A classical strategic system for timing and decision-making. Helps reduce risks and act with awareness.",
+          detail: "Offers clarity and reference for important decisions, not predictions or guarantees.",
+          image: "/qimen_strategic_compass.webp"
         }
       ],
+      qimen_details: {
+        title: "Qi Men Dun Jia: Strategic Timing & Decision Analysis",
+        intro: "Qi Men Dun Jia is a classical Chinese strategic analysis system. It is not a method to change destiny, nor a tool to remove bad luck. Its true purpose is to help people make better decisions at the right time by understanding timing, direction, and situational dynamics.",
+        helps_title: "What Qi Men Dun Jia Can Help With",
+        helps_list: [
+          "Important decision-making",
+          "Timing analysis (when to act, when to wait)",
+          "Understanding hidden influences in a situation",
+          "Strategic planning under uncertainty"
+        ],
+        helps_note: "It provides clarity and reference, not predictions or guarantees.",
+        not_title: "What Qi Men Dun Jia Does NOT Do",
+        not_list: [
+          "Change fate or destiny",
+          "Eliminate life challenges",
+          "Control outcomes",
+          "Replace personal effort or responsibility"
+        ],
+        not_note: "It does not “fix fate” or promise success.",
+        vs_title: "Qi Men Dun Jia vs Feng Shui",
+        vs_text: "Qi Men Dun Jia is not Feng Shui. Feng Shui focuses on physical environments, while Qi Men Dun Jia focuses on time-based and situational analysis. They serve different purposes and should not be confused.",
+        perspective_title: "A Clear Perspective",
+        perspective_text: "Qi Men Dun Jia works like a strategic compass, not a supernatural force. It helps people reduce risks caused by poor timing, make clearer choices, and act with awareness instead of fear. It does not change your life — it helps you choose more wisely within it.",
+        disclaimer_title: "Important Note",
+        disclaimer_text: "All Qi Men Dun Jia analysis is provided for analytical reference and personal insight only. Life outcomes depend on individual decisions, actions, and circumstances."
+      },
       philosophy: {
         title: "The Art of Clear Seeing",
         text: "Just as a captain checks the weather before sailing, a thoughtful person reviews life patterns and timing before making major decisions. We provide analytical reference, not absolute answers."
@@ -373,8 +405,40 @@ export const content = {
         { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。了解优势、劣势及事业、财富、感情时机。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
         { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位，提供详细的人生事件与业力模式细节。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
         { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。", detail: "协调外部环境与内部目标。", image: "/xj_compass_rusheng.webp" },
-        { name: "年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。", detail: "充满信心地驾驭流年变幻。", image: "/xj_annual_rusheng.webp" }
+        { name: "年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。", detail: "充满信心地驾驭流年变幻。", image: "/xj_annual_rusheng.webp" },
+        {
+          name: "奇门遁甲 (战略决策分析)",
+          desc: "一种用于时机把握与决策制定的古典战略体系。帮助降低风险，带着觉知行动。",
+          detail: "为重要决策提供清晰度和参考，而非预测或保证。",
+          image: "/qimen_strategic_compass.webp"
+        }
       ],
+      qimen_details: {
+        title: "奇门遁甲：战略时机与决策分析",
+        intro: "奇门遁甲是中国古典战略分析体系。它不是改变命运的方法，也不是消除厄运的工具。它的真正目的是通过理解时机、方位和局势动态，帮助人们在正确的时间做出更好的决策。",
+        helps_title: "奇门遁甲能帮到什么",
+        helps_list: [
+          "重要决策制定",
+          "时机分析 (何时行动，何时等待)",
+          "理解局势中的隐藏影响",
+          "不确定性下的战略规划"
+        ],
+        helps_note: "它提供清晰度和参考，而非预测或保证。",
+        not_title: "奇门遁甲不能做什么",
+        not_list: [
+          "改变命运",
+          "消除人生挑战",
+          "控制结果",
+          "替代个人努力或责任"
+        ],
+        not_note: "它不“修复命运”也不承诺成功。",
+        vs_title: "奇门遁甲 vs 风水",
+        vs_text: "奇门遁甲不是风水。风水关注物理环境，而奇门遁甲关注基于时间和局势的分析。它们服务于不同的目的，不应混淆。",
+        perspective_title: "清晰的视角",
+        perspective_text: "奇门遁甲像一个战略指南针，而不是超自然力量。它帮助人们减少因时机不当造成的风险，做出更清晰的选择，并带着觉知而非恐惧行动。它不改变你的人生——它帮助你在其中更明智地选择。",
+        disclaimer_title: "重要提示",
+        disclaimer_text: "所有奇门遁甲分析仅供分析参考和个人洞察。人生结果取决于个人的决定、行动和环境。"
+      },
       philosophy: {
         title: "明心见性",
         text: "我们相信玄学不是迷信或恐惧。它是战略工具。正如船长出海前查看天气，智者在做重大人生决定前查看宇宙气流。"
@@ -570,8 +634,39 @@ export const content = {
         { name: "Analisis BaZi (Empat Pilar)", desc: "Mencerna rangka tindakan kehidupan anda berdasarkan data kelahiran. Fahami kekuatan, kelemahan, dan masa untuk kerjaya, kekayaan, dan hubungan.", detail: "Dedahkan struktur elemen dan potensi laluan hidup anda.", image: "/xj_consultant_rusheng.webp" },
         { name: "Analisis Zi Wei Dou Shu", desc: "Sistem astrologi canggih yang memetakan 12 istana kehidupan utama, memberikan butiran terperinci tentang peristiwa kehidupan dan corak karma.", detail: "Menawarkan wawasan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
         { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat untuk mengoptimumkan aliran dan keseimbangan.", detail: "Harmonikan persekitaran luaran anda dengan matlamat dalaman anda.", image: "/xj_compass_rusheng.webp" },
-        { name: "Panduan Tahunan", desc: "Ramalan tahun hadapan untuk membantu anda bersedia bagi peluang dan mengurangkan risiko dalam kerjaya, kesihatan, dan keluarga.", detail: "Mengemudi perubahan arus tahun dengan yakin.", image: "/xj_annual_rusheng.webp" }
+        { name: "Panduan Tahunan", desc: "Ramalan tahun hadapan untuk membantu anda bersedia bagi peluang dan mengurangkan risiko dalam kerjaya, kesihatan, dan keluarga.", detail: "Mengemudi perubahan arus tahun dengan yakin.", image: "/xj_annual_rusheng.webp" },
+        {
+          name: "Qi Men Dun Jia (Analisis Strategik)",
+          desc: "Sistem strategi klasik untuk masa dan pembuatan keputusan. Membantu mengurangkan risiko dan bertindak dengan kesedaran.",
+          detail: "Menawarkan kejelasan dan rujukan untuk keputusan penting, bukan ramalan atau jaminan.",
+          image: "/qimen_strategic_compass.webp"
+        }
       ],
+      qimen_details: {
+        title: "Qi Men Dun Jia: Analisis Masa & Keputusan Strategik",
+        intro: "Qi Men Dun Jia adalah sistem analisis strategi klasik Cina. Ia bukan kaedah untuk mengubah takdir, atau alat untuk membuang nasib malang. Tujuan sebenarnya adalah untuk membantu orang membuat keputusan yang lebih baik pada masa yang tepat dengan memahami masa, arah, dan dinamik situasi.",
+        helps_title: "Apa Yang Qi Men Dun Jia Boleh Bantu",
+        helps_list: [
+          "Pembuatan keputusan penting",
+          "Analisis masa (bila untuk bertindak, bila untuk menunggu)",
+          "Memahami pengaruh tersembunyi dalam situasi",
+          "Perancangan strategik dalam ketidakpastian"
+        ],
+        helps_note: "Ia memberikan kejelasan dan rujukan, bukan ramalan atau jaminan.",
+        not_title: "Apa Yang Qi Men Dun Jia TIDAK Lakukan",
+        not_list: [
+          "Mengubah nasib atau takdir",
+          "Menghapuskan cabaran hidup",
+          "Menggantikan usaha atau tanggungjawab peribadi"
+        ],
+        not_note: "Ia tidak 'membaiki nasib' atau menjanjikan kejayaan.",
+        vs_title: "Qi Men Dun Jia vs Feng Shui",
+        vs_text: "Qi Men Dun Jia bukan Feng Shui. Feng Shui menumpukan pada persekitaran fizikal, manakala Qi Men Dun Jia menumpukan pada analisis berasaskan masa dan situasi. Ia mempunyai tujuan yang berbeza dan tidak harus dikelirukan.",
+        perspective_title: "Perspektif Jelas",
+        perspective_text: "Qi Men Dun Jia berfungsi seperti kompas strategik, bukan kuasa ghaib. Ia membantu orang mengurangkan risiko yang disebabkan oleh masa yang salah, membuat pilihan yang lebih jelas, dan bertindak dengan kesedaran dan bukannya ketakutan. Ia tidak mengubah hidup anda — ia membantu anda memilih dengan lebih bijak di dalamnya.",
+        disclaimer_title: "Nota Penting",
+        disclaimer_text: "Semua analisis Qi Men Dun Jia disediakan untuk rujukan analisis dan wawasan peribadi sahaja. Hasil kehidupan bergantung kepada keputusan, tindakan, dan keadaan individu."
+      },
       philosophy: {
         title: "Seni Kejelasan",
         text: "Kami percaya bahawa metafizik bukan tentang khurafat atau ketakutan. Ia adalah alat strategik. Sama seperti kapten memeriksa cuaca sebelum belayar, orang bijak memeriksa arus kosmik sebelum membuat keputusan hidup yang besar."

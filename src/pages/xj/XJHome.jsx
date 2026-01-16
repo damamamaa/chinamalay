@@ -90,6 +90,57 @@ const XJHome = ({ lang }) => {
         </div>
       </section>
 
+      {/* 5. QI MEN DUN JIA DEEP DIVE (NEW) */}
+      <section className="xj-qimen section-padding bg-dark-rich">
+        <div className="container">
+          <div className="qimen-header text-center">
+            <h2 className="display-3 text-gold mb-4">{t.qimen_details.title}</h2>
+            <p className="qimen-intro">{t.qimen_details.intro}</p>
+          </div>
+
+          <div className="qimen-grid">
+            {/* Left: What It Helps With */}
+            <div className="q-list-box border-gold">
+              <h4 className="q-title text-gold">{t.qimen_details.helps_title}</h4>
+              <ul className="q-list check-list">
+                {t.qimen_details.helps_list.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+              <p className="q-note">{t.qimen_details.helps_note}</p>
+            </div>
+
+            {/* Right: What It Does Not Do */}
+            <div className="q-list-box border-dim">
+              <h4 className="q-title text-white">{t.qimen_details.not_title}</h4>
+              <ul className="q-list cross-list">
+                {t.qimen_details.not_list.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+              <p className="q-note">{t.qimen_details.not_note}</p>
+            </div>
+          </div>
+
+          <div className="qimen-bottom-layout">
+            <div className="q-bottom-card">
+              <h4 className="q-title text-gold">{t.qimen_details.perspective_title}</h4>
+              <p>{t.qimen_details.perspective_text}</p>
+            </div>
+
+            <div className="q-bottom-card">
+              <h4 className="q-title text-gold">{t.qimen_details.vs_title}</h4>
+              <p>{t.qimen_details.vs_text}</p>
+            </div>
+          </div>
+
+          <div className="qimen-disclaimer mt-5 text-center">
+            <h5 className="text-dim small-caps">{t.qimen_details.disclaimer_title}</h5>
+            <p className="text-dim small-text">{t.qimen_details.disclaimer_text}</p>
+          </div>
+        </div>
+      </section>
+
       <style>{`
 
         .xj-page-rich {
@@ -242,6 +293,103 @@ const XJHome = ({ lang }) => {
           .s-row { grid-template-columns: 1fr; }
           .s-row.reverse { direction: ltr; }
           .display-1 { font-size: 4rem; }
+          .qimen-grid, .qimen-bottom-layout { grid-template-columns: 1fr; }
+        }
+
+        /* QIMEN SECTION */
+        .bg-dark-rich { background: #111; color: #eee; }
+        .mb-4 { margin-bottom: 2rem; }
+        .mt-5 { margin-top: 4rem; }
+
+        .qimen-header {
+           max-width: 800px;
+           margin: 0 auto 5rem;
+        }
+
+        .qimen-intro {
+           font-size: 1.3rem;
+           line-height: 1.7;
+           color: #ccc;
+        }
+
+        .qimen-grid {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 3rem;
+           margin-bottom: 4rem;
+        }
+
+        .q-list-box {
+           padding: 3rem;
+           background: rgba(255,255,255,0.03);
+           border-radius: 4px;
+        }
+
+        .border-gold { border: 1px solid rgba(212, 175, 55, 0.3); }
+        .border-dim { border: 1px solid rgba(255,255,255,0.1); }
+
+        .q-title {
+           font-family: var(--font-display);
+           font-size: 1.8rem;
+           margin-bottom: 2rem;
+        }
+
+        .q-list {
+           list-style: none;
+           padding: 0;
+           margin-bottom: 2rem;
+        }
+
+        .q-list li {
+           position: relative;
+           padding-left: 2rem;
+           margin-bottom: 1rem;
+           font-size: 1.1rem;
+           color: #ddd;
+        }
+
+        .check-list li::before { content: "✓"; color: var(--xj-accent); position: absolute; left: 0; }
+        .cross-list li::before { content: "✕"; color: #666; position: absolute; left: 0; }
+
+        .q-note {
+           font-family: var(--font-mono);
+           font-size: 0.8rem;
+           color: #888;
+           border-top: 1px solid rgba(255,255,255,0.1);
+           padding-top: 1rem;
+        }
+
+        .qimen-bottom-layout {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 3rem;
+        }
+
+        .q-bottom-card {
+           padding: 2rem;
+           border-left: 2px solid var(--xj-accent);
+           background: rgba(0,0,0,0.2);
+        }
+        
+        .q-bottom-card p {
+           font-size: 1.1rem;
+           color: #ccc;
+           line-height: 1.8;
+        }
+
+        .small-caps {
+           font-family: var(--font-mono);
+           text-transform: uppercase;
+           letter-spacing: 0.1em;
+           font-size: 0.9rem;
+           margin-bottom: 0.5rem;
+        }
+
+        .small-text {
+           font-size: 0.9rem;
+           opacity: 0.6;
+           max-width: 600px;
+           margin: 0 auto;
         }
       `}</style>
     </div>
