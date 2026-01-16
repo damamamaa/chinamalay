@@ -292,8 +292,11 @@ const XJHome = ({ lang }) => {
           .philo-box { grid-template-columns: 1fr; padding: 2rem; }
           .s-row { grid-template-columns: 1fr; }
           .s-row.reverse { direction: ltr; }
-          .display-1 { font-size: 4rem; }
-          .qimen-grid, .qimen-bottom-layout { grid-template-columns: 1fr; }
+          .display-1 { font-size: 3rem; }
+          .qimen-grid, .qimen-bottom-layout { grid-template-columns: 1fr; gap: 2rem; }
+          .q-list-box { padding: 1.5rem; } /* Reduce padding on mobile */
+          .section-header { font-size: 2.2rem; } /* Smaller header on mobile */
+          .xj-home { overflow-x: hidden; } /* Prevent horizontal overflow */
         }
 
         /* QIMEN SECTION */

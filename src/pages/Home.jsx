@@ -51,24 +51,16 @@ const Home = ({ lang }) => {
           >
             {t.subtitle}
           </motion.p>
+
         </div>
 
-        <div className="scroll-hint">
-          {/* Primary CTA: Get Started */}
-          <NavLink to="/service-entry" className="btn-hero-primary">
-            Get Started
-          </NavLink>
-
-          {/* Secondary CTA: How to Consult */}
-          <NavLink to="/how-to-consult" className="btn-hero-consult">
-            {content[lang].consult}
-          </NavLink>
-
+        {/* Scroll Indicator converted to Get Started Button */}
+        <NavLink to="/service-entry" className="scroll-hint-btn">
           <div className="scroll-hint-text">
-            <span>{t.explore}</span>
-            <div className="scroll-line"></div>
+            <span>GET STARTED</span>
+            <div className="scroll-arrow">↓</div>
           </div>
-        </div>
+        </NavLink>
       </section>
 
       {/* 2. DUAL PATHWAYS - WIDE CARDS */}
@@ -218,80 +210,60 @@ const Home = ({ lang }) => {
           max-width: 600px;
           margin: 0 auto;
           line-height: 1.6;
+          margin-bottom: 3rem;
         }
 
-        .scroll-hint {
+        .hero-ctas {
+          display: flex;
+          gap: 1.5rem;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        .scroll-hint-btn {
           position: absolute;
-          bottom: 2rem;
+          bottom: 3rem;
           left: 50%;
           transform: translateX(-50%);
           z-index: 10;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 1.5rem;
+          text-decoration: none;
+          transition: transform 0.3s ease;
+          cursor: pointer;
         }
 
-        .btn-hero-primary {
-          display: inline-block;
-          padding: 1rem 2.5rem;
-          background: #2C5E4F;
-          color: white;
-          text-transform: uppercase;
-          letter-spacing: 0.15em;
-          font-family: var(--font-mono);
-          font-size: 0.9rem;
-          font-weight: 600;
-          border-radius: 50px;
-          border: none;
-          transition: all 0.3s;
-          margin-bottom: 0.8rem;
-          box-shadow: 0 4px 15px rgba(44, 94, 79, 0.4);
+        .scroll-hint-btn:hover {
+          transform: translateX(-50%) translateY(5px);
         }
 
-        .btn-hero-primary:hover {
-          background: #1a3b31;
-          transform: translateY(-2px);
-          box-shadow: 0 6px 20px rgba(44, 94, 79, 0.5);
-        }
 
-        .btn-hero-consult {
-          display: inline-block;
-          padding: 0.8rem 2rem;
-          border: 1px solid rgba(255,255,255,0.4);
-          color: white;
-          text-transform: uppercase;
-          letter-spacing: 0.15em;
-          font-family: var(--font-mono);
-          font-size: 0.8rem;
-          background: rgba(255,255,255,0.05);
-          backdrop-filter: blur(5px);
-          border-radius: 50px;
-          transition: all 0.3s;
-          margin-bottom: 1rem;
-        }
-
-        .btn-hero-consult:hover {
-          background: white;
-          color: black;
-          border-color: white;
-        }
 
         .scroll-hint-text {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 1rem;
+          gap: 0.5rem;
           font-family: var(--font-mono);
-          font-size: 0.7rem;
-          letter-spacing: 0.2em;
-          color: rgba(255,255,255,0.5);
+          font-size: 0.85rem;
+          letter-spacing: 0.25em;
+          color: white;
+          font-weight: 500;
+          text-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
 
-        .scroll-line {
-          width: 1px;
-          height: 40px;
-          background: rgba(255,255,255,0.3);
+        .scroll-arrow {
+          font-size: 1.5rem;
+          color: rgba(255,255,255,0.8);
+          animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+          40% {transform: translateY(-5px);}
+          60% {transform: translateY(-3px);}
         }
 
         /* PATHWAYS */
