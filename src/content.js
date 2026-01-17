@@ -139,20 +139,20 @@ export const content = {
         },
         {
           name: "BaZi (Four Pillars) Analysis",
-          desc: "An analysis of life structure based on birth data. Standard Session (50 mins): SGD 168. Extended Session: SGD 48 per 30-min block.",
+          desc: "An analysis of life structure based on birth data. Standard Session (45 mins): SGD 188. Extended Session: SGD 48 per 30-min block.",
           detail: "Understand your Elemental structure and potential life path.",
           image: "/xj_consultant_rusheng.webp"
         },
         {
           name: "Zi Wei Dou Shu Analysis",
-          desc: "A detailed classical system mapping life domains. Standard Session (50 mins): SGD 168. Extended Session: SGD 48 per 30-min block.",
+          desc: "A detailed classical system mapping life domains. Standard Session (45 mins): SGD 188. Extended Session: SGD 48 per 30-min block.",
           detail: "Offers high-resolution insight into specific life domains.",
           image: "/xj_reading_rusheng.webp"
         },
         {
           name: "Feng Shui Consultation",
-          desc: "Assessment of residential and office environments to improve flow, balance, and harmony. Pricing varies by project.",
-          detail: "Harmonize your environment with your goals.",
+          desc: "Assessment of residential and commercial environments to improve flow, balance, and harmony.",
+          detail: "HDB 3-room: From SGD 888 | Landed property: From SGD 1,688 | Office: From SGD 3,888 | Factory: From SGD 1,688",
           image: "/xj_compass_rusheng_smooth.webp"
         },
         {
@@ -365,9 +365,9 @@ export const content = {
       services_title: "命理服务",
       services: [
         { name: "命理数字分析", desc: "优化您周围的磁场频率。选择与您个人能量共鸣的手机号、车牌号等。SGD 288+ 起。", detail: "门牌/单位号码 SGD 138 起。手机号码 SGD 138 起。仅供分析参考。", image: "/xj_numerology_rusheng.webp" },
-        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。标准咨询 (50分钟): SGD 168。加时: SGD 48 / 30分钟。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
-        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位。标准咨询 (50分钟): SGD 168。加时: SGD 48 / 30分钟。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
-        { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。价格视项目而定。", detail: "协调外部环境与内部目标。", image: "/xj_compass_rusheng_smooth.webp" },
+        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。标准咨询 (45分钟): SGD 188。加时: SGD 48 / 30分钟。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
+        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位。标准咨询 (45分钟): SGD 188。加时: SGD 48 / 30分钟。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
+        { name: "风水咨询", desc: "住宅与商业环境评估，优化气流与平衡。", detail: "HDB 3房: 从 SGD 888 起 | 有地房产: 从 SGD 1,688 起 | 办公室: 从 SGD 3,888 起 | 工厂: 从 SGD 1,688 起", image: "/xj_compass_rusheng_smooth.webp" },
         { name: "2026 年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。SGD 288+ 起。", detail: "充满信心地驾驭流年变幻。", image: "/xj_annual_rusheng.webp" },
         { name: "奇门遁甲 (战略决策分析)", desc: "一种用于时机把握与决策制定的古典战略体系。SGD 388 起。", detail: "为重要决策提供清晰度和参考，而非预测或保证。", image: "/qimen_rusheng_3d.webp" }
       ],
@@ -568,9 +568,9 @@ export const content = {
       services_title: "Perkhidmatan Takdir",
       services: [
         { name: "Analisis Numerologi", desc: "Memahami corak nombor nama, telefon, plat kenderaan. Bermula dari SGD 288+.", detail: "Nombor Rumah/Unit dari SGD 138. Nombor Telefon dari SGD 138. Rujukan analitikal sahaja.", image: "/xj_numerology_rusheng.webp" },
-        { name: "Analisis BaZi (Empat Pilar)", desc: "Analisis struktur kehidupan berdasarkan data kelahiran. Sesi Standard (50 min): SGD 168. Lanjutan: SGD 48 / 30 min.", detail: "Fahami struktur Elemen dan potensi laluan hayat anda.", image: "/xj_consultant_rusheng.webp" },
-        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem klasik terperinci yang memetakan domain kehidupan utama. Sesi Standard (50 min): SGD 168. Lanjutan: SGD 48 / 30 min.", detail: "Menawarkan pandangan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
-        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat. Harga berbeza mengikut projek.", detail: "Selaraskan persekitaran anda dengan matlamat anda.", image: "/xj_compass_rusheng_smooth.webp" },
+        { name: "Analisis BaZi (Empat Pilar)", desc: "Analisis struktur kehidupan berdasarkan data kelahiran. Sesi Standard (45 min): SGD 188. Lanjutan: SGD 48 / 30 min.", detail: "Fahami struktur Elemen dan potensi laluan hayat anda.", image: "/xj_consultant_rusheng.webp" },
+        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem klasik terperinci yang memetakan domain kehidupan utama. Sesi Standard (45 min): SGD 188. Lanjutan: SGD 48 / 30 min.", detail: "Menawarkan pandangan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
+        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan komersial untuk aliran dan keseimbangan lebih baik.", detail: "HDB 3-bilik: Dari SGD 888 | Hartanah berkeluasan: Dari SGD 1,688 | Pejabat: Dari SGD 3,888 | Kilang: Dari SGD 1,688", image: "/xj_compass_rusheng_smooth.webp" },
         { name: "Panduan Tahunan 2026", desc: "Ramalan setahun ke hadapan untuk bersedia bagi peluang dan cabaran. Bermula dari SGD 288+.", detail: "Navigasi perubahan tahun dengan yakin.", image: "/xj_annual_rusheng.webp" },
         {
           name: "Qi Men Dun Jia (Analisis Strategik)",
