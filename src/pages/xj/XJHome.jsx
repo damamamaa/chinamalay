@@ -26,12 +26,13 @@ const XJHome = ({ lang }) => {
           <div className="xj-hero-content" style={{ position: 'relative', zIndex: 100 }}>
 
             {/* Replaced Brand Image with Simple Telescope Icon as requested */}
+            {/* Replaced Brand Image with Premium Telescope as requested */}
             <div className="hero-brand-icon mb-6">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: '80px', height: '80px', margin: '0 auto', filter: 'drop-shadow(0 0 10px rgba(212, 175, 55, 0.5))' }}>
-                <path d="M10.5 4.5l-6 6M10.5 4.5l6-6M4.5 10.5l-2.5 2.5a2.121 2.121 0 0 0 3 3L17.5 3.5a2.121 2.121 0 0 0-3-3L2 13" />
-                <path d="M15 15l4 4" />
-                <path d="M15 19l4-4" />
-              </svg>
+              <img
+                src="/gold_telescope.webp"
+                alt="Vision & Clarity"
+                style={{ width: '150px', margin: '0 auto', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.5))' }}
+              />
             </div>
 
             <h1 className="display-1 text-gold">{t.brand}</h1>
