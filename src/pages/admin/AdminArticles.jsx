@@ -287,20 +287,102 @@ const AdminArticles = () => {
         @media (max-width: 768px) {
           .header-content {
             flex-direction: column;
+            gap: 1.5rem;
+            text-align: center;
+          }
+
+          .header-actions {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
+          /* Mobile Friendly Card View for Table */
+          .articles-table {
+            background: transparent;
+            box-shadow: none;
+          }
+
+          table, thead, tbody, th, td, tr {
+            display: block;
+          }
+
+          thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+          }
+
+          tr {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            position: relative;
+          }
+
+          td {
+            border: none;
+            position: relative;
+            padding: 0.5rem 0;
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: right;
+          }
+
+          /* Force image to be top full width or large thumbnail */
+          td:nth-of-type(1) {
+            justify-content: center;
+            margin-bottom: 1rem;
+            padding: 0;
+          }
+          
+          .table-image {
+            width: 100%;
+            height: 180px;
+            border-radius: 6px;
+          }
+
+          /* Title */
+          td:nth-of-type(2) {
+            display: block;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+          }
+
+          /* Category & Date */
+          td:nth-of-type(3), td:nth-of-type(4) {
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+            padding: 0.2rem 0;
+          }
+
+          /* Actions */
+          td:nth-of-type(5) {
+            margin-top: 1.5rem;
+            justify-content: stretch;
             gap: 1rem;
           }
 
-          table {
-            font-size: 0.9rem;
+          .action-buttons {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
           }
 
-          th, td {
-            padding: 0.7rem 0.5rem;
-          }
-
-          .table-image {
-            width: 60px;
-            height: 45px;
+          .btn-edit, .btn-delete {
+            text-align: center;
+            padding: 0.8rem;
+            font-size: 1rem;
           }
         }
       `}</style>

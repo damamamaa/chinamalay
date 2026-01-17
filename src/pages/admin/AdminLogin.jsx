@@ -2,43 +2,43 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const AdminLogin = () => {
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
-    const navigate = useNavigate();
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
-    const handleLogin = (e) => {
-        e.preventDefault();
-        // Simple password check (in production, use proper authentication)
-        if (password === 'rusheng2024') {
-            localStorage.setItem('adminAuth', 'true');
-            navigate('/admin/articles');
-        } else {
-            setError('Invalid password');
-        }
-    };
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Simple password check (in production, use proper authentication)
+    if (password === 'rushengweb2026') {
+      localStorage.setItem('adminAuth', 'true');
+      navigate('/admin/articles');
+    } else {
+      setError('Invalid password');
+    }
+  };
 
-    return (
-        <div className="admin-login">
-            <div className="login-container">
-                <h1>Admin Login</h1>
-                <form onSubmit={handleLogin}>
-                    <div className="form-group">
-                        <label>Password</label>
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            placeholder="Enter admin password"
-                            autoFocus
-                        />
-                    </div>
-                    {error && <p className="error">{error}</p>}
-                    <button type="submit" className="btn-primary">Login</button>
-                </form>
-                <p className="hint">Hint: rusheng2024</p>
-            </div>
+  return (
+    <div className="admin-login">
+      <div className="login-container">
+        <h1>Admin Login</h1>
+        <form onSubmit={handleLogin}>
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter admin password"
+              autoFocus
+            />
+          </div>
+          {error && <p className="error">{error}</p>}
+          <button type="submit" className="btn-primary">Login</button>
+        </form>
 
-            <style>{`
+      </div>
+
+      <style>{`
         .admin-login {
           min-height: 100vh;
           display: flex;
@@ -118,8 +118,8 @@ const AdminLogin = () => {
           color: #666;
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default AdminLogin;

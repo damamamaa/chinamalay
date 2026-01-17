@@ -28,12 +28,15 @@ import FloatingContact from './components/FloatingContact';
 
 function App() {
   const [lang, setLang] = useState('en');
+  const { pathname } = useLocation();
 
   return (
     <div className="app-container">
       <ScrollToTop />
-      {/* Global Header always visible */}
-      <Header lang={lang} setLang={setLang} />
+      {/* Conditionally render Header - Hidden on Admin Pages AND Article Detail Pages */}
+      {!pathname.startsWith('/admin') && !pathname.match(/^\/articles\/.+/) && (
+        <Header lang={lang} setLang={setLang} />
+      )}
 
       <main>
         <Routes>
@@ -55,11 +58,13 @@ function App() {
         </Routes>
       </main>
 
-      {/* Global Footer always visible */}
-      <Footer lang={lang} />
-
-      {/* Floating Elements */}
-      <FloatingContact lang={lang} />
+      {/* Conditionally render Footer and FloatingContact - Hidden on Admin Pages AND Article Detail Pages */}
+      {!pathname.startsWith('/admin') && !pathname.match(/^\/articles\/.+/) && (
+        <>
+          <Footer lang={lang} />
+          <FloatingContact lang={lang} />
+        </>
+      )}
     </div>
   );
 }
