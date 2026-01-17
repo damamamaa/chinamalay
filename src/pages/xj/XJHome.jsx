@@ -116,8 +116,8 @@ const XJHome = ({ lang }) => {
           </div>
 
           <div className="qimen-disclaimer mt-5 text-center">
-            <h5 className="text-dim small-caps" style={{ color: 'rgba(255,255,255,0.4)' }}>{t.qimen_details.disclaimer_title}</h5>
-            <p className="text-dim small-text" style={{ color: 'rgba(255,255,255,0.3)' }}>{t.qimen_details.disclaimer_text}</p>
+            <h5 className="small-caps" style={{ color: 'rgba(255,255,255,0.9)', letterSpacing: '0.15em', marginBottom: '0.5rem' }}>{t.qimen_details.disclaimer_title}</h5>
+            <p className="small-text" style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '700px', margin: '0 auto' }}>{t.qimen_details.disclaimer_text}</p>
           </div>
         </div>
       </section>
@@ -144,6 +144,7 @@ const XJHome = ({ lang }) => {
 
         .text-gold { color: #D4AF37; text-shadow: 0 0 1px rgba(0,0,0,0.1); } 
         .bg-void { background: #F8F9FA; }
+        .bg-dark-rich { background: #0B0C10; color: #fff; }
         .invert { opacity: 1; }
         .text-dim { color: #444; } /* Darkened from muted */
         .text-dim-2 { color: #666; font-style: italic; margin-top: 1rem; }

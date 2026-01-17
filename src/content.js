@@ -110,7 +110,7 @@ export const content = {
           image: "/tcm_sports_rusheng.webp"
         },
         { name: "Tui Na & Bone Alignment", desc: "Structural alignment and soft tissue therapy.", detail: "SGD 160.", image: "/tcm_bone_setting_rusheng.webp" },
-        { name: "Herbal Medicine", desc: "Customized herbal prescriptions. Conventional (SGD 48/day), Premium (From SGD 86/day).", detail: "Medicine cost only, consultation not included.", image: "/tcm-herbs.webp" }
+        { name: "Herbal Medicine", desc: "Customized herbal prescriptions. Conventional (SGD 36/day), Premium (From SGD 54/day).", detail: "Medicine cost only, consultation not included.", image: "/tcm-herbs.webp" }
       ],
       process_title: "Treatment Process",
       process: [
@@ -139,13 +139,13 @@ export const content = {
         },
         {
           name: "BaZi (Four Pillars) Analysis",
-          desc: "An analysis of life structure based on birth data. Standard Session (50 mins): SGD 80. Extended Session: SGD 40 per 50-min block.",
+          desc: "An analysis of life structure based on birth data. Standard Session (50 mins): SGD 168. Extended Session: SGD 48 per 30-min block.",
           detail: "Understand your Elemental structure and potential life path.",
           image: "/xj_consultant_rusheng.webp"
         },
         {
           name: "Zi Wei Dou Shu Analysis",
-          desc: "A detailed classical system mapping life domains. Standard Session (50 mins): SGD 80. Extended Session: SGD 40 per 50-min block.",
+          desc: "A detailed classical system mapping life domains. Standard Session (50 mins): SGD 168. Extended Session: SGD 48 per 30-min block.",
           detail: "Offers high-resolution insight into specific life domains.",
           image: "/xj_reading_rusheng.webp"
         },
@@ -153,7 +153,7 @@ export const content = {
           name: "Feng Shui Consultation",
           desc: "Assessment of residential and office environments to improve flow, balance, and harmony. Pricing varies by project.",
           detail: "Harmonize your environment with your goals.",
-          image: "/xj_compass_rusheng.webp"
+          image: "/xj_compass_rusheng_gloves.webp"
         },
         {
           name: "2026 Annual Guidance",
@@ -343,7 +343,7 @@ export const content = {
         { name: "拔罐疗法", desc: "传统真空拔罐，促进血液循环，祛除淤滞。SGD 98。", detail: "有效缓解疼痛与排毒。", image: "/tcm_cupping_rusheng_old_v3.webp" },
         { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。SGD 160。", detail: "制定特定康复方案。", image: "/tcm_sports_rusheng.webp" },
         { name: "推拿与正骨", desc: "结构调整与软组织通过手法理疗。", detail: "SGD 160。", image: "/tcm_bone_setting_rusheng.webp" },
-        { name: "草药调理", desc: "个性化草药处方。常规 (SGD 48/天), 优选 (SGD 86/天 起)。", detail: "仅含药费，不含咨询费。", image: "/tcm-herbs.webp" }
+        { name: "草药调理", desc: "个性化草药处方。常规 (SGD 36/天), 优选 (SGD 54/天 起)。", detail: "仅含药费，不含咨询费。", image: "/tcm-herbs.webp" }
       ],
       process_title: "治疗流程",
       process: [
@@ -365,9 +365,9 @@ export const content = {
       services_title: "命理服务",
       services: [
         { name: "命理数字分析", desc: "优化您周围的磁场频率。选择与您个人能量共鸣的手机号、车牌号等。SGD 288+ 起。", detail: "门牌/单位号码 SGD 138 起。手机号码 SGD 138 起。仅供分析参考。", image: "/xj_numerology_rusheng.webp" },
-        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。标准咨询 (50分钟): SGD 80。加时: SGD 40 / 50分钟。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
-        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位。标准咨询 (50分钟): SGD 80。加时: SGD 40 / 50分钟。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
-        { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。价格视项目而定。", detail: "协调外部环境与内部目标。", image: "/xj_compass_rusheng.webp" },
+        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。标准咨询 (50分钟): SGD 168。加时: SGD 48 / 30分钟。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
+        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位。标准咨询 (50分钟): SGD 168。加时: SGD 48 / 30分钟。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
+        { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。价格视项目而定。", detail: "协调外部环境与内部目标。", image: "/xj_compass_rusheng_gloves.webp" },
         { name: "2026 年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。SGD 288+ 起。", detail: "充满信心地驾驭流年变幻。", image: "/xj_annual_rusheng.webp" },
         { name: "奇门遁甲 (战略决策分析)", desc: "一种用于时机把握与决策制定的古典战略体系。SGD 388 起。", detail: "为重要决策提供清晰度和参考，而非预测或保证。", image: "/qimen_strategic_compass.webp" }
       ],
@@ -546,7 +546,7 @@ export const content = {
         { name: "Terapi Bekam", desc: "Terapi vakum tradisional untuk melancarkan aliran darah. SGD 98.", detail: "Berkesan untuk melegakan kesakitan dan detoksifikasi.", image: "/tcm_cupping_rusheng_old_v3.webp" },
         { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal. SGD 160.", detail: "Protokol pemulihan khusus.", image: "/tcm_sports_rusheng.webp" },
         { name: "Tui Na & Penyelarasan Tulang", desc: "Penyelarasan struktur dan terapi tisu lembut.", detail: "SGD 160.", image: "/tcm_bone_setting_rusheng.webp" },
-        { name: "Perubatan Herba", desc: "Preskripsi herba peribadi. Konvensional (SGD 48/hari), Premium (Dari SGD 86/hari).", detail: "Kos ubat sahaja, tidak termasuk konsultasi.", image: "/tcm-herbs.webp" }
+        { name: "Perubatan Herba", desc: "Preskripsi herba peribadi. Konvensional (SGD 36/hari), Premium (Dari SGD 54/hari).", detail: "Kos ubat sahaja, tidak termasuk konsultasi.", image: "/tcm-herbs.webp" }
       ],
       process_title: "Proses Rawatan",
       process: [
@@ -568,9 +568,9 @@ export const content = {
       services_title: "Perkhidmatan Takdir",
       services: [
         { name: "Analisis Numerologi", desc: "Memahami corak nombor nama, telefon, plat kenderaan. Bermula dari SGD 288+.", detail: "Nombor Rumah/Unit dari SGD 138. Nombor Telefon dari SGD 138. Rujukan analitikal sahaja.", image: "/xj_numerology_rusheng.webp" },
-        { name: "Analisis BaZi (Empat Pilar)", desc: "Analisis struktur kehidupan berdasarkan data kelahiran. Sesi Standard (50 min): SGD 80. Lanjutan: SGD 40 / 50 min.", detail: "Fahami struktur Elemen dan potensi laluan hayat anda.", image: "/xj_consultant_rusheng.webp" },
-        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem klasik terperinci yang memetakan domain kehidupan utama. Sesi Standard (50 min): SGD 80. Lanjutan: SGD 40 / 50 min.", detail: "Menawarkan pandangan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
-        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat. Harga berbeza mengikut projek.", detail: "Selaraskan persekitaran anda dengan matlamat anda.", image: "/xj_compass_rusheng.webp" },
+        { name: "Analisis BaZi (Empat Pilar)", desc: "Analisis struktur kehidupan berdasarkan data kelahiran. Sesi Standard (50 min): SGD 168. Lanjutan: SGD 48 / 30 min.", detail: "Fahami struktur Elemen dan potensi laluan hayat anda.", image: "/xj_consultant_rusheng.webp" },
+        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem klasik terperinci yang memetakan domain kehidupan utama. Sesi Standard (50 min): SGD 168. Lanjutan: SGD 48 / 30 min.", detail: "Menawarkan pandangan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
+        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat. Harga berbeza mengikut projek.", detail: "Selaraskan persekitaran anda dengan matlamat anda.", image: "/xj_compass_rusheng_gloves.webp" },
         { name: "Panduan Tahunan 2026", desc: "Ramalan setahun ke hadapan untuk bersedia bagi peluang dan cabaran. Bermula dari SGD 288+.", detail: "Navigasi perubahan tahun dengan yakin.", image: "/xj_annual_rusheng.webp" },
         {
           name: "Qi Men Dun Jia (Analisis Strategik)",
