@@ -152,9 +152,9 @@ const Home = ({ lang }) => {
           position: absolute;
           inset: 0;
 
-          background-image: url('/hero-split.webp');
+          background-image: url('/hero_home_final_2026.webp?t=1');
           background-size: cover;
-          background-position: center;
+          background-position: center 25%;
           background-repeat: no-repeat;
           z-index: 0;
         }
