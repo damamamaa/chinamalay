@@ -21,7 +21,18 @@ const Home = ({ lang }) => {
 
       {/* 1. CINEMATIC BACKGROUND HERO */}
       <section ref={targetRef} className="hero-section">
-        <motion.div style={{ opacity, scale, y }} className="hero-bg-layer" />
+        <motion.div
+          style={{
+            opacity,
+            scale,
+            y,
+            backgroundImage: 'url(/hero_home_final_2026.webp)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 25%',
+            backgroundRepeat: 'no-repeat'
+          }}
+          className="hero-bg-layer"
+        />
         <div className="hero-overlay-grad" />
 
         <div className="hero-content">
@@ -151,11 +162,6 @@ const Home = ({ lang }) => {
         .hero-bg-layer {
           position: absolute;
           inset: 0;
-
-          background-image: url('/hero_home_final_2026.webp?t=1');
-          background-size: cover;
-          background-position: center 25%;
-          background-repeat: no-repeat;
           z-index: 0;
         }
 
