@@ -149,25 +149,28 @@ const TCMHome = ({ lang }) => {
           font-family: var(--font-mono);
           letter-spacing: 0.2em;
           text-transform: uppercase;
-          font-size: 1rem; /* Slightly larger */
-          font-weight: 600; /* Bolder */
+          font-size: 1.1rem; 
+          font-weight: 700; 
           display: block;
           margin-bottom: 2rem;
-          color: rgba(255,255,255,0.9);
+          color: #FF0000; /* Brighter Red as requested */
+          text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(255, 0, 0, 0.4);
         }
 
         .sc-title {
           font-family: var(--font-display);
           font-size: 5rem;
           margin-bottom: 2rem;
-          font-weight: 700; /* Bolder */
+          font-weight: 700; 
+          text-shadow: 0 4px 8px rgba(0,0,0,0.8);
         }
 
         .sc-desc {
           font-size: 1.6rem;
-          opacity: 1; /* Full opacity */
+          opacity: 1; 
           font-weight: 500;
           line-height: 1.5;
+          text-shadow: 0 2px 4px rgba(0,0,0,0.9); /* Stronger shadow for readability */
         }
 
         /* PROCESS SECTION */

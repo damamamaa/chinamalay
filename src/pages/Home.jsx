@@ -80,7 +80,7 @@ const Home = ({ lang }) => {
 
 
           <NavLink to="/xinjian" className="pathway-card xj-card">
-            <div className="pathway-bg" style={{ backgroundImage: "url('/xj_compass_rusheng.webp')" }}></div>
+            <div className="pathway-bg" style={{ backgroundImage: "url('/images/rusheng-compass-new.jpg')" }}></div>
             <div className="pathway-content">
               <span className="pathway-label">{t.path_destiny}</span>
               <h2 className="pathway-title">{content[lang].hero.section_xj.title}</h2>
@@ -183,24 +183,27 @@ const Home = ({ lang }) => {
           padding: 0 2rem;
         }
 
+
         .hero-badge {
            font-family: var(--font-mono);
-           font-size: 0.8rem;
-           letter-spacing: 0.3em;
-           color: rgba(255,255,255,0.7);
+           font-size: 0.9rem;
+           letter-spacing: 0.2em;
+           color: #FFD700; /* Gold text */
+           background: linear-gradient(to right, #8B0000, #000000); /* Red to Black */
            margin-bottom: 2rem;
-           border: 1px solid rgba(255,255,255,0.2);
+           border: 1px solid #FFD700; /* Gold border */
            display: inline-block;
-           padding: 0.5rem 1rem;
-           backdrop-filter: blur(10px);
+           padding: 0.6rem 1.2rem;
+           box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
+           text-transform: uppercase;
+           font-weight: bold;
         }
 
         .hero-title {
           font-family: var(--font-display);
           font-size: clamp(3.5rem, 6vw, 6rem);
           line-height: 1.1;
-          margin-bottom: 2rem;
-          color: white;
+          margin-bottom: 1.5rem;
           text-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
@@ -266,21 +269,26 @@ const Home = ({ lang }) => {
           60% {transform: translateY(-3px);}
         }
 
-        /* PATHWAYS */
+        /* PATHWAYS Styles */
         .pathways-section {
-          position: relative;
-          z-index: 5;
-          margin-top: -5vh; 
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          padding: 2rem;
+          background: #0a0a0a;
         }
 
         .pathway-container {
           display: grid;
           grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+          width: 100%;
+          max-width: 1400px;
+          margin: 0 auto;
           height: 80vh;
         }
 
         .pathway-card {
-           position: relative;
            display: flex;
            align-items: center;
            justify-content: center;
