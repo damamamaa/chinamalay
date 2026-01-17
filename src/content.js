@@ -93,24 +93,24 @@ export const content = {
       services: [
         {
           name: "Acupuncture & Diagnosis",
-          desc: "Precise needle therapy (SGD 110) combined with Syndrome Differentiation (SGD 90).",
+          desc: "Precise needle therapy combined with Traditional Chinese Medicine syndrome differentiation.",
           detail: "Restores flow and energetic balance through meridian points.",
           image: "/tcm_acupuncture_rusheng_v2.webp"
         },
         {
           name: "Cupping Therapy",
-          desc: "Traditional vacuum therapy that stimulates blood flow and removes stagnation. SGD 98.",
+          desc: "Traditional vacuum therapy that stimulates blood flow and removes stagnation.",
           detail: "Effective for pain relief and detoxification.",
           image: "/tcm_cupping_rusheng_old_v3.webp"
         },
         {
           name: "Sports Injury Rehabilitation",
-          desc: "Targeted therapy to accelerate healing of musculoskeletal injuries. SGD 160.",
+          desc: "Targeted therapy to accelerate healing of musculoskeletal injuries.",
           detail: "Specific rehabilitation protocols.",
           image: "/tcm_sports_rusheng.webp"
         },
-        { name: "Tui Na & Bone Alignment", desc: "Structural alignment and soft tissue therapy.", detail: "SGD 160.", image: "/tcm_bone_setting_rusheng.webp" },
-        { name: "Herbal Medicine", desc: "Customized herbal prescriptions. Conventional (SGD 36/day), Premium (From SGD 54/day).", detail: "Medicine cost only, consultation not included.", image: "/tcm-herbs.webp" }
+        { name: "Tui Na & Bone Alignment", desc: "Structural alignment and soft tissue therapy.", detail: "Professional manual therapy for musculoskeletal balance.", image: "/tcm_bone_setting_rusheng.webp" },
+        { name: "Herbal Medicine", desc: "Customized herbal prescriptions based on individual diagnosis.", detail: "Medicine cost only, consultation not included.", image: "/tcm-herbs.webp" }
       ],
       process_title: "Treatment Process",
       process: [
@@ -133,37 +133,37 @@ export const content = {
 
         {
           name: "Numerology Analysis",
-          desc: "Helping you understand numerical patterns associated with names, phone numbers, vehicle registration numbers, and house numbers. Starting from SGD 288+.",
-          detail: "House/Unit Number from SGD 138. Phone Number from SGD 138. Analytical reference only.",
+          desc: "Helping you understand numerical patterns associated with names, phone numbers, vehicle registration numbers, and house numbers.",
+          detail: "Analytical reference only.",
           image: "/xj_numerology_rusheng.webp"
         },
         {
           name: "BaZi (Four Pillars) Analysis",
-          desc: "An analysis of life structure based on birth data. Standard Session (45 mins): SGD 188. Extended Session: SGD 48 per 30-min block.",
+          desc: "An analysis of life structure based on birth data.",
           detail: "Understand your Elemental structure and potential life path.",
           image: "/xj_consultant_rusheng.webp"
         },
         {
           name: "Zi Wei Dou Shu Analysis",
-          desc: "A detailed classical system mapping life domains. Standard Session (45 mins): SGD 188. Extended Session: SGD 48 per 30-min block.",
+          desc: "A detailed classical system mapping life domains.",
           detail: "Offers high-resolution insight into specific life domains.",
           image: "/xj_reading_rusheng.webp"
         },
         {
           name: "Feng Shui Consultation",
           desc: "Assessment of residential and commercial environments to improve flow, balance, and harmony.",
-          detail: "HDB 3-room: From SGD 888 | Landed property: From SGD 1,688 | Office: From SGD 3,888 | Factory: From SGD 1,688",
+          detail: "Harmonize your environment with your goals.",
           image: "/xj_compass_rusheng_smooth.webp"
         },
         {
           name: "2026 Annual Guidance",
-          desc: "A year-ahead outlook designed to help you prepare for opportunities and manage potential challenges. Starting from SGD 288+.",
+          desc: "A year-ahead outlook designed to help you prepare for opportunities and manage potential challenges.",
           detail: "Navigate the changing tides of the year with confidence.",
           image: "/xj_annual_rusheng.webp"
         },
         {
           name: "Qi Men Dun Jia (Strategic Analysis)",
-          desc: "A classical strategic system for timing and decision-making. Starting from SGD 388.",
+          desc: "A classical strategic system for timing and decision-making.",
           detail: "Offers clarity and reference for important decisions, not predictions or guarantees.",
           image: "/qimen_rusheng_3d.webp"
         }
