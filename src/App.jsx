@@ -25,17 +25,32 @@ const ScrollToTop = () => {
 };
 
 import FloatingContact from './components/FloatingContact';
+import LanguageGate from './components/LanguageGate';
 
 function App() {
-  const [lang, setLang] = useState('en');
+  // Initialize lang from localStorage if available, otherwise default to 'en'
+  const [lang, setLang] = useState(() => {
+    return localStorage.getItem('user_lang_preference') || 'en';
+  });
+
   const { pathname } = useLocation();
+
+  // Wrapper to update both state and localStorage
+  const handleSetLang = (newLang) => {
+    setLang(newLang);
+    localStorage.setItem('user_lang_preference', newLang);
+  };
 
   return (
     <div className="app-container">
       <ScrollToTop />
+
+      {/* Language Gate Overlay - Shows only if no language preference saved */}
+      <LanguageGate onSelectLang={handleSetLang} />
+
       {/* Conditionally render Header - Hidden on Admin Pages AND Article Detail Pages */}
       {!pathname.startsWith('/admin') && !pathname.match(/^\/articles\/.+/) && (
-        <Header lang={lang} setLang={setLang} />
+        <Header lang={lang} setLang={handleSetLang} />
       )}
 
       <main>

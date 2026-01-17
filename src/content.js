@@ -57,7 +57,7 @@ export const content = {
       subtitle: "True care begins with clarity, not fear.",
       section_tcm: {
         title: "Live true care",
-        desc: "Strictly medical and wellness focused. Emphasizing daily health maintenance and long-term balance.",
+        desc: "Live True Care offers analytical guidance to help individuals make clearer decisions — with awareness, responsibility, and respect for personal choice.",
         button: "Enter TCM Clinic"
       },
       section_xj: {
@@ -86,51 +86,38 @@ export const content = {
       fallback_xj: "We provide analytical Bazi reference, Numerology analysis, and environmental Feng Shui assessment to help navigate life's terrain."
     },
     tcm: {
-      brand: "Live true care",
-      tagline: "TCM Clinic & Wellness Care",
-      description: "Strictly medical and wellness focused. No metaphysical elements involved. Emphasizing daily health maintenance, long-term balance, and gentle care aligned with nature.",
-      services_title: "Clinical Modalities",
+      brand: "AI TCM SynerQi & Acupuncture",
+      tagline: "Master Rusheng",
+      description: "Adjust the body · regulate Qi · balance Yin and Yang for better health and long-term stability. Using Traditional Chinese Medicine principles, we support the body in returning to its natural and proper balance.",
+      services_title: "Consultation & Treatment Fees (SGD)",
       services: [
         {
-          name: "Sports Injury Recovery",
-          desc: "Targeted therapy to accelerate healing of musculoskeletal injuries, reduce inflammation, and restore range of motion.",
-          detail: "Effective for sprains, strains, and post-operative recovery.",
+          name: "TCM Diagnosis & Treatment",
+          desc: "Include Syndrome Differentiation (SGD 90), Acupuncture (SGD 110), Cupping (SGD 98).",
+          detail: "Consultation: Initial SGD 90 / Follow-up SGD 36.",
+          image: "/tcm_pulse_rusheng.webp"
+        },
+        {
+          name: "Sports Injury Rehabilitation",
+          desc: "Targeted therapy to accelerate healing of musculoskeletal injuries. SGD 248.",
+          detail: "Specific rehabilitation protocols.",
           image: "/tcm_sports_rusheng.webp"
         },
         {
-          name: "Bone Setting & Spinal Alignment",
-          desc: "Structural alignment through manual therapy. Correcting the skeletal framework to allow proper nerve and blood function.",
-          detail: "Restores mobility and alleviates chronic structural pain without medication.",
-          image: "/tcm_bone_setting_rusheng.webp"
+          name: "Tui Na & Bone Alignment",
+          desc: "Structural alignment and soft tissue therapy.",
+          detail: "From SGD 248.",
+          image: "/tcm_tuina_rusheng.webp"
         },
         {
-          name: "Pain Management",
-          desc: "A holistic approach to chronic and acute pain relief using acupuncture and manual techniques.",
-          detail: "We address the root cause of pain, not just the symptoms.",
-          image: "/tcm_acupuncture_rusheng_v2.webp"
-        },
-        {
-          name: "Women’s Health Regulation",
-          desc: "Supporting hormonal balance, menstrual health, and fertility through natural methods.",
-          detail: "Gentle and effective care for women at all life stages.",
-          image: "/tcm_women_health_rusheng_v2.webp"
-        },
-        {
-          name: "Men’s Vitality & Sub-health Care",
-          desc: "Boosting energy, improving stamina, and addressing sub-clinical fatigue states.",
-          detail: "Restoring vigor and resilience for modern life demands.",
-          image: "/tcm_men_vitality_rusheng_v2.webp"
-        },
-        {
-          name: "Gua Sha, Cupping & Acupuncture Therapy",
-          desc: "Traditional modalities to improve circulation, release toxicity, and balance the body's energy flow.",
-          detail: "Proven techniques for systemic wellness and stress relief.",
-          image: "/tcm_cupping_rusheng.webp"
+          name: "Herbal Medicine",
+          desc: "Customized herbal prescriptions. Conventional (SGD 48/day), Premium (From SGD 86/day).",
+          detail: "Medicine cost only, consultation not included.",
+          image: "/tcm_herbal_rusheng.webp"
         }
       ],
+      process_title: "Treatment Process",
       process: [
-        { title: "Diagnosis", desc: "Pulse taking and tongue analysis to identify root causes." },
-        { title: "Strategy", desc: "Formulating a personalized treatment plan." },
         { title: "Treatment", desc: "Applying precise therapies to restore balance." },
         { title: "Maintenance", desc: "Guidance on diet and habits for long-term health." }
       ],
@@ -147,39 +134,40 @@ export const content = {
       description: "We believe that metaphysical studies are not about superstition or fear. They are tools for awareness and preparation.",
       services_title: "Destiny Services",
       services: [
+
         {
           name: "Numerology Analysis",
-          desc: "Helping you understand numerical patterns associated with names, phone numbers, vehicle registration numbers, and house numbers.",
-          detail: "This service offers reference for alignment and clarity—not control over outcomes.",
+          desc: "Helping you understand numerical patterns associated with names, phone numbers, vehicle registration numbers, and house numbers. Starting from SGD 288+.",
+          detail: "House/Unit Number from SGD 138. Phone Number from SGD 138. Analytical reference only.",
           image: "/xj_numerology_rusheng.webp"
         },
         {
           name: "BaZi (Four Pillars) Analysis",
-          desc: "An analysis of life structure based on birth data, focusing on strengths, challenges, and timing trends related to career, relationships, and personal development.",
+          desc: "An analysis of life structure based on birth data, focusing on strengths, challenges, and timing trends. Starting from SGD 388+.",
           detail: "Understand your Elemental structure and potential life path.",
           image: "/xj_consultant_rusheng.webp"
         },
         {
           name: "Zi Wei Dou Shu Analysis",
-          desc: "A detailed classical system that maps major life domains to provide deeper insight into long-term patterns and recurring themes.",
-          detail: "Offers high-resolution insight into specific life domains, supporting long-term reflection and planning.",
+          desc: "A detailed classical system that maps major life domains to provide deeper insight into long-term patterns. Starting from SGD 388+.",
+          detail: "Offers high-resolution insight into specific life domains.",
           image: "/xj_reading_rusheng.webp"
         },
         {
           name: "Feng Shui Consultation",
-          desc: "Assessment of residential and office environments to improve flow, balance, and harmony between external surroundings and internal goals.",
+          desc: "Assessment of residential and office environments to improve flow, balance, and harmony. Pricing varies by project.",
           detail: "Harmonize your environment with your goals.",
           image: "/xj_compass_rusheng.webp"
         },
         {
-          name: "Annual Guidance",
-          desc: "A year-ahead outlook designed to help you prepare for opportunities and manage potential challenges in work, health, and family matters. Focused on awareness and preparation, not fixed outcomes.",
+          name: "2026 Annual Guidance",
+          desc: "A year-ahead outlook designed to help you prepare for opportunities and manage potential challenges. Starting from SGD 288+.",
           detail: "Navigate the changing tides of the year with confidence.",
           image: "/xj_annual_rusheng.webp"
         },
         {
           name: "Qi Men Dun Jia (Strategic Analysis)",
-          desc: "A classical strategic system for timing and decision-making. Helps reduce risks and act with awareness.",
+          desc: "A classical strategic system for timing and decision-making. Starting from SGD 388.",
           detail: "Offers clarity and reference for important decisions, not predictions or guarantees.",
           image: "/qimen_strategic_compass.webp"
         }
@@ -214,12 +202,12 @@ export const content = {
         title: "The Art of Clear Seeing",
         text: "Just as a captain checks the weather before sailing, a thoughtful person reviews life patterns and timing before making major decisions. We provide analytical reference, not absolute answers."
       },
-      disclaimer: "All services provided under Live True Care are for analytical reference and personal insight only. Life outcomes depend on individual decisions, actions, and circumstances."
+      disclaimer: "All services provided under Live True Care are for analytical reference and personal insight only. No guarantees are made. Life outcomes depend on individual decisions, actions, and circumstances."
     },
     about: {
       title: "About Rusheng",
       role: "Practitioner",
-      description: "Live True Care is founded on a simple principle: true care begins with clarity, not fear. We believe that well-being should be approached with honesty, responsibility, and respect for individual choice.",
+      description: "I help people see situations clearly, so they can choose wisely — without fear or dependency. Live True Care is founded on a simple principle: true care begins with clarity, not fear.",
       bio_deep: "Live True Care represents an evolution: a clearer, more grounded expression of care that respects both modern understanding and classical wisdom.",
       reg: "Professional Registration: CT0147948-T",
       heading: "Our Commitment",
@@ -341,7 +329,7 @@ export const content = {
       subtitle: "一个统一的专业实践，融合临床精准与古老智慧。",
       section_tcm: {
         title: "Live true care",
-        desc: "以稳妥、安全与平衡为核心的中医调理服务。",
+        desc: "Live True Care 提供分析性指导，帮助个人在觉知、责任和尊重个人选择的基础上做出更清晰的决定。",
         button: "进入中医诊所"
       },
       section_xj: {
@@ -370,30 +358,28 @@ export const content = {
       fallback_xj: "我们提供八字分析、命理参考和风水评估，帮助您看清人生地形。"
     },
     tcm: {
-      brand: "Live true care",
-      tagline: "中医诊所",
-      description: "以脚踏实地、负责任的医疗方式关注身体健康。",
-      services_title: "中医服务项目",
+      brand: "AI中医 SynerQi与针灸",
+      tagline: "鲁胜大师",
+      description: "整复身体 · 调理气机 · 平衡阴阳，以获得更好的健康和长期的稳定。运用中医原理，我们将支持身体回归其自然和应有的平衡。",
+      services_title: "咨询与治疗费用 (SGD)",
       services: [
-        { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。", detail: "有效缓解扭伤、拉伤及术后康复。", image: "/tcm_sports_rusheng.webp" },
-        { name: "正骨与脊柱整复", desc: "通过手法复位骨骼结构。", detail: "恢复活动能力，无需药物缓解结构性疼痛。", image: "/tcm_bone_setting_rusheng.webp" },
-        { name: "疼痛管理", desc: "综合针灸与手法缓解急慢性疼痛。", detail: "治标更治本。", image: "/tcm_acupuncture_rusheng.webp" },
-        { name: "女性健康调理", desc: "通过自然疗法调理荷尔蒙与月经健康。", detail: "温柔呵护女性各个生命阶段。", image: "/tcm_women_health_rusheng.webp" },
-        { name: "男性活力与亚健康调理", desc: "提升精力，改善耐力，调理亚健康状态。", detail: "恢复活力，应对现代生活挑战。", image: "/tcm_men_vitality_rusheng.webp" },
-        { name: "刮痧、拔罐与针灸疗法", desc: "传统疗法促进循环，排毒通络。", detail: "系统性健康与减压的成熟技术。", image: "/tcm_pulse_rusheng.webp" }
+        { name: "中医诊断与治疗", desc: "包括辨证 (SGD 90)、针灸 (SGD 110)、拔罐 (SGD 98)。", detail: "咨询费：初诊 SGD 90 / 复诊 SGD 36。", image: "/tcm_pulse_rusheng.webp" },
+        { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。SGD 248。", detail: "制定特定康复方案。", image: "/tcm_sports_rusheng.webp" },
+        { name: "推拿与正骨", desc: "结构调整与软组织通过手法理疗。", detail: "SGD 248 起。", image: "/tcm_tuina_rusheng.webp" },
+        { name: "草药调理", desc: "个性化草药处方。常规 (SGD 48/天), 优选 (SGD 86/天 起)。", detail: "仅含药费，不含咨询费。", image: "/tcm_herbal_rusheng.webp" }
       ],
+      process_title: "治疗流程",
       process: [
-        { title: "诊断", desc: "望闻问切，寻找病根。" },
-        { title: "策略", desc: "制定个性化调理方案。" },
-        { title: "施治", desc: "精准施术，恢复平衡。" },
-        { title: "养护", desc: "生活指导，长久健康。" }
+        { title: "评估", desc: "详细诊断 (脉诊、舌诊、问诊)。" },
+        { title: "辨证", desc: "确定根源 (证候)。" },
+        { title: "治疗", desc: "针灸、推拿或草药调理。" },
+        { title: "复查", desc: "后续调整。" }
       ],
-      process_title: "临床诊疗流程",
       pulse_section: {
-        title: "治本诊断",
-        text: "在中医里，我们不只治疗症状，更倾听身体的语言。通过脉诊，我们能在疾病显化之前精准探测脏腑的失衡。"
+        title: "SynerQi 平衡",
+        text: "结合针灸、草药和生活方式调整，恢复身体的自愈能力。"
       },
-      disclaimer: "本版块严格专注于医疗与健康。不涉及任何玄学内容。"
+      disclaimer: "所有中医服务仅作为辅助健康支持，不取代医疗诊断或医院治疗。"
     },
     fengshui: {
       brand: "心鉴分析 (Xin Jian Analysis)",
@@ -401,17 +387,12 @@ export const content = {
       description: "命运不是固定的剧本，而是地形图。我们是您的导航员。",
       services_title: "命理服务",
       services: [
-        { name: "命理数字分析", desc: "优化您周围的磁场频率。选择与您个人能量共鸣的手机号、车牌号等。", detail: "数字即能量。确保它们为您所用。", image: "/xj_numerology_rusheng.webp" },
-        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。了解优势、劣势及事业、财富、感情时机。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
-        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位，提供详细的人生事件与业力模式细节。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
-        { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。", detail: "协调外部环境与内部目标。", image: "/xj_compass_rusheng.webp" },
-        { name: "年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。", detail: "充满信心地驾驭流年变幻。", image: "/xj_annual_rusheng.webp" },
-        {
-          name: "奇门遁甲 (战略决策分析)",
-          desc: "一种用于时机把握与决策制定的古典战略体系。帮助降低风险，带着觉知行动。",
-          detail: "为重要决策提供清晰度和参考，而非预测或保证。",
-          image: "/qimen_strategic_compass.webp"
-        }
+        { name: "命理数字分析", desc: "优化您周围的磁场频率。选择与您个人能量共鸣的手机号、车牌号等。SGD 288+ 起。", detail: "门牌/单位号码 SGD 138 起。手机号码 SGD 138 起。仅供分析参考。", image: "/xj_numerology_rusheng.webp" },
+        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。了解优势、劣势及事业、财富、感情时机。SGD 388+ 起。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
+        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位，提供详细的人生事件与业力模式细节。SGD 388+ 起。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
+        { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。价格视项目而定。", detail: "协调外部环境与内部目标。", image: "/xj_compass_rusheng.webp" },
+        { name: "2026 年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。SGD 288+ 起。", detail: "充满信心地驾驭流年变幻。", image: "/xj_annual_rusheng.webp" },
+        { name: "奇门遁甲 (战略决策分析)", desc: "一种用于时机把握与决策制定的古典战略体系。SGD 388 起。", detail: "为重要决策提供清晰度和参考，而非预测或保证。", image: "/qimen_strategic_compass.webp" }
       ],
       qimen_details: {
         title: "奇门遁甲：战略时机与决策分析",
@@ -569,8 +550,8 @@ export const content = {
       title: "Keseimbangan. Kejelasan. Tanggungjawab.",
       subtitle: "Amalan profesional bersatu yang menggabungkan ketepatan klinikal dengan kebijaksanaan kuno.",
       section_tcm: {
-        title: "Live true care",
-        desc: "Rawatan Perubatan Tradisional Cina yang tenang dan bertanggungjawab.",
+        role: "Pengamal",
+        description: "Saya membantu orang melihat situasi dengan jelas, supaya mereka boleh memilih dengan bijak — tanpa rasa takut atau pergantungan. Live True Care diasaskan atas prinsip mudah: penjagaan sebenar bermula dengan kejelasan, bukan ketakutan.",
         button: "Masuk Klinik TCM"
       },
       section_xj: {
@@ -599,30 +580,28 @@ export const content = {
       fallback_xj: "Kami menyediakan rujukan analisis Bazi, Numerologi, dan penilaian Feng Shui untuk membantu menavigasi kehidupan."
     },
     tcm: {
-      brand: "Live true care",
-      tagline: "Perubatan & Kesejahteraan",
-      description: "Pendekatan perubatan yang berpijak di bumi nyata dan bertanggungjawab untuk kesejahteraan fizikal.",
-      services_title: "Perkhidmatan TCM",
+      brand: "AI TCM SynerQi & Akupunktur",
+      tagline: "Master Rusheng",
+      description: "Selaraskan badan · atur Qi · seimbangkan Yin dan Yang untuk kesihatan lebih baik dan kestabilan jangka panjang. Menggunakan prinsip Perubatan Tradisional Cina, kami menyokong badan untuk kembali kepada keseimbangannya yang semula jadi.",
+      services_title: "Yuran Konsultasi & Rawatan (SGD)",
       services: [
-        { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal.", detail: "Berkesan untuk terseliuh, ketegangan otot, dan pemulihan pasca pembedahan.", image: "/tcm_sports_rusheng.webp" },
-        { name: "Rawatan Tulang & Penyelarasan Tulang Belakang", desc: "Penyelarasan struktur melalui terapi manual.", detail: "Memulihkan mobiliti dan melegakan sakit struktur kronik tanpa ubat.", image: "/tcm_bone_setting_rusheng.webp" },
-        { name: "Pengurusan Kesakitan", desc: "Pendekatan holistik untuk melegakan sakit kronik dan akut menggunakan akupunktur dan teknik manual.", detail: "Kami menangani punca sakit, bukan sekadar gejala.", image: "/tcm_acupuncture_rusheng.webp" },
-        { name: "Pengaturan Kesihatan Wanita", desc: "Menyokong keseimbangan hormon, kesihatan haid, dan kesuburan melalui kaedah semula jadi.", detail: "Penjagaan lembut dan berkesan untuk wanita pada semua peringkat umur.", image: "/tcm_women_health_rusheng.webp" },
-        { name: "Tenaga Lelaki & Penjagaan Sub-kesihatan", desc: "Meningkatkan tenaga, memperbaiki stamina, dan menangani keadaan keletihan sub-klinikal.", detail: "Memulihkan semangat dan daya tahan untuk tuntutan kehidupan moden.", image: "/tcm_men_vitality_rusheng.webp" },
-        { name: "Terapi Gua Sha, Bekam & Akupunktur", desc: "Modaliti tradisional untuk melancarkan peredaran darah, membuang toksin, dan menyeimbangkan aliran tenaga badan.", detail: "Teknik terbukti untuk kesejahteraan sistemik dan kelegaan tekanan.", image: "/tcm_pulse_rusheng.webp" }
+        { name: "Diagnosis & Rawatan TCM", desc: "Termasuk Diferensiasi Sindrom (SGD 90), Akupunktur (SGD 110), Bekam (SGD 98).", detail: "Konsultasi: Awal SGD 90 / Susulan SGD 36.", image: "/tcm_pulse_rusheng.webp" },
+        { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal. SGD 248.", detail: "Protokol pemulihan khusus.", image: "/tcm_sports_rusheng.webp" },
+        { name: "Tui Na & Penyelarasan Tulang", desc: "Penyelarasan struktur dan terapi tisu lembut.", detail: "Dari SGD 248.", image: "/tcm_tuina_rusheng.webp" },
+        { name: "Perubatan Herba", desc: "Preskripsi herba peribadi. Konvensional (SGD 48/hari), Premium (Dari SGD 86/hari).", detail: "Kos ubat sahaja, tidak termasuk konsultasi.", image: "/tcm_herbal_rusheng.webp" }
       ],
+      process_title: "Proses Rawatan",
       process: [
-        { title: "Diagnosis", desc: "Pemeriksaan nadi dan lidah untuk mengenal pasti punca." },
-        { title: "Strategi", desc: "Merangka pelan rawatan peribadi." },
-        { title: "Rawatan", desc: "Menggunakan terapi yang tepat untuk memulihkan keseimbangan." },
-        { title: "Penjagaan", desc: "Panduan pemakanan dan tabiat untuk kesihatan jangka panjang." }
+        { title: "Penilaian", desc: "Diagnosis terperinci (Nadi, Lidah, Soal Selidik)." },
+        { title: "Diferensiasi", desc: "Kenal pasti punca (Sindrom)." },
+        { title: "Rawatan", desc: "Akupunktur, Tui Na, atau Herba." },
+        { title: "Semakan", desc: "Pelarasan susulan." }
       ],
-      process_title: "Pendekatan Klinikal",
       pulse_section: {
-        title: "Diagnosis Punca Utama",
-        text: "Dalam TCM, kami tidak hanya merawat gejala; kami mendengar apa yang dikatakan oleh tubuh. Melalui diagnosis nadi, kami dapat mengesan ketidakseimbangan organ dalaman jauh sebelum ia menjadi penyakit kronik."
+        title: "Keseimbangan SynerQi",
+        text: "Menggabungkan akupunktur, perubatan herba, dan pelarasan gaya hidup untuk memulihkan keupayaan penyembuhan diri badan."
       },
-      disclaimer: "Bahagian ini tertumpu sepenuhnya kepada perubatan dan kesejahteraan. Tiada elemen metafizik terlibat."
+      disclaimer: "Semua perkhidmatan TCM disediakan sebagai sokongan kesejahteraan pelengkap dan tidak menggantikan diagnosis perubatan atau rawatan hospital."
     },
     fengshui: {
       brand: "Xin Jian Analysis",
@@ -630,14 +609,14 @@ export const content = {
       description: "Takdir bukan skrip tetap; ia adalah peta rupa bumi. Kami bertindak sebagai navigator anda.",
       services_title: "Perkhidmatan Takdir",
       services: [
-        { name: "Analisis Numerologi", desc: "Mengoptimumkan frekuensi di sekeliling anda. Pemilihan nombor telefon, plat kereta, dan nombor rumah yang bergema dengan tenaga peribadi anda.", detail: "Nombor adalah tenaga. Pastikan ia berfungsi untuk anda.", image: "/xj_numerology_rusheng.webp" },
-        { name: "Analisis BaZi (Empat Pilar)", desc: "Mencerna rangka tindakan kehidupan anda berdasarkan data kelahiran. Fahami kekuatan, kelemahan, dan masa untuk kerjaya, kekayaan, dan hubungan.", detail: "Dedahkan struktur elemen dan potensi laluan hidup anda.", image: "/xj_consultant_rusheng.webp" },
-        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem astrologi canggih yang memetakan 12 istana kehidupan utama, memberikan butiran terperinci tentang peristiwa kehidupan dan corak karma.", detail: "Menawarkan wawasan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
-        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat untuk mengoptimumkan aliran dan keseimbangan.", detail: "Harmonikan persekitaran luaran anda dengan matlamat dalaman anda.", image: "/xj_compass_rusheng.webp" },
-        { name: "Panduan Tahunan", desc: "Ramalan tahun hadapan untuk membantu anda bersedia bagi peluang dan mengurangkan risiko dalam kerjaya, kesihatan, dan keluarga.", detail: "Mengemudi perubahan arus tahun dengan yakin.", image: "/xj_annual_rusheng.webp" },
+        { name: "Analisis Numerologi", desc: "Memahami corak nombor nama, telefon, plat kenderaan. Bermula dari SGD 288+.", detail: "Nombor Rumah/Unit dari SGD 138. Nombor Telefon dari SGD 138. Rujukan analitikal sahaja.", image: "/xj_numerology_rusheng.webp" },
+        { name: "Analisis BaZi (Empat Pilar)", desc: "Analisis struktur kehidupan berdasarkan data kelahiran. Bermula dari SGD 388+.", detail: "Fahami struktur Elemen dan potensi laluan hayat anda.", image: "/xj_consultant_rusheng.webp" },
+        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem klasik terperinci yang memetakan domain kehidupan utama. Bermula dari SGD 388+.", detail: "Menawarkan pandangan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
+        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat. Harga berbeza mengikut projek.", detail: "Selaraskan persekitaran anda dengan matlamat anda.", image: "/xj_compass_rusheng.webp" },
+        { name: "Panduan Tahunan 2026", desc: "Ramalan setahun ke hadapan untuk bersedia bagi peluang dan cabaran. Bermula dari SGD 288+.", detail: "Navigasi perubahan tahun dengan yakin.", image: "/xj_annual_rusheng.webp" },
         {
           name: "Qi Men Dun Jia (Analisis Strategik)",
-          desc: "Sistem strategi klasik untuk masa dan pembuatan keputusan. Membantu mengurangkan risiko dan bertindak dengan kesedaran.",
+          desc: "Sistem strategi klasik untuk masa dan buat keputusan. Bermula dari SGD 388.",
           detail: "Menawarkan kejelasan dan rujukan untuk keputusan penting, bukan ramalan atau jaminan.",
           image: "/qimen_strategic_compass.webp"
         }
@@ -665,7 +644,7 @@ export const content = {
         perspective_title: "Perspektif Jelas",
         perspective_text: "Qi Men Dun Jia berfungsi seperti kompas strategik, bukan kuasa ghaib. Ia membantu orang mengurangkan risiko yang disebabkan oleh masa yang salah, membuat pilihan yang lebih jelas, dan bertindak dengan kesedaran dan bukannya ketakutan. Ia tidak mengubah hidup anda — ia membantu anda memilih dengan lebih bijak di dalamnya.",
         disclaimer_title: "Nota Penting",
-        disclaimer_text: "Semua analisis Qi Men Dun Jia disediakan untuk rujukan analisis dan wawasan peribadi sahaja. Hasil kehidupan bergantung kepada keputusan, tindakan, dan keadaan individu."
+        disclaimer: "Semua perkhidmatan yang disediakan di bawah Live True Care adalah untuk rujukan analitikal dan pandangan peribadi sahaja. Tiada jaminan dibuat. Hasil kehidupan bergantung pada keputusan, tindakan, dan keadaan individu."
       },
       philosophy: {
         title: "Seni Kejelasan",
