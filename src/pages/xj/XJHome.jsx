@@ -99,48 +99,25 @@ const XJHome = ({ lang }) => {
         <div className="container">
           <div className="qimen-header text-center">
             <h2 className="display-3 text-gold mb-4">{t.qimen_details.title}</h2>
-            <p className="qimen-intro">{t.qimen_details.intro}</p>
-          </div>
+            <p className="qimen-intro mb-5" style={{ maxWidth: '800px', margin: '0 auto 3rem' }}>{t.qimen_details.intro}</p>
 
-          <div className="qimen-grid">
-            {/* Left: What It Helps With */}
-            <div className="q-list-box border-gold">
-              <h4 className="q-title text-gold">{t.qimen_details.helps_title}</h4>
-              <ul className="q-list check-list">
-                {t.qimen_details.helps_list.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-              <p className="q-note">{t.qimen_details.helps_note}</p>
-            </div>
-
-            {/* Right: What It Does Not Do */}
-            <div className="q-list-box border-dim">
-              <h4 className="q-title text-gold">{t.qimen_details.not_title}</h4>
-              <ul className="q-list cross-list">
-                {t.qimen_details.not_list.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-              <p className="q-note">{t.qimen_details.not_note}</p>
-            </div>
-          </div>
-
-          <div className="qimen-bottom-layout">
-            <div className="q-bottom-card">
-              <h4 className="q-title text-gold">{t.qimen_details.perspective_title}</h4>
-              <p>{t.qimen_details.perspective_text}</p>
-            </div>
-
-            <div className="q-bottom-card">
-              <h4 className="q-title text-gold">{t.qimen_details.vs_title}</h4>
-              <p>{t.qimen_details.vs_text}</p>
+            <div className="qimen-visual" style={{ maxWidth: '500px', margin: '0 auto' }}>
+              <img
+                src="/qimen_strategic_compass.webp"
+                alt="Qi Men Dun Jia"
+                style={{
+                  width: '100%',
+                  borderRadius: '4px',
+                  border: '1px solid rgba(212, 175, 55, 0.3)',
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.5)'
+                }}
+              />
             </div>
           </div>
 
           <div className="qimen-disclaimer mt-5 text-center">
-            <h5 className="text-dim small-caps">{t.qimen_details.disclaimer_title}</h5>
-            <p className="text-dim small-text">{t.qimen_details.disclaimer_text}</p>
+            <h5 className="text-dim small-caps" style={{ color: 'rgba(255,255,255,0.4)' }}>{t.qimen_details.disclaimer_title}</h5>
+            <p className="text-dim small-text" style={{ color: 'rgba(255,255,255,0.3)' }}>{t.qimen_details.disclaimer_text}</p>
           </div>
         </div>
       </section>

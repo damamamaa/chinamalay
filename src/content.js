@@ -92,18 +92,24 @@ export const content = {
       services_title: "Consultation & Treatment Fees (SGD)",
       services: [
         {
-          name: "TCM Diagnosis & Treatment",
-          desc: "Include Syndrome Differentiation (SGD 90), Acupuncture (SGD 110), Cupping (SGD 98).",
-          detail: "Consultation: Initial SGD 90 / Follow-up SGD 36.",
-          image: "/tcm_pulse_rusheng.webp"
+          name: "Acupuncture & Diagnosis",
+          desc: "Precise needle therapy (SGD 110) combined with Syndrome Differentiation (SGD 90).",
+          detail: "Restores flow and energetic balance through meridian points.",
+          image: "/tcm_acupuncture_rusheng_v2.webp"
+        },
+        {
+          name: "Cupping Therapy",
+          desc: "Traditional vacuum therapy that stimulates blood flow and removes stagnation. SGD 98.",
+          detail: "Effective for pain relief and detoxification.",
+          image: "/tcm_cupping_rusheng_old_v3.webp"
         },
         {
           name: "Sports Injury Rehabilitation",
-          desc: "Targeted therapy to accelerate healing of musculoskeletal injuries. SGD 248.",
+          desc: "Targeted therapy to accelerate healing of musculoskeletal injuries. SGD 160.",
           detail: "Specific rehabilitation protocols.",
           image: "/tcm_sports_rusheng.webp"
         },
-        { name: "Tui Na & Bone Alignment", desc: "Structural alignment and soft tissue therapy.", detail: "From SGD 248.", image: "/tcm_bone_setting_rusheng.webp" },
+        { name: "Tui Na & Bone Alignment", desc: "Structural alignment and soft tissue therapy.", detail: "SGD 160.", image: "/tcm_bone_setting_rusheng.webp" },
         { name: "Herbal Medicine", desc: "Customized herbal prescriptions. Conventional (SGD 48/day), Premium (From SGD 86/day).", detail: "Medicine cost only, consultation not included.", image: "/tcm-herbs.webp" }
       ],
       process_title: "Treatment Process",
@@ -133,13 +139,13 @@ export const content = {
         },
         {
           name: "BaZi (Four Pillars) Analysis",
-          desc: "An analysis of life structure based on birth data, focusing on strengths, challenges, and timing trends. Starting from SGD 388+.",
+          desc: "An analysis of life structure based on birth data. Standard Session (50 mins): SGD 80. Extended Session: SGD 40 per 50-min block.",
           detail: "Understand your Elemental structure and potential life path.",
           image: "/xj_consultant_rusheng.webp"
         },
         {
           name: "Zi Wei Dou Shu Analysis",
-          desc: "A detailed classical system that maps major life domains to provide deeper insight into long-term patterns. Starting from SGD 388+.",
+          desc: "A detailed classical system mapping life domains. Standard Session (50 mins): SGD 80. Extended Session: SGD 40 per 50-min block.",
           detail: "Offers high-resolution insight into specific life domains.",
           image: "/xj_reading_rusheng.webp"
         },
@@ -164,27 +170,7 @@ export const content = {
       ],
       qimen_details: {
         title: "Qi Men Dun Jia: Strategic Timing & Decision Analysis",
-        intro: "Qi Men Dun Jia is a classical Chinese strategic analysis system. It is not a method to change destiny, nor a tool to remove bad luck. Its true purpose is to help people make better decisions at the right time by understanding timing, direction, and situational dynamics.",
-        helps_title: "What Qi Men Dun Jia Can Help With",
-        helps_list: [
-          "Important decision-making",
-          "Timing analysis (when to act, when to wait)",
-          "Understanding hidden influences in a situation",
-          "Strategic planning under uncertainty"
-        ],
-        helps_note: "It provides clarity and reference, not predictions or guarantees.",
-        not_title: "What Qi Men Dun Jia Does NOT Do",
-        not_list: [
-          "Change fate or destiny",
-          "Eliminate life challenges",
-          "Control outcomes",
-          "Replace personal effort or responsibility"
-        ],
-        not_note: "It does not “fix fate” or promise success.",
-        vs_title: "Qi Men Dun Jia vs Feng Shui",
-        vs_text: "Qi Men Dun Jia is not Feng Shui. Feng Shui focuses on physical environments, while Qi Men Dun Jia focuses on time-based and situational analysis. They serve different purposes and should not be confused.",
-        perspective_title: "A Clear Perspective",
-        perspective_text: "Qi Men Dun Jia works like a strategic compass, not a supernatural force. It helps people reduce risks caused by poor timing, make clearer choices, and act with awareness instead of fear. It does not change your life — it helps you choose more wisely within it.",
+        intro: "Qi Men Dun Jia is a classical Chinese strategic analysis system. Its true purpose is to help people make better decisions at the right time by understanding timing, direction, and situational dynamics.",
         disclaimer_title: "Important Note",
         disclaimer_text: "All Qi Men Dun Jia analysis is provided for analytical reference and personal insight only. Life outcomes depend on individual decisions, actions, and circumstances."
       },
@@ -353,9 +339,10 @@ export const content = {
       description: "整复身体 · 调理气机 · 平衡阴阳，以获得更好的健康和长期的稳定。运用中医原理，我们将支持身体回归其自然和应有的平衡。",
       services_title: "咨询与治疗费用 (SGD)",
       services: [
-        { name: "中医诊断与治疗", desc: "包括辨证 (SGD 90)、针灸 (SGD 110)、拔罐 (SGD 98)。", detail: "咨询费：初诊 SGD 90 / 复诊 SGD 36。", image: "/tcm_pulse_rusheng.webp" },
-        { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。SGD 248。", detail: "制定特定康复方案。", image: "/tcm_sports_rusheng.webp" },
-        { name: "推拿与正骨", desc: "结构调整与软组织通过手法理疗。", detail: "SGD 248 起。", image: "/tcm_bone_setting_rusheng.webp" },
+        { name: "针灸与诊断", desc: "精密针刺治疗 (SGD 110) 结合中医辨证 (SGD 90)。", detail: "通过经络穴位恢复气血平衡。", image: "/tcm_acupuncture_rusheng_v2.webp" },
+        { name: "拔罐疗法", desc: "传统真空拔罐，促进血液循环，祛除淤滞。SGD 98。", detail: "有效缓解疼痛与排毒。", image: "/tcm_cupping_rusheng_old_v3.webp" },
+        { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。SGD 160。", detail: "制定特定康复方案。", image: "/tcm_sports_rusheng.webp" },
+        { name: "推拿与正骨", desc: "结构调整与软组织通过手法理疗。", detail: "SGD 160。", image: "/tcm_bone_setting_rusheng.webp" },
         { name: "草药调理", desc: "个性化草药处方。常规 (SGD 48/天), 优选 (SGD 86/天 起)。", detail: "仅含药费，不含咨询费。", image: "/tcm-herbs.webp" }
       ],
       process_title: "治疗流程",
@@ -378,35 +365,15 @@ export const content = {
       services_title: "命理服务",
       services: [
         { name: "命理数字分析", desc: "优化您周围的磁场频率。选择与您个人能量共鸣的手机号、车牌号等。SGD 288+ 起。", detail: "门牌/单位号码 SGD 138 起。手机号码 SGD 138 起。仅供分析参考。", image: "/xj_numerology_rusheng.webp" },
-        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。了解优势、劣势及事业、财富、感情时机。SGD 388+ 起。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
-        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位，提供详细的人生事件与业力模式细节。SGD 388+ 起。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
+        { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。标准咨询 (50分钟): SGD 80。加时: SGD 40 / 50分钟。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
+        { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位。标准咨询 (50分钟): SGD 80。加时: SGD 40 / 50分钟。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
         { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。价格视项目而定。", detail: "协调外部环境与内部目标。", image: "/xj_compass_rusheng.webp" },
         { name: "2026 年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。SGD 288+ 起。", detail: "充满信心地驾驭流年变幻。", image: "/xj_annual_rusheng.webp" },
         { name: "奇门遁甲 (战略决策分析)", desc: "一种用于时机把握与决策制定的古典战略体系。SGD 388 起。", detail: "为重要决策提供清晰度和参考，而非预测或保证。", image: "/qimen_strategic_compass.webp" }
       ],
       qimen_details: {
         title: "奇门遁甲：战略时机与决策分析",
-        intro: "奇门遁甲是中国古典战略分析体系。它不是改变命运的方法，也不是消除厄运的工具。它的真正目的是通过理解时机、方位和局势动态，帮助人们在正确的时间做出更好的决策。",
-        helps_title: "奇门遁甲能帮到什么",
-        helps_list: [
-          "重要决策制定",
-          "时机分析 (何时行动，何时等待)",
-          "理解局势中的隐藏影响",
-          "不确定性下的战略规划"
-        ],
-        helps_note: "它提供清晰度和参考，而非预测或保证。",
-        not_title: "奇门遁甲不能做什么",
-        not_list: [
-          "改变命运",
-          "消除人生挑战",
-          "控制结果",
-          "替代个人努力或责任"
-        ],
-        not_note: "它不“修复命运”也不承诺成功。",
-        vs_title: "奇门遁甲 vs 风水",
-        vs_text: "奇门遁甲不是风水。风水关注物理环境，而奇门遁甲关注基于时间和局势的分析。它们服务于不同的目的，不应混淆。",
-        perspective_title: "清晰的视角",
-        perspective_text: "奇门遁甲像一个战略指南针，而不是超自然力量。它帮助人们减少因时机不当造成的风险，做出更清晰的选择，并带着觉知而非恐惧行动。它不改变你的人生——它帮助你在其中更明智地选择。",
+        intro: "奇门遁甲是中国古典战略分析体系。它的真正目的是通过理解时机、方位和局势动态，帮助人们在正确的时间做出更好的决策。",
         disclaimer_title: "重要提示",
         disclaimer_text: "所有奇门遁甲分析仅供分析参考和个人洞察。人生结果取决于个人的决定、行动和环境。"
       },
@@ -575,9 +542,10 @@ export const content = {
       description: "Selaraskan badan · atur Qi · seimbangkan Yin dan Yang untuk kesihatan lebih baik dan kestabilan jangka panjang. Menggunakan prinsip Perubatan Tradisional Cina, kami menyokong badan untuk kembali kepada keseimbangannya yang semula jadi.",
       services_title: "Yuran Konsultasi & Rawatan (SGD)",
       services: [
-        { name: "Diagnosis & Rawatan TCM", desc: "Termasuk Diferensiasi Sindrom (SGD 90), Akupunktur (SGD 110), Bekam (SGD 98).", detail: "Konsultasi: Awal SGD 90 / Susulan SGD 36.", image: "/tcm_pulse_rusheng.webp" },
-        { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal. SGD 248.", detail: "Protokol pemulihan khusus.", image: "/tcm_sports_rusheng.webp" },
-        { name: "Tui Na & Penyelarasan Tulang", desc: "Penyelarasan struktur dan terapi tisu lembut.", detail: "Dari SGD 248.", image: "/tcm_bone_setting_rusheng.webp" },
+        { name: "Akupunktur & Diagnosis", desc: "Terapi jarum tepat (SGD 110) dengan Diferensiasi Sindrom (SGD 90).", detail: "Memulihkan aliran dan keseimbangan tenaga.", image: "/tcm_acupuncture_rusheng_v2.webp" },
+        { name: "Terapi Bekam", desc: "Terapi vakum tradisional untuk melancarkan aliran darah. SGD 98.", detail: "Berkesan untuk melegakan kesakitan dan detoksifikasi.", image: "/tcm_cupping_rusheng_old_v3.webp" },
+        { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal. SGD 160.", detail: "Protokol pemulihan khusus.", image: "/tcm_sports_rusheng.webp" },
+        { name: "Tui Na & Penyelarasan Tulang", desc: "Penyelarasan struktur dan terapi tisu lembut.", detail: "SGD 160.", image: "/tcm_bone_setting_rusheng.webp" },
         { name: "Perubatan Herba", desc: "Preskripsi herba peribadi. Konvensional (SGD 48/hari), Premium (Dari SGD 86/hari).", detail: "Kos ubat sahaja, tidak termasuk konsultasi.", image: "/tcm-herbs.webp" }
       ],
       process_title: "Proses Rawatan",
@@ -600,8 +568,8 @@ export const content = {
       services_title: "Perkhidmatan Takdir",
       services: [
         { name: "Analisis Numerologi", desc: "Memahami corak nombor nama, telefon, plat kenderaan. Bermula dari SGD 288+.", detail: "Nombor Rumah/Unit dari SGD 138. Nombor Telefon dari SGD 138. Rujukan analitikal sahaja.", image: "/xj_numerology_rusheng.webp" },
-        { name: "Analisis BaZi (Empat Pilar)", desc: "Analisis struktur kehidupan berdasarkan data kelahiran. Bermula dari SGD 388+.", detail: "Fahami struktur Elemen dan potensi laluan hayat anda.", image: "/xj_consultant_rusheng.webp" },
-        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem klasik terperinci yang memetakan domain kehidupan utama. Bermula dari SGD 388+.", detail: "Menawarkan pandangan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
+        { name: "Analisis BaZi (Empat Pilar)", desc: "Analisis struktur kehidupan berdasarkan data kelahiran. Sesi Standard (50 min): SGD 80. Lanjutan: SGD 40 / 50 min.", detail: "Fahami struktur Elemen dan potensi laluan hayat anda.", image: "/xj_consultant_rusheng.webp" },
+        { name: "Analisis Zi Wei Dou Shu", desc: "Sistem klasik terperinci yang memetakan domain kehidupan utama. Sesi Standard (50 min): SGD 80. Lanjutan: SGD 40 / 50 min.", detail: "Menawarkan pandangan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
         { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat. Harga berbeza mengikut projek.", detail: "Selaraskan persekitaran anda dengan matlamat anda.", image: "/xj_compass_rusheng.webp" },
         { name: "Panduan Tahunan 2026", desc: "Ramalan setahun ke hadapan untuk bersedia bagi peluang dan cabaran. Bermula dari SGD 288+.", detail: "Navigasi perubahan tahun dengan yakin.", image: "/xj_annual_rusheng.webp" },
         {
@@ -613,28 +581,9 @@ export const content = {
       ],
       qimen_details: {
         title: "Qi Men Dun Jia: Analisis Masa & Keputusan Strategik",
-        intro: "Qi Men Dun Jia adalah sistem analisis strategi klasik Cina. Ia bukan kaedah untuk mengubah takdir, atau alat untuk membuang nasib malang. Tujuan sebenarnya adalah untuk membantu orang membuat keputusan yang lebih baik pada masa yang tepat dengan memahami masa, arah, dan dinamik situasi.",
-        helps_title: "Apa Yang Qi Men Dun Jia Boleh Bantu",
-        helps_list: [
-          "Pembuatan keputusan penting",
-          "Analisis masa (bila untuk bertindak, bila untuk menunggu)",
-          "Memahami pengaruh tersembunyi dalam situasi",
-          "Perancangan strategik dalam ketidakpastian"
-        ],
-        helps_note: "Ia memberikan kejelasan dan rujukan, bukan ramalan atau jaminan.",
-        not_title: "Apa Yang Qi Men Dun Jia TIDAK Lakukan",
-        not_list: [
-          "Mengubah nasib atau takdir",
-          "Menghapuskan cabaran hidup",
-          "Menggantikan usaha atau tanggungjawab peribadi"
-        ],
-        not_note: "Ia tidak 'membaiki nasib' atau menjanjikan kejayaan.",
-        vs_title: "Qi Men Dun Jia vs Feng Shui",
-        vs_text: "Qi Men Dun Jia bukan Feng Shui. Feng Shui menumpukan pada persekitaran fizikal, manakala Qi Men Dun Jia menumpukan pada analisis berasaskan masa dan situasi. Ia mempunyai tujuan yang berbeza dan tidak harus dikelirukan.",
-        perspective_title: "Perspektif Jelas",
-        perspective_text: "Qi Men Dun Jia berfungsi seperti kompas strategik, bukan kuasa ghaib. Ia membantu orang mengurangkan risiko yang disebabkan oleh masa yang salah, membuat pilihan yang lebih jelas, dan bertindak dengan kesedaran dan bukannya ketakutan. Ia tidak mengubah hidup anda — ia membantu anda memilih dengan lebih bijak di dalamnya.",
+        intro: "Qi Men Dun Jia adalah sistem analisis strategi klasik Cina. Tujuan sebenarnya adalah untuk membantu orang membuat keputusan yang lebih baik pada masa yang tepat dengan memahami masa, arah, dan dinamik situasi.",
         disclaimer_title: "Nota Penting",
-        disclaimer: "Semua perkhidmatan yang disediakan di bawah Live True Care adalah untuk rujukan analitikal dan pandangan peribadi sahaja. Tiada jaminan dibuat. Hasil kehidupan bergantung pada keputusan, tindakan, dan keadaan individu."
+        disclaimer_text: "Semua perkhidmatan yang disediakan di bawah Live True Care adalah untuk rujukan analitikal dan pandangan peribadi sahaja. Tiada jaminan dibuat. Hasil kehidupan bergantung pada keputusan, tindakan, dan keadaan individu."
       },
       philosophy: {
         title: "Seni Kejelasan",
