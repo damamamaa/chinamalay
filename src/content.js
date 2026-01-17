@@ -170,7 +170,7 @@ export const content = {
       ],
       qimen_details: {
         title: "Qi Men Dun Jia: Strategic Timing & Decision Analysis",
-        intro: "Qi Men Dun Jia is a classical Chinese strategic analysis system. Its true purpose is to help people make better decisions at the right time by understanding timing, direction, and situational dynamics.",
+        intro: "Qi Men Dun Jia is an ancient art of reading time, space, and circumstance. Today, it is applied to Feng Shui insight, situational fortune analysis, and the choice of proper timing. It helps one know when to move, when to pause, and how to align with the moment.",
         disclaimer_title: "Important Note",
         disclaimer_text: "All Qi Men Dun Jia analysis is provided for analytical reference and personal insight only. Life outcomes depend on individual decisions, actions, and circumstances."
       },
@@ -373,7 +373,7 @@ export const content = {
       ],
       qimen_details: {
         title: "奇门遁甲：战略时机与决策分析",
-        intro: "奇门遁甲是中国古典战略分析体系。它的真正目的是通过理解时机、方位和局势动态，帮助人们在正确的时间做出更好的决策。",
+        intro: "奇门遁甲是阅读时间、空间和环境的古老艺术。如今，它被应用于风水洞察、局势运势分析以及正确时机的选择。它帮助人们知道何时行动，何时停顿，以及如何与当下时刻保持一致。",
         disclaimer_title: "重要提示",
         disclaimer_text: "所有奇门遁甲分析仅供分析参考和个人洞察。人生结果取决于个人的决定、行动和环境。"
       },
@@ -581,7 +581,7 @@ export const content = {
       ],
       qimen_details: {
         title: "Qi Men Dun Jia: Analisis Masa & Keputusan Strategik",
-        intro: "Qi Men Dun Jia adalah sistem analisis strategi klasik Cina. Tujuan sebenarnya adalah untuk membantu orang membuat keputusan yang lebih baik pada masa yang tepat dengan memahami masa, arah, dan dinamik situasi.",
+        intro: "Qi Men Dun Jia adalah seni kuno untuk membaca masa, ruang, dan keadaan. Hari ini, ia digunakan untuk pandangan Feng Shui, analisis nasib situasi, dan pilihan masa yang tepat. Ia membantu seseorang tahu bila perlu bergerak, bila perlu berhenti, dan bagaimana untuk selaras dengan ketika itu.",
         disclaimer_title: "Nota Penting",
         disclaimer_text: "Semua perkhidmatan yang disediakan di bawah Live True Care adalah untuk rujukan analitikal dan pandangan peribadi sahaja. Tiada jaminan dibuat. Hasil kehidupan bergantung pada keputusan, tindakan, dan keadaan individu."
       },
