@@ -101,9 +101,9 @@ const XJHome = ({ lang }) => {
             <h2 className="display-3 text-gold mb-4">{t.qimen_details.title}</h2>
             <p className="qimen-intro mb-5" style={{ maxWidth: '800px', margin: '0 auto 3rem' }}>{t.qimen_details.intro}</p>
 
-            <div className="qimen-visual" style={{ maxWidth: '500px', margin: '0 auto' }}>
+            <div className="qimen-visual" style={{ maxWidth: '600px', margin: '0 auto' }}>
               <img
-                src="/qimen_strategic_compass.webp"
+                src="/qimen_rusheng_3d.webp"
                 alt="Qi Men Dun Jia"
                 style={{
                   width: '100%',

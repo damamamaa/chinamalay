@@ -122,7 +122,7 @@ export const content = {
         title: "Root Cause Diagnosis",
         text: "In TCM, we do not just treat the symptom; we listen to what the body is saying. Through pulse diagnosis, we can detect imbalances in the internal organs long before they manifest as severe illness."
       },
-      disclaimer: "All wellness services aim to support the body, not override it. Care is personalized, gradual, and grounded in professional responsibility."
+      disclaimer: "All treatments aim to support the body's natural healing process. Care is personalized, gradual, and guided by professional responsibility."
     },
     fengshui: {
       brand: "Xin Jian Analysis",
@@ -153,7 +153,7 @@ export const content = {
           name: "Feng Shui Consultation",
           desc: "Assessment of residential and office environments to improve flow, balance, and harmony. Pricing varies by project.",
           detail: "Harmonize your environment with your goals.",
-          image: "/xj_compass_rusheng_gloves.webp"
+          image: "/xj_compass_rusheng_smooth.webp"
         },
         {
           name: "2026 Annual Guidance",
@@ -165,7 +165,7 @@ export const content = {
           name: "Qi Men Dun Jia (Strategic Analysis)",
           desc: "A classical strategic system for timing and decision-making. Starting from SGD 388.",
           detail: "Offers clarity and reference for important decisions, not predictions or guarantees.",
-          image: "/qimen_strategic_compass.webp"
+          image: "/qimen_rusheng_3d.webp"
         }
       ],
       qimen_details: {
@@ -356,7 +356,7 @@ export const content = {
         title: "SynerQi 平衡",
         text: "结合针灸、草药和生活方式调整，恢复身体的自愈能力。"
       },
-      disclaimer: "所有中医服务仅作为辅助健康支持，不取代医疗诊断或医院治疗。"
+      disclaimer: "所有治疗旨在支持身体的自然愈合过程。护理是个性化、循序渐进的，并以专业责任为指导。"
     },
     fengshui: {
       brand: "心鉴分析 (Xin Jian Analysis)",
@@ -367,9 +367,9 @@ export const content = {
         { name: "命理数字分析", desc: "优化您周围的磁场频率。选择与您个人能量共鸣的手机号、车牌号等。SGD 288+ 起。", detail: "门牌/单位号码 SGD 138 起。手机号码 SGD 138 起。仅供分析参考。", image: "/xj_numerology_rusheng.webp" },
         { name: "八字 (四柱) 分析", desc: "基于出生数据解读您的人生蓝图。标准咨询 (50分钟): SGD 168。加时: SGD 48 / 30分钟。", detail: "揭示您的五行结构与潜在人生路径。", image: "/xj_consultant_rusheng.webp" },
         { name: "紫微斗数分析", desc: "复杂的星象系统，绘制十二个关键人生宫位。标准咨询 (50分钟): SGD 168。加时: SGD 48 / 30分钟。", detail: "提供特定生活领域的得高分辨率洞察。", image: "/xj_reading_rusheng.webp" },
-        { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。价格视项目而定。", detail: "协调外部环境与内部目标。", image: "/xj_compass_rusheng_gloves.webp" },
+        { name: "风水咨询", desc: "住宅与办公环境评估，优化气流与平衡。价格视项目而定。", detail: "协调外部环境与内部目标。", image: "/xj_compass_rusheng_smooth.webp" },
         { name: "2026 年度运势指引", desc: "提前预测一年运势，为事业、健康及家庭的机遇与风险做好准备。SGD 288+ 起。", detail: "充满信心地驾驭流年变幻。", image: "/xj_annual_rusheng.webp" },
-        { name: "奇门遁甲 (战略决策分析)", desc: "一种用于时机把握与决策制定的古典战略体系。SGD 388 起。", detail: "为重要决策提供清晰度和参考，而非预测或保证。", image: "/qimen_strategic_compass.webp" }
+        { name: "奇门遁甲 (战略决策分析)", desc: "一种用于时机把握与决策制定的古典战略体系。SGD 388 起。", detail: "为重要决策提供清晰度和参考，而非预测或保证。", image: "/qimen_rusheng_3d.webp" }
       ],
       qimen_details: {
         title: "奇门遁甲：战略时机与决策分析",
@@ -559,7 +559,7 @@ export const content = {
         title: "Keseimbangan SynerQi",
         text: "Menggabungkan akupunktur, perubatan herba, dan pelarasan gaya hidup untuk memulihkan keupayaan penyembuhan diri badan."
       },
-      disclaimer: "Semua perkhidmatan TCM disediakan sebagai sokongan kesejahteraan pelengkap dan tidak menggantikan diagnosis perubatan atau rawatan hospital."
+      disclaimer: "Semua rawatan bertujuan untuk menyokong proses penyembuhan semulajadi badan. Penjagaan adalah diperibadikan, bertahap, dan dipandu oleh tanggungjawab profesional."
     },
     fengshui: {
       brand: "Xin Jian Analysis",
@@ -570,13 +570,13 @@ export const content = {
         { name: "Analisis Numerologi", desc: "Memahami corak nombor nama, telefon, plat kenderaan. Bermula dari SGD 288+.", detail: "Nombor Rumah/Unit dari SGD 138. Nombor Telefon dari SGD 138. Rujukan analitikal sahaja.", image: "/xj_numerology_rusheng.webp" },
         { name: "Analisis BaZi (Empat Pilar)", desc: "Analisis struktur kehidupan berdasarkan data kelahiran. Sesi Standard (50 min): SGD 168. Lanjutan: SGD 48 / 30 min.", detail: "Fahami struktur Elemen dan potensi laluan hayat anda.", image: "/xj_consultant_rusheng.webp" },
         { name: "Analisis Zi Wei Dou Shu", desc: "Sistem klasik terperinci yang memetakan domain kehidupan utama. Sesi Standard (50 min): SGD 168. Lanjutan: SGD 48 / 30 min.", detail: "Menawarkan pandangan resolusi tinggi ke dalam domain kehidupan tertentu.", image: "/xj_reading_rusheng.webp" },
-        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat. Harga berbeza mengikut projek.", detail: "Selaraskan persekitaran anda dengan matlamat anda.", image: "/xj_compass_rusheng_gloves.webp" },
+        { name: "Konsultasi Feng Shui", desc: "Penilaian persekitaran kediaman dan pejabat. Harga berbeza mengikut projek.", detail: "Selaraskan persekitaran anda dengan matlamat anda.", image: "/xj_compass_rusheng_smooth.webp" },
         { name: "Panduan Tahunan 2026", desc: "Ramalan setahun ke hadapan untuk bersedia bagi peluang dan cabaran. Bermula dari SGD 288+.", detail: "Navigasi perubahan tahun dengan yakin.", image: "/xj_annual_rusheng.webp" },
         {
           name: "Qi Men Dun Jia (Analisis Strategik)",
           desc: "Sistem strategi klasik untuk masa dan buat keputusan. Bermula dari SGD 388.",
           detail: "Menawarkan kejelasan dan rujukan untuk keputusan penting, bukan ramalan atau jaminan.",
-          image: "/qimen_strategic_compass.webp"
+          image: "/qimen_rusheng_3d.webp"
         }
       ],
       qimen_details: {
