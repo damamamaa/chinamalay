@@ -34,23 +34,13 @@ const Home = ({ lang }) => {
             Live true care
           </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4 }}
-            className="hero-title"
-          >
+          <h1 className="hero-title">
             {t.title}
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.9 }}
-            transition={{ duration: 1, delay: 0.6 }}
-            className="hero-desc"
-          >
+          <p className="hero-desc">
             {t.subtitle}
-          </motion.p>
+          </p>
 
         </div>
 
@@ -172,7 +162,7 @@ const Home = ({ lang }) => {
         .hero-overlay-grad {
           position: absolute;
           inset: 0;
-          background: radial-gradient(circle at center, rgba(0,0,0,0.2) 0%, rgba(14,13,12,0.8) 100%);
+          background: radial-gradient(circle at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.9) 100%);
           z-index: 1;
         }
 
@@ -204,16 +194,19 @@ const Home = ({ lang }) => {
           font-size: clamp(3.5rem, 6vw, 6rem);
           line-height: 1.1;
           margin-bottom: 1.5rem;
-          text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+          text-shadow: 0 4px 20px rgba(0,0,0,0.9);
+          color: #ffffff;
         }
 
         .hero-desc {
-          font-size: 1.25rem;
-          color: rgba(255,255,255,0.9);
+          font-family: var(--font-sans);
+          font-size: 1.5rem;
           max-width: 600px;
           margin: 0 auto;
           line-height: 1.6;
-          margin-bottom: 3rem;
+          color: #ffffff;
+          text-shadow: 0 2px 10px rgba(0,0,0,0.9);
+          font-weight: 500;
         }
 
         .hero-ctas {

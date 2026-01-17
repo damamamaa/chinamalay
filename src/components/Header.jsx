@@ -145,19 +145,21 @@ const Header = ({ lang, setLang }) => {
           align-items: center;
           position: relative; 
           z-index: 1002; 
-          min-height: 50px;
+          min-height: 60px; /* Slight increase */
         }
-
 
         .text-logo {
           font-family: var(--font-display);
-          font-size: 1.5rem;
+          font-size: 1.1rem; /* Smaller for long names */
           letter-spacing: 0.1em;
           font-weight: 700;
           text-transform: uppercase;
           text-shadow: 0 2px 10px rgba(0,0,0,0.8);
           position: relative;
           z-index: 1003;
+          max-width: 300px;
+          line-height: 1.2;
+          display: block;
         }
 
 

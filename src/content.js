@@ -103,18 +103,8 @@ export const content = {
           detail: "Specific rehabilitation protocols.",
           image: "/tcm_sports_rusheng.webp"
         },
-        {
-          name: "Tui Na & Bone Alignment",
-          desc: "Structural alignment and soft tissue therapy.",
-          detail: "From SGD 248.",
-          image: "/tcm_tuina_rusheng.webp"
-        },
-        {
-          name: "Herbal Medicine",
-          desc: "Customized herbal prescriptions. Conventional (SGD 48/day), Premium (From SGD 86/day).",
-          detail: "Medicine cost only, consultation not included.",
-          image: "/tcm_herbal_rusheng.webp"
-        }
+        { name: "Tui Na & Bone Alignment", desc: "Structural alignment and soft tissue therapy.", detail: "From SGD 248.", image: "/tcm_bone_setting_rusheng.webp" },
+        { name: "Herbal Medicine", desc: "Customized herbal prescriptions. Conventional (SGD 48/day), Premium (From SGD 86/day).", detail: "Medicine cost only, consultation not included.", image: "/tcm-herbs.webp" }
       ],
       process_title: "Treatment Process",
       process: [
@@ -365,8 +355,8 @@ export const content = {
       services: [
         { name: "中医诊断与治疗", desc: "包括辨证 (SGD 90)、针灸 (SGD 110)、拔罐 (SGD 98)。", detail: "咨询费：初诊 SGD 90 / 复诊 SGD 36。", image: "/tcm_pulse_rusheng.webp" },
         { name: "运动损伤康复", desc: "针对性疗法，加速肌肉骨骼损伤愈合。SGD 248。", detail: "制定特定康复方案。", image: "/tcm_sports_rusheng.webp" },
-        { name: "推拿与正骨", desc: "结构调整与软组织通过手法理疗。", detail: "SGD 248 起。", image: "/tcm_tuina_rusheng.webp" },
-        { name: "草药调理", desc: "个性化草药处方。常规 (SGD 48/天), 优选 (SGD 86/天 起)。", detail: "仅含药费，不含咨询费。", image: "/tcm_herbal_rusheng.webp" }
+        { name: "推拿与正骨", desc: "结构调整与软组织通过手法理疗。", detail: "SGD 248 起。", image: "/tcm_bone_setting_rusheng.webp" },
+        { name: "草药调理", desc: "个性化草药处方。常规 (SGD 48/天), 优选 (SGD 86/天 起)。", detail: "仅含药费，不含咨询费。", image: "/tcm-herbs.webp" }
       ],
       process_title: "治疗流程",
       process: [
@@ -587,8 +577,8 @@ export const content = {
       services: [
         { name: "Diagnosis & Rawatan TCM", desc: "Termasuk Diferensiasi Sindrom (SGD 90), Akupunktur (SGD 110), Bekam (SGD 98).", detail: "Konsultasi: Awal SGD 90 / Susulan SGD 36.", image: "/tcm_pulse_rusheng.webp" },
         { name: "Pemulihan Kecederaan Sukan", desc: "Terapi sasaran untuk mempercepatkan penyembuhan kecederaan muskuloskeletal. SGD 248.", detail: "Protokol pemulihan khusus.", image: "/tcm_sports_rusheng.webp" },
-        { name: "Tui Na & Penyelarasan Tulang", desc: "Penyelarasan struktur dan terapi tisu lembut.", detail: "Dari SGD 248.", image: "/tcm_tuina_rusheng.webp" },
-        { name: "Perubatan Herba", desc: "Preskripsi herba peribadi. Konvensional (SGD 48/hari), Premium (Dari SGD 86/hari).", detail: "Kos ubat sahaja, tidak termasuk konsultasi.", image: "/tcm_herbal_rusheng.webp" }
+        { name: "Tui Na & Penyelarasan Tulang", desc: "Penyelarasan struktur dan terapi tisu lembut.", detail: "Dari SGD 248.", image: "/tcm_bone_setting_rusheng.webp" },
+        { name: "Perubatan Herba", desc: "Preskripsi herba peribadi. Konvensional (SGD 48/hari), Premium (Dari SGD 86/hari).", detail: "Kos ubat sahaja, tidak termasuk konsultasi.", image: "/tcm-herbs.webp" }
       ],
       process_title: "Proses Rawatan",
       process: [

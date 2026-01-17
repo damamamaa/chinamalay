@@ -23,17 +23,12 @@ const TCMHome = ({ lang }) => {
         <div className="tcm-hero-overlay" />
 
         <div className="container relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="tcm-hero-content"
-          >
+          <div className="tcm-hero-content">
             <span className="sc-tag">{t.tagline}</span>
             <h1 className="sc-title">{t.brand}</h1>
             <p className="sc-desc">{t.description}</p>
             <div className="sc-line"></div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -59,7 +54,7 @@ const TCMHome = ({ lang }) => {
             </div>
 
             <div className="pulse-img">
-              <img src="/tcm_pulse_rusheng.webp" alt="Pulse Diagnosis" className="shadow-lg" loading="lazy" />
+              <img src="/tcm_men_vitality_rusheng_v2.webp" alt="Pulse Diagnosis" className="shadow-lg" loading="lazy" />
             </div>
           </div>
         </div>
@@ -159,18 +154,21 @@ const TCMHome = ({ lang }) => {
 
         .sc-title {
           font-family: var(--font-display);
-          font-size: 5rem;
-          margin-bottom: 2rem;
-          font-weight: 700; 
-          text-shadow: 0 4px 8px rgba(0,0,0,0.8);
+          font-size: clamp(2.5rem, 5vw, 4.5rem);
+          margin-bottom: 1.5rem;
+          line-height: 1.1;
+          color: #ffffff; /* FORCE WHITE */
+          text-shadow: 0 4px 20px rgba(0,0,0,0.9);
         }
 
         .sc-desc {
-          font-size: 1.6rem;
-          opacity: 1; 
+          font-size: 1.3rem;
+          line-height: 1.6;
+          opacity: 1; /* Ensure full opacity */
+          margin-bottom: 2rem;
+          color: #ffffff; /* FORCE WHITE */
+          text-shadow: 0 2px 10px rgba(0,0,0,0.9);
           font-weight: 500;
-          line-height: 1.5;
-          text-shadow: 0 2px 4px rgba(0,0,0,0.9); /* Stronger shadow for readability */
         }
 
         /* PROCESS SECTION */

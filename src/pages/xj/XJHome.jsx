@@ -23,12 +23,7 @@ const XJHome = ({ lang }) => {
         <div className="xj-hero-overlay" />
 
         <div className="container relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="xj-hero-content"
-          >
+          <div className="xj-hero-content" style={{ position: 'relative', zIndex: 100 }}>
 
             {/* Replaced Brand Image with Simple Telescope Icon as requested */}
             <div className="hero-brand-icon mb-6">
@@ -41,7 +36,7 @@ const XJHome = ({ lang }) => {
 
             <h1 className="display-1 text-gold">{t.brand}</h1>
             <p className="xj-lead">{t.description}</p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -55,7 +50,7 @@ const XJHome = ({ lang }) => {
             </div>
 
             <div className="philo-visual">
-              <img src="/images/rusheng-compass-new.jpg" alt="Strategic Navigation" className="philo-img" loading="lazy" />
+              <img src="/rusheng_compass_v2.webp" alt="Strategic Navigation" className="philo-img" loading="lazy" />
             </div>
           </div>
         </div>
@@ -200,10 +195,10 @@ const XJHome = ({ lang }) => {
         
         .xj-hero-overlay {
            /* Removed radical gradient that might cause glare */
-           position: absolute;
-           inset: 0;
-           background: transparent; 
-        }
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+         }
 
         .hero-brand-img {
           width: 80px;
@@ -216,8 +211,11 @@ const XJHome = ({ lang }) => {
            margin-top: 1rem;
            max-width: 600px;
            margin-left: auto; 
+           margin-left: auto; 
            margin-right: auto;
-           color: #333; /* Dark gray for readability */
+           color: #ffffff;
+           opacity: 1;
+           text-shadow: 0 4px 15px rgba(0,0,0,1); /* Max contrast shadow */
            font-weight: 500;
         }
 
