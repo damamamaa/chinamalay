@@ -3,93 +3,93 @@ import { motion } from 'framer-motion';
 import { content } from '../content';
 
 const HowToConsult = ({ lang }) => {
-    const t = content[lang].how_to_consult;
+  const t = content[lang].how_to_consult;
 
-    return (
-        <div className="consult-page">
-            <div className="container">
+  return (
+    <div className="consult-page">
+      <div className="container">
 
-                {/* HEADER */}
-                <header className="consult-header">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <h1 className="page-title">{t.title}</h1>
-                        <p className="page-subtitle">{t.subtitle}</p>
-                    </motion.div>
-                </header>
+        {/* HEADER */}
+        <header className="consult-header">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="page-title">{t.title}</h1>
+            <p className="page-subtitle">{t.subtitle}</p>
+          </motion.div>
+        </header>
 
-                {/* SECTION 1: INTRO */}
-                <section className="consult-section intro-section">
-                    <p className="intro-text">{t.intro}</p>
-                </section>
+        {/* SECTION 1: INTRO */}
+        <section className="consult-section intro-section">
+          <p className="intro-text">{t.intro}</p>
+        </section>
 
-                {/* SECTION 2: CONTACT OPTIONS */}
-                <section className="consult-section">
-                    <h2 className="section-heading">{t.contact_options.title}</h2>
-                    <div className="options-grid">
-                        {t.contact_options.options.map((opt, i) => (
-                            <div key={i} className="option-card">
-                                <h3 className="opt-title">{opt.title}</h3>
-                                <p className="opt-desc">{opt.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </section>
+        {/* SECTION 2: CONTACT OPTIONS */}
+        <section className="consult-section">
+          <h2 className="section-heading">{t.contact_options.title}</h2>
+          <div className="options-grid">
+            {t.contact_options.options.map((opt, i) => (
+              <div key={i} className="option-card">
+                <h3 className="opt-title">{opt.title}</h3>
+                <p className="opt-desc">{opt.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
-                {/* SECTION 3: ONLINE CONSULTATION */}
-                <section className="consult-section">
-                    <h2 className="section-heading">{t.online.title}</h2>
-                    <div className="online-content">
-                        <ul className="consult-list">
-                            {t.online.list.map((item, i) => (
-                                <li key={i}>{item}</li>
-                            ))}
-                        </ul>
-                        <p className="section-desc">{t.online.desc}</p>
-                    </div>
-                </section>
+        {/* SECTION 3: ONLINE CONSULTATION */}
+        <section className="consult-section">
+          <h2 className="section-heading">{t.online.title}</h2>
+          <div className="online-content">
+            <ul className="consult-list">
+              {t.online.list.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+            <p className="section-desc">{t.online.desc}</p>
+          </div>
+        </section>
 
-                {/* SECTION 4: TCM CONSULTATION */}
-                <section className="consult-section">
-                    <h2 className="section-heading">{t.tcm.title}</h2>
-                    <p className="section-desc">{t.tcm.desc}</p>
-                </section>
+        {/* SECTION 4: TCM CONSULTATION */}
+        <section className="consult-section">
+          <h2 className="section-heading">{t.tcm.title}</h2>
+          <p className="section-desc">{t.tcm.desc}</p>
+        </section>
 
-                {/* SECTION 5: PAYMENT METHODS */}
-                <section className="consult-section">
-                    <h2 className="section-heading">{t.payment.title}</h2>
-                    <ul className="consult-list">
-                        {t.payment.list.map((item, i) => (
-                            <li key={i}>{item}</li>
-                        ))}
-                    </ul>
-                    <p className="section-desc">{t.payment.desc}</p>
-                </section>
+        {/* SECTION 5: PAYMENT METHODS */}
+        <section className="consult-section">
+          <h2 className="section-heading">{t.payment.title}</h2>
+          <ul className="consult-list">
+            {t.payment.list.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+          <p className="section-desc">{t.payment.desc}</p>
+        </section>
 
-                {/* SECTION 6: ETHICS */}
-                <section className="consult-section ethics-section">
-                    <h2 className="section-heading">{t.ethics.title}</h2>
-                    <p className="ethics-text">{t.ethics.text}</p>
-                </section>
+        {/* SECTION 6: ETHICS */}
+        <section className="consult-section ethics-section">
+          <h2 className="section-heading">{t.ethics.title}</h2>
+          <p className="ethics-text">{t.ethics.text}</p>
+        </section>
 
-                {/* SECTION 7: ACTION BUTTON */}
-                <div className="cta-container">
-                    <a
-                        href="https://wa.me/6596961237"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="consult-cta-btn"
-                    >
-                        {t.cta}
-                    </a>
-                </div>
+        {/* SECTION 7: ACTION BUTTON */}
+        <div className="cta-container">
+          <a
+            href="https://wa.me/6596961237"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="consult-cta-btn"
+          >
+            {t.cta}
+          </a>
+        </div>
 
-            </div>
+      </div>
 
-            <style>{`
+      <style>{`
         .consult-page {
           padding-top: 10rem;
           padding-bottom: 6rem;
@@ -193,6 +193,7 @@ const HowToConsult = ({ lang }) => {
           font-size: 0.95rem;
           color: #555;
           line-height: 1.5;
+          white-space: pre-line;
         }
 
         /* LISTS */
@@ -267,8 +268,8 @@ const HowToConsult = ({ lang }) => {
            .consult-section { margin-bottom: 3rem; }
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default HowToConsult;

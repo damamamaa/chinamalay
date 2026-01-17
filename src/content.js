@@ -17,9 +17,9 @@ export const content = {
       contact_options: {
         title: "Contact Options",
         options: [
-          { title: "1. Phone Call", desc: "Direct phone consultation for immediate discussion." },
-          { title: "2. WhatsApp Message", desc: "Text or voice messages for written communication." },
-          { title: "3. Email", desc: "For detailed background sharing or document-based consultation." }
+          { title: "1. Phone Call", desc: "Direct phone consultation.\nSG: +65 9696 1237\nMY: +60 14 827 1236" },
+          { title: "2. WhatsApp Message", desc: "Text or voice messages.\nSG: +65 9696 1237\nMY: +60 14 827 1236" },
+          { title: "3. Email", desc: "For detailed background sharing.\nmasterrusheng123@gmail.com" }
         ]
       },
       online: {
@@ -279,9 +279,9 @@ export const content = {
       contact_options: {
         title: "联系方式",
         options: [
-          { title: "1. 电话咨询", desc: "直接电话咨询，立即讨论。" },
-          { title: "2. WhatsApp 留言", desc: "文字或语音消息，用于书面沟通。" },
-          { title: "3. 电子邮件", desc: "用于详细背景分享或基于文档的咨询。" }
+          { title: "1. 电话咨询", desc: "直接电话咨询。\n新加坡: +65 9696 1237\n马来西亚: +60 14 827 1236" },
+          { title: "2. WhatsApp 留言", desc: "文字或语音消息。\n新加坡: +65 9696 1237\n马来西亚: +60 14 827 1236" },
+          { title: "3. 电子邮件", desc: "用于详细背景分享。\nmasterrusheng123@gmail.com" }
         ]
       },
       online: {
@@ -501,9 +501,9 @@ export const content = {
       contact_options: {
         title: "Pilihan Hubungi",
         options: [
-          { title: "1. Panggilan Telefon", desc: "Konsultasi telefon terus untuk perbincangan segera." },
-          { title: "2. Mesej WhatsApp", desc: "Mesej teks atau suara untuk komunikasi bertulis." },
-          { title: "3. Emel", desc: "Untuk perkongsian latar belakang terperinci atau konsultasi berasaskan dokumen." }
+          { title: "1. Panggilan Telefon", desc: "Konsultasi telefon terus.\nSG: +65 9696 1237\nMY: +60 14 827 1236" },
+          { title: "2. Mesej WhatsApp", desc: "Mesej teks atau suara.\nSG: +65 9696 1237\nMY: +60 14 827 1236" },
+          { title: "3. Emel", desc: "Untuk perkongsian latar belakang.\nmasterrusheng123@gmail.com" }
         ]
       },
       online: {
